@@ -2,7 +2,7 @@
 
 [English](README.md)
 
-这是 [Agent Review Instant](https://github.com/Desolate-Jix/agent-gui-runtime) 的独立私有证据备份。执行安装器不包含、也不自动下载本仓库。需要数据时手动克隆；访问需要仓库授权。
+这是 [Agent Review Instant](https://github.com/Desolate-Jix/agent-gui-runtime) 的独立公开证据备份。执行安装器不包含、也不自动下载本仓库。需要数据时手动克隆。
 
 ## 冻结数据集
 

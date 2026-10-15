@@ -1,4 +1,4 @@
-"""逐文件校验私有备份，不调用模型或改写数据。"""
+"""逐文件校验备份，不调用模型或改写数据。"""
 from hashlib import sha256
 import json
 from pathlib import Path

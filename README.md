@@ -2,7 +2,7 @@
 
 [简体中文](README.zh-CN.md)
 
-Private, separately downloaded evidence backup for [Agent Review Instant](https://github.com/Desolate-Jix/agent-gui-runtime). The execution installer does not include or automatically download this repository. Clone it manually only when the data is needed; repository access is required.
+Public, separately downloaded evidence backup for [Agent Review Instant](https://github.com/Desolate-Jix/agent-gui-runtime). The execution installer does not include or automatically download this repository. Clone it manually only when the data is needed.
 
 ## Frozen dataset
 

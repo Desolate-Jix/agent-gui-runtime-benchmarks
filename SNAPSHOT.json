@@ -359,13 +359,13 @@
     },
     {
       "path": "README.md",
-      "size": 2578,
-      "sha256": "2ba9c8c941f21c885499b08fa0ddb2c5cfaa66c7672bee3df5dc1b9256a016a8"
+      "size": 2546,
+      "sha256": "c4a89d1bfe2d05224711681e6950bd431df2555ac13a5a5e3ed86a862d70db32"
     },
     {
       "path": "README.zh-CN.md",
-      "size": 2177,
-      "sha256": "18278940e31098569d3f447c17ee8eff990328e88169ddadfe495eea43508117"
+      "size": 2150,
+      "sha256": "db65d3ad6ccc7eae8d3cc19bb35425de32c292603e22ec4183da5d0db537fe38"
     },
     {
       "path": "evidence/decision-benchmark-20261015-01/annotations-a.json",
@@ -31869,8 +31869,8 @@
     },
     {
       "path": "verify_snapshot.py",
-      "size": 1460,
-      "sha256": "b3377171fdae255bcecbb242667b3b0055cc632aeb1c36ad064e47fdc061cd54"
+      "size": 1454,
+      "sha256": "dd520fbb79885f0da7ec93a440d5e6c46e0c99309bcec097f1151750b7703338"
     }
   ]
 }
