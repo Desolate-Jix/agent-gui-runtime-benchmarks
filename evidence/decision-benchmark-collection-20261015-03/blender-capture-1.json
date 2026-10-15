@@ -1,0 +1,102 @@
+{
+  "request_id": "collect-7-capture-1",
+  "received_at": "2026-10-14T12:48:25.852612+00:00",
+  "started_at": "2026-10-14T12:48:25.852612+00:00",
+  "observation": {
+    "image_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\data\\session-201ae9b32f2d439c8de47f0bc6c77bac\\captures\\blender-the-free-and-open-source-3d-creation-software-blender-org-microsoft-edge__live-latency-observation__full-window__20261015-014825-876658.png",
+    "image_width": 1264,
+    "image_height": 892,
+    "image_size": {
+      "width": 1264,
+      "height": 892
+    },
+    "window_rect": [
+      18,
+      10,
+      1282,
+      902
+    ],
+    "roi": null,
+    "roi_adjusted": false,
+    "capture_purpose": "live-latency-observation",
+    "window_size": {
+      "width": 1264,
+      "height": 892
+    },
+    "capture_timings": {
+      "contract_version": "window_capture_timing_v1",
+      "total_ms": 60.643,
+      "steps": [
+        {
+          "name": "backend_and_binding",
+          "elapsed_ms": 0.208
+        },
+        {
+          "name": "foreground_preparation",
+          "elapsed_ms": 0.005
+        },
+        {
+          "name": "geometry_and_pre_visibility",
+          "elapsed_ms": 0.148
+        },
+        {
+          "name": "backend_open_and_grab",
+          "elapsed_ms": 17.979
+        },
+        {
+          "name": "post_binding_and_visibility",
+          "elapsed_ms": 0.638
+        },
+        {
+          "name": "pixel_conversion",
+          "elapsed_ms": 4.171
+        },
+        {
+          "name": "backend_close_and_mask",
+          "elapsed_ms": 0.211
+        },
+        {
+          "name": "output_path",
+          "elapsed_ms": 0.589
+        },
+        {
+          "name": "png_encode_and_write",
+          "elapsed_ms": 32.756
+        },
+        {
+          "name": "retention_cleanup",
+          "elapsed_ms": 3.933
+        }
+      ],
+      "nested_timings_additive": false
+    },
+    "capture_visibility": {
+      "contract_version": "bound_capture_visibility_v2",
+      "allowed": true,
+      "reason": "capture_window_visible",
+      "bound_window_handle": 526736,
+      "masked": false,
+      "coordinate_space": "window"
+    },
+    "window": {
+      "handle": 526736,
+      "process_id": 72744
+    },
+    "window_identity": {
+      "handle": 526736,
+      "process_id": 72744,
+      "process_create_time": 1791982098.549205
+    },
+    "sha256": "e389e39281e0bc402941489e5e26c5e26c8a4f9db2b3ffeca37280523e449522"
+  },
+  "status": "returned",
+  "finished_at": "2026-10-14T12:48:25.915658+00:00",
+  "command_wall_ms": 62.983,
+  "response_available_at": "2026-10-14T12:48:25.915658+00:00",
+  "operation_succeeded": true,
+  "task_effect_verified": false,
+  "automatic_retry_allowed": false,
+  "original_request_id": "collect-7-capture-1",
+  "current_status_request_id": null,
+  "client_state": "terminal"
+}

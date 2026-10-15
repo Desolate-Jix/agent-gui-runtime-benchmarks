@@ -1,0 +1,23 @@
+{
+  "schema": "decision_prompt_comparison.v1",
+  "suite_sha256": "577ec133b92fcdac077be541491403e537acb96ec46baa32f054cca96cdcf672",
+  "variants_sha256": "aee9d3a6e610f801d052f1235eec53935ff504f67bdd68ec51596e2f5234e299",
+  "seed": 20261015,
+  "training": {
+    "split": "train",
+    "repeats": 1,
+    "requests": 312
+  },
+  "selection": [
+    "per-category exact accuracy descending",
+    "false accepts ascending",
+    "false rejects ascending",
+    "median latency ascending",
+    "input tokens ascending"
+  ],
+  "validation": "Freeze the category mix selected on train; compare twice per case against baseline. Validation may reject a category change before final freeze.",
+  "heldout": "Only after final freeze compare test baseline versus frozen candidate, twice per case; do not retune on test.",
+  "tokens": "Unified 5,000,000 ceiling includes workflow and later cascade/grounding calls.",
+  "human_reviewed": false,
+  "text_value_scope": "production question and field-crop image protocol; not an executed runtime receipt"
+}

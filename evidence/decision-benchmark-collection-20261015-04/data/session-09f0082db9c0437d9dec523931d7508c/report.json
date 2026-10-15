@@ -1,0 +1,128 @@
+{
+  "started_at": "2026-10-14T12:51:51.183740+00:00",
+  "phase": "stopped",
+  "runner_pid": 79276,
+  "learning_enabled": false,
+  "legacy_learning_executor_enabled": false,
+  "learning_recording": {
+    "recording_enabled": false,
+    "learning_id": null,
+    "status": "disabled"
+  },
+  "observer": "minimal",
+  "completed_commands": [
+    {
+      "name": "collect-0-launch.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-0-capture-0.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-0-capture-1.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-0-close.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-1-launch.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-1-capture-0.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-1-capture-1.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-1-close.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-2-launch.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-2-capture-0.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-2-capture-1.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-2-close.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-3-launch.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-3-capture-0.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-3-capture-1.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-3-close.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-4-launch.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-4-capture-0.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-4-capture-1.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-4-close.json",
+      "status": "returned"
+    },
+    {
+      "name": "close-9d39604f72e24bff8d00003450fa38a6.json",
+      "status": "returned"
+    }
+  ],
+  "host_is_admin": false,
+  "decision_service": {
+    "enabled": false,
+    "mode": "off",
+    "model": "gpt-6-luna",
+    "contract_version": "decision_profile.v1",
+    "configured": false,
+    "request_cap": 20,
+    "timeout_seconds": 8,
+    "closed": false,
+    "used": 0,
+    "remaining": 20,
+    "unknown_dispatches": 0,
+    "budget_scope": "execution",
+    "budget_status": "available"
+  },
+  "recognition_source": "agent_current",
+  "delegate_profile": null,
+  "api_profile": null,
+  "model_configuration": null,
+  "learning_recording_error": null,
+  "target": null,
+  "agent_command_cleanup": {
+    "status": "stopped"
+  },
+  "cleanup_errors": [],
+  "finished_at": "2026-10-14T12:52:30.501995+00:00",
+  "host_phase": "stopped",
+  "sampler_stopped": true
+}

@@ -1,0 +1,63 @@
+{
+  "request_id": "collect-22-launch",
+  "received_at": "2026-10-14T12:50:11.658396+00:00",
+  "started_at": "2026-10-14T12:50:11.658396+00:00",
+  "preparation_preview": {
+    "source": "app_catalog",
+    "app_id": "discovered-39db17a669b6bf26795fb17997dd0b8b",
+    "name": "nasa",
+    "working_directory": "c:\\program files (x86)\\microsoft\\edge\\application",
+    "url": null,
+    "command": [
+      "c:\\program files (x86)\\microsoft\\edge\\application\\msedge.exe",
+      "--user-data-dir=D:\\AgentGUI-Projects\\test-profiles\\amadeus-codex-runtime-edge",
+      "--profile-directory=Default",
+      "--new-window",
+      "--window-size=1280,900",
+      "https://www.nasa.gov/"
+    ],
+    "executable_path": "c:\\program files (x86)\\microsoft\\edge\\application\\msedge.exe",
+    "catalog_entry_sha256": "30a7c15ed737312a9a8bee632a29c98fa5004761957f5007ac93a1facec4229d",
+    "executable_sha256": "4bb4545b4ab80a3cf463a588ce570ca42de38fe6db16e3baeb0798ac75b4648b",
+    "contract_version": "native_window_preparation_v1",
+    "preparation_id": "4bc43951-65b5-445b-a400-843607010d67",
+    "mode": "launch",
+    "identity": null,
+    "expires_in_seconds": 60
+  },
+  "result": {
+    "status": "launched_window_ready",
+    "process_id": 17892,
+    "window": {
+      "handle": 2687368,
+      "process_id": 17892,
+      "title": "NASA - 个人 - Microsoft​ Edge"
+    },
+    "launch_ownership": {
+      "contract_version": "launched_window_ownership.v1",
+      "newly_launched": true,
+      "identity": {
+        "contract_version": "windows_native_identity_observation_v1",
+        "provider": "windows_native_identity",
+        "status": "observed",
+        "target_window_handle": 2687368,
+        "process_id": 17892,
+        "process_create_time": 1791982211.68221,
+        "executable_path": "c:\\program files (x86)\\microsoft\\edge\\application\\msedge.exe"
+      }
+    },
+    "presentation_wait_ms": 500,
+    "content_ready": null,
+    "next_action": "capture_and_inspect_current_content"
+  },
+  "status": "returned",
+  "finished_at": "2026-10-14T12:50:12.672397+00:00",
+  "command_wall_ms": 1013.611,
+  "response_available_at": "2026-10-14T12:50:12.672397+00:00",
+  "operation_succeeded": true,
+  "task_effect_verified": false,
+  "automatic_retry_allowed": false,
+  "original_request_id": "collect-22-launch",
+  "current_status_request_id": null,
+  "client_state": "terminal"
+}

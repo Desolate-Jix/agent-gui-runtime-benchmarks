@@ -1,0 +1,578 @@
+{
+  "schema": "decision_benchmark_annotations.v1",
+  "suite_id": "real-gui-20261015",
+  "annotator": "Main AI visual review",
+  "images": [
+    {
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-04\\retained-sources\\pypi-capture-1.png",
+      "source_sha256": "bc1f560fa02eb1bac64204a114ad1ca268a1c660e66661b872a6d49ab9d06d55",
+      "original_size": {
+        "width": 1264,
+        "height": 892
+      },
+      "session_id": "session-09f0082db9c0437d9dec523931d7508c",
+      "capture_id": null,
+      "group_id": "pypi",
+      "original_image_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-04\\data\\session-09f0082db9c0437d9dec523931d7508c\\captures\\pypi-the-python-package-index-microsoft-edge__live-latency-observation__full-window__20261015-015200-412299.png",
+      "cases": [
+        {
+          "id": "pypi-search-hit",
+          "category": "input_field",
+          "target": "the project search input on the PyPI homepage",
+          "point": {
+            "x": 530,
+            "y": 386
+          },
+          "candidate_bbox": {
+            "x": 320,
+            "y": 362,
+            "w": 611,
+            "h": 50
+          },
+          "target_bbox": {
+            "x": 320,
+            "y": 362,
+            "w": 611,
+            "h": 50
+          },
+          "expected": "condition_met",
+          "reason": "The point is inside the large white project search field.",
+          "appearance": "A wide white rectangular search field with a magnifying-glass icon at the right.",
+          "container": "Below the main PyPI heading."
+        },
+        {
+          "id": "pypi-search-on-login",
+          "category": "input_field",
+          "target": "the project search input on the PyPI homepage",
+          "point": {
+            "x": 994,
+            "y": 123
+          },
+          "candidate_bbox": {
+            "x": 974,
+            "y": 110,
+            "w": 43,
+            "h": 28
+          },
+          "target_bbox": {
+            "x": 320,
+            "y": 362,
+            "w": 611,
+            "h": 50
+          },
+          "expected": "condition_not_met",
+          "reason": "The point is on the Log in navigation link, not the project search field.",
+          "appearance": "A wide white rectangular search field with a magnifying-glass icon at the right.",
+          "container": "Below the main PyPI heading."
+        },
+        {
+          "id": "pypi-search-icon",
+          "category": "graphic",
+          "target": "the magnifying-glass search icon inside the project search field",
+          "point": {
+            "x": 904,
+            "y": 385
+          },
+          "candidate_bbox": {
+            "x": 892,
+            "y": 373,
+            "w": 25,
+            "h": 27
+          },
+          "target_bbox": {
+            "x": 892,
+            "y": 373,
+            "w": 25,
+            "h": 27
+          },
+          "expected": "condition_met",
+          "reason": "The center is on the magnifying-glass icon.",
+          "appearance": "A gray magnifying-glass icon.",
+          "container": "Right end of the central white search input."
+        },
+        {
+          "id": "pypi-register-on-login",
+          "category": "graphic",
+          "target": "the Register navigation link on the PyPI page",
+          "point": {
+            "x": 994,
+            "y": 123
+          },
+          "candidate_bbox": {
+            "x": 974,
+            "y": 110,
+            "w": 43,
+            "h": 28
+          },
+          "target_bbox": {
+            "x": 1045,
+            "y": 110,
+            "w": 62,
+            "h": 28
+          },
+          "expected": "condition_not_met",
+          "reason": "The marked link reads Log in; Register is the separate neighboring link.",
+          "appearance": "The white word Register.",
+          "container": "Top blue navigation bar."
+        },
+        {
+          "id": "pypi-address-value",
+          "category": "text_value",
+          "target": "the browser address bar",
+          "point": {
+            "x": 300,
+            "y": 60
+          },
+          "candidate_bbox": {
+            "x": 76,
+            "y": 44,
+            "w": 961,
+            "h": 31
+          },
+          "target_bbox": null,
+          "expected": "condition_met",
+          "reason": "The complete displayed address is https://pypi.org.",
+          "appearance": "",
+          "container": "",
+          "expected_text": "https://pypi.org"
+        },
+        {
+          "id": "pypi-placeholder-not-entered",
+          "category": "text_value",
+          "target": "the project search input on the PyPI homepage",
+          "point": {
+            "x": 530,
+            "y": 386
+          },
+          "candidate_bbox": {
+            "x": 320,
+            "y": 362,
+            "w": 611,
+            "h": 50
+          },
+          "target_bbox": null,
+          "expected": "condition_not_met",
+          "reason": "Only a search placeholder is visible, not the specified package query.",
+          "appearance": "",
+          "container": "",
+          "expected_text": "requests"
+        },
+        {
+          "id": "pypi-homepage-result",
+          "category": "page_result",
+          "target": "the current PyPI webpage",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "expected": "condition_met",
+          "reason": "The large package-index homepage heading and search input are visible.",
+          "appearance": "",
+          "container": "",
+          "condition": "The PyPI homepage is visible with its project search input."
+        },
+        {
+          "id": "pypi-not-project-detail",
+          "category": "page_result",
+          "target": "the current PyPI webpage",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "expected": "condition_not_met",
+          "reason": "This is the homepage, not a numpy package detail page.",
+          "appearance": "",
+          "container": "",
+          "condition": "The numpy package detail page with its package-specific metadata is visible."
+        }
+      ]
+    },
+    {
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-04\\retained-sources\\mozilla-capture-1.png",
+      "source_sha256": "8fea23bb9d927751ba575fdfa68c520402ca6d8ba2481379aaadff07b4f66836",
+      "original_size": {
+        "width": 1264,
+        "height": 892
+      },
+      "session_id": "session-09f0082db9c0437d9dec523931d7508c",
+      "capture_id": null,
+      "group_id": "mozilla",
+      "original_image_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-04\\data\\session-09f0082db9c0437d9dec523931d7508c\\captures\\mozilla-internet-for-people-not-profit-us-microsoft-edge__live-latency-observation__full-window__20261015-015207-875037.png",
+      "cases": [
+        {
+          "id": "mozilla-address-hit",
+          "category": "input_field",
+          "target": "the browser address bar at the top of the window",
+          "point": {
+            "x": 480,
+            "y": 60
+          },
+          "candidate_bbox": {
+            "x": 76,
+            "y": 44,
+            "w": 961,
+            "h": 31
+          },
+          "target_bbox": {
+            "x": 76,
+            "y": 44,
+            "w": 961,
+            "h": 31
+          },
+          "expected": "condition_met",
+          "reason": "The point lies inside the visible URL field.",
+          "appearance": "A long rounded URL input.",
+          "container": "Browser toolbar above the page."
+        },
+        {
+          "id": "mozilla-address-on-products",
+          "category": "input_field",
+          "target": "the browser address bar at the top of the window",
+          "point": {
+            "x": 559,
+            "y": 106
+          },
+          "candidate_bbox": {
+            "x": 516,
+            "y": 91,
+            "w": 91,
+            "h": 31
+          },
+          "target_bbox": {
+            "x": 76,
+            "y": 44,
+            "w": 961,
+            "h": 31
+          },
+          "expected": "condition_not_met",
+          "reason": "The point is on Products in the webpage navigation.",
+          "appearance": "A long rounded URL input.",
+          "container": "Browser toolbar above the page."
+        },
+        {
+          "id": "mozilla-pause-button",
+          "category": "graphic",
+          "target": "the Pause animation button",
+          "point": {
+            "x": 1153,
+            "y": 216
+          },
+          "candidate_bbox": {
+            "x": 1085,
+            "y": 200,
+            "w": 137,
+            "h": 33
+          },
+          "target_bbox": {
+            "x": 1085,
+            "y": 200,
+            "w": 137,
+            "h": 33
+          },
+          "expected": "condition_met",
+          "reason": "The point is on the explicitly labeled pause button.",
+          "appearance": "A small dark outlined button with a pause icon and Pause animation text.",
+          "container": "Upper-right of the black hero panel."
+        },
+        {
+          "id": "mozilla-about-on-products",
+          "category": "graphic",
+          "target": "the About us navigation item",
+          "point": {
+            "x": 559,
+            "y": 106
+          },
+          "candidate_bbox": {
+            "x": 516,
+            "y": 91,
+            "w": 91,
+            "h": 31
+          },
+          "target_bbox": {
+            "x": 647,
+            "y": 91,
+            "w": 82,
+            "h": 31
+          },
+          "expected": "condition_not_met",
+          "reason": "The point is on Products, while About us is to its right.",
+          "appearance": "Black text reading About us.",
+          "container": "White page navigation header."
+        },
+        {
+          "id": "mozilla-address-value",
+          "category": "text_value",
+          "target": "the browser address bar",
+          "point": {
+            "x": 480,
+            "y": 60
+          },
+          "candidate_bbox": {
+            "x": 76,
+            "y": 44,
+            "w": 961,
+            "h": 31
+          },
+          "target_bbox": null,
+          "expected": "condition_met",
+          "reason": "The visible URL includes the en-US path and final slash.",
+          "appearance": "",
+          "container": "",
+          "expected_text": "https://www.mozilla.org/en-US/"
+        },
+        {
+          "id": "mozilla-wrong-address-value",
+          "category": "text_value",
+          "target": "the browser address bar",
+          "point": {
+            "x": 480,
+            "y": 60
+          },
+          "candidate_bbox": {
+            "x": 76,
+            "y": 44,
+            "w": 961,
+            "h": 31
+          },
+          "target_bbox": null,
+          "expected": "condition_not_met",
+          "reason": "The URL is for Mozilla, not the stated PyPI address.",
+          "appearance": "",
+          "container": "",
+          "expected_text": "https://pypi.org"
+        },
+        {
+          "id": "mozilla-homepage-result",
+          "category": "page_result",
+          "target": "the current webpage",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "expected": "condition_met",
+          "reason": "The hero heading says Welcome to Mozilla.",
+          "appearance": "",
+          "container": "",
+          "condition": "The Mozilla homepage with the Welcome to Mozilla heading is visible."
+        },
+        {
+          "id": "mozilla-download-persistence",
+          "category": "page_result",
+          "target": "a completed local installer download",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "expected": "evidence_insufficient",
+          "reason": "This webpage screenshot has no download receipt or local file evidence.",
+          "appearance": "",
+          "container": "",
+          "condition": "A local Firefox installer download has completed successfully."
+        }
+      ]
+    },
+    {
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-04\\retained-sources\\libreoffice-capture-1.png",
+      "source_sha256": "9e4b4d53fbf78cb98c2b27a9b399564665301dd1d81cc3790e2c6800b0aed5df",
+      "original_size": {
+        "width": 1264,
+        "height": 892
+      },
+      "session_id": "session-09f0082db9c0437d9dec523931d7508c",
+      "capture_id": null,
+      "group_id": "libreoffice",
+      "original_image_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-04\\data\\session-09f0082db9c0437d9dec523931d7508c\\captures\\free-and-private-office-suite-no-forced-ai-libreoffice-microsoft-edge__live-latency-observation__full-window__20261015-015215-286258.png",
+      "cases": [
+        {
+          "id": "libreoffice-address-hit",
+          "category": "input_field",
+          "target": "the browser address bar",
+          "point": {
+            "x": 480,
+            "y": 60
+          },
+          "candidate_bbox": {
+            "x": 76,
+            "y": 44,
+            "w": 961,
+            "h": 31
+          },
+          "target_bbox": {
+            "x": 76,
+            "y": 44,
+            "w": 961,
+            "h": 31
+          },
+          "expected": "condition_met",
+          "reason": "The point is within the URL text field.",
+          "appearance": "A rounded URL text input.",
+          "container": "Browser toolbar above the site."
+        },
+        {
+          "id": "libreoffice-address-on-language",
+          "category": "input_field",
+          "target": "the browser address bar",
+          "point": {
+            "x": 1060,
+            "y": 102
+          },
+          "candidate_bbox": {
+            "x": 963,
+            "y": 88,
+            "w": 210,
+            "h": 27
+          },
+          "target_bbox": {
+            "x": 76,
+            "y": 44,
+            "w": 961,
+            "h": 31
+          },
+          "expected": "condition_not_met",
+          "reason": "The point is on the site language selector below the browser toolbar.",
+          "appearance": "A rounded URL text input.",
+          "container": "Browser toolbar above the site."
+        },
+        {
+          "id": "libreoffice-download-hit",
+          "category": "graphic",
+          "target": "the green DOWNLOAD NOW button",
+          "point": {
+            "x": 488,
+            "y": 459
+          },
+          "candidate_bbox": {
+            "x": 387,
+            "y": 436,
+            "w": 203,
+            "h": 48
+          },
+          "target_bbox": {
+            "x": 387,
+            "y": 436,
+            "w": 203,
+            "h": 48
+          },
+          "expected": "condition_met",
+          "reason": "The center is on the green DOWNLOAD NOW call-to-action.",
+          "appearance": "A green rounded button labeled DOWNLOAD NOW.",
+          "container": "Below the main LibreOffice description."
+        },
+        {
+          "id": "libreoffice-donate-on-download",
+          "category": "graphic",
+          "target": "the green DONATE button",
+          "point": {
+            "x": 488,
+            "y": 459
+          },
+          "candidate_bbox": {
+            "x": 387,
+            "y": 436,
+            "w": 203,
+            "h": 48
+          },
+          "target_bbox": {
+            "x": 1033,
+            "y": 239,
+            "w": 113,
+            "h": 55
+          },
+          "expected": "condition_not_met",
+          "reason": "The point is on DOWNLOAD NOW, not the separate DONATE button.",
+          "appearance": "A green rounded DONATE button.",
+          "container": "Page navigation row near the upper right."
+        },
+        {
+          "id": "libreoffice-search-icon",
+          "category": "graphic",
+          "target": "the magnifying-glass website search icon",
+          "point": {
+            "x": 932,
+            "y": 265
+          },
+          "candidate_bbox": {
+            "x": 917,
+            "y": 248,
+            "w": 33,
+            "h": 35
+          },
+          "target_bbox": {
+            "x": 917,
+            "y": 248,
+            "w": 33,
+            "h": 35
+          },
+          "expected": "condition_met",
+          "reason": "The center is on the standalone gray magnifying-glass icon.",
+          "appearance": "A gray magnifying-glass icon.",
+          "container": "Page navigation immediately left of DONATE."
+        },
+        {
+          "id": "libreoffice-address-value",
+          "category": "text_value",
+          "target": "the browser address bar",
+          "point": {
+            "x": 480,
+            "y": 60
+          },
+          "candidate_bbox": {
+            "x": 76,
+            "y": 44,
+            "w": 961,
+            "h": 31
+          },
+          "target_bbox": null,
+          "expected": "condition_met",
+          "reason": "The displayed address is the LibreOffice homepage.",
+          "appearance": "",
+          "container": "",
+          "expected_text": "https://www.libreoffice.org"
+        },
+        {
+          "id": "libreoffice-wrong-address-value",
+          "category": "text_value",
+          "target": "the browser address bar",
+          "point": {
+            "x": 480,
+            "y": 60
+          },
+          "candidate_bbox": {
+            "x": 76,
+            "y": 44,
+            "w": 961,
+            "h": 31
+          },
+          "target_bbox": null,
+          "expected": "condition_not_met",
+          "reason": "The address is LibreOffice, not Microsoft.",
+          "appearance": "",
+          "container": "",
+          "expected_text": "https://www.microsoft.com"
+        },
+        {
+          "id": "libreoffice-homepage-result",
+          "category": "page_result",
+          "target": "the current webpage",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "expected": "condition_met",
+          "reason": "The LibreOffice branding and homepage download call-to-action are visible.",
+          "appearance": "",
+          "container": "",
+          "condition": "The LibreOffice homepage with its DOWNLOAD NOW button is visible."
+        },
+        {
+          "id": "libreoffice-embedded-editor-decoy",
+          "category": "page_result",
+          "target": "the foreground application",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "expected": "condition_not_met",
+          "reason": "The Writer UI is an illustration inside an Edge webpage, not a foreground native Writer window.",
+          "appearance": "",
+          "container": "",
+          "condition": "The foreground native application is LibreOffice Writer with an editable document open."
+        }
+      ]
+    }
+  ]
+}

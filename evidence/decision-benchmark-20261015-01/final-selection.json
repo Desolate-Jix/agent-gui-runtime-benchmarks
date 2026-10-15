@@ -1,0 +1,187 @@
+{
+  "decisions": {
+    "input_field": {
+      "any_measured_benefit": false,
+      "baseline": {
+        "accuracy": 0.9285714285714286,
+        "cases": 28,
+        "errors": 0,
+        "exact_correct": 26,
+        "false_accepts": 2,
+        "false_rejects": 0,
+        "http_latency": {
+          "n": 28,
+          "p50_ms": 184.16445,
+          "p95_ms": 267.0004
+        },
+        "input_tokens": 36602,
+        "output_tokens": 0,
+        "returned": 28,
+        "returned_http_latency": {
+          "n": 28,
+          "p50_ms": 184.16445,
+          "p95_ms": 267.0004
+        },
+        "returned_nonpass_on_positive": 0,
+        "scene_groups": 5,
+        "unique_cases": 14,
+        "unknown_usage_requests": 0
+      },
+      "candidate": {
+        "accuracy": 0.9285714285714286,
+        "cases": 28,
+        "errors": 0,
+        "exact_correct": 26,
+        "false_accepts": 2,
+        "false_rejects": 0,
+        "http_latency": {
+          "n": 28,
+          "p50_ms": 184.7262,
+          "p95_ms": 553.7695
+        },
+        "input_tokens": 37918,
+        "output_tokens": 0,
+        "returned": 28,
+        "returned_http_latency": {
+          "n": 28,
+          "p50_ms": 184.7262,
+          "p95_ms": 553.7695
+        },
+        "returned_nonpass_on_positive": 0,
+        "scene_groups": 5,
+        "unique_cases": 14,
+        "unknown_usage_requests": 0
+      },
+      "non_regression": true,
+      "retained": false
+    },
+    "page_result": {
+      "any_measured_benefit": true,
+      "baseline": {
+        "accuracy": 0.9545454545454546,
+        "cases": 44,
+        "errors": 0,
+        "exact_correct": 42,
+        "false_accepts": 0,
+        "false_rejects": 0,
+        "http_latency": {
+          "n": 44,
+          "p50_ms": 253.07655,
+          "p95_ms": 543.9306
+        },
+        "input_tokens": 90884,
+        "output_tokens": 0,
+        "returned": 44,
+        "returned_http_latency": {
+          "n": 44,
+          "p50_ms": 253.07655,
+          "p95_ms": 543.9306
+        },
+        "returned_nonpass_on_positive": 0,
+        "scene_groups": 8,
+        "unique_cases": 22,
+        "unknown_usage_requests": 0
+      },
+      "candidate": {
+        "accuracy": 1.0,
+        "cases": 44,
+        "errors": 0,
+        "exact_correct": 44,
+        "false_accepts": 0,
+        "false_rejects": 0,
+        "http_latency": {
+          "n": 44,
+          "p50_ms": 243.02675,
+          "p95_ms": 553.6416
+        },
+        "input_tokens": 88244,
+        "output_tokens": 0,
+        "returned": 44,
+        "returned_http_latency": {
+          "n": 44,
+          "p50_ms": 243.02675,
+          "p95_ms": 553.6416
+        },
+        "returned_nonpass_on_positive": 0,
+        "scene_groups": 8,
+        "unique_cases": 22,
+        "unknown_usage_requests": 0
+      },
+      "non_regression": true,
+      "retained": true
+    },
+    "text_value": {
+      "any_measured_benefit": true,
+      "baseline": {
+        "accuracy": 1.0,
+        "cases": 16,
+        "errors": 0,
+        "exact_correct": 16,
+        "false_accepts": 0,
+        "false_rejects": 0,
+        "http_latency": {
+          "n": 16,
+          "p50_ms": 117.23275000000001,
+          "p95_ms": 209.7562
+        },
+        "input_tokens": 4212,
+        "output_tokens": 0,
+        "returned": 16,
+        "returned_http_latency": {
+          "n": 16,
+          "p50_ms": 117.23275000000001,
+          "p95_ms": 209.7562
+        },
+        "returned_nonpass_on_positive": 0,
+        "scene_groups": 3,
+        "unique_cases": 8,
+        "unknown_usage_requests": 0
+      },
+      "candidate": {
+        "accuracy": 1.0,
+        "cases": 16,
+        "errors": 0,
+        "exact_correct": 16,
+        "false_accepts": 0,
+        "false_rejects": 0,
+        "http_latency": {
+          "n": 16,
+          "p50_ms": 107.0163,
+          "p95_ms": 125.3297
+        },
+        "input_tokens": 4036,
+        "output_tokens": 0,
+        "returned": 16,
+        "returned_http_latency": {
+          "n": 16,
+          "p50_ms": 107.0163,
+          "p95_ms": 125.3297
+        },
+        "returned_nonpass_on_positive": 0,
+        "scene_groups": 3,
+        "unique_cases": 8,
+        "unknown_usage_requests": 0
+      },
+      "non_regression": true,
+      "retained": true
+    }
+  },
+  "frozen_at_utc": "2026-10-14T14:51:59.759529+00:00",
+  "latency_qualification": "Descriptive HTTP latency; no statistically reliable or end-to-end action speedup claim.",
+  "release_adoption_gate": "Adopt the complete frozen mix only if heldout exact accuracy is not lower and false accepts/false rejects/errors/unknown usage are not higher than baseline, with at least one measured accuracy/error/token/median-latency benefit. If gate fails retain baseline without retuning wording on heldout.",
+  "runner_variants": {
+    "baseline": {},
+    "frozen_mix": {
+      "page_result": "Check only this visible current result: {condition}. Choose condition_met if shown, condition_not_met if contradicted, otherwise evidence_insufficient. One static image cannot establish temporal progress or hidden persistence.",
+      "text_value": "Does the entered field text exactly equal {expected_text}? Ignore separate icons and shortcut hints. If gray unaccepted completion is attached, choose evidence_insufficient."
+    }
+  },
+  "schema": "decision_final_selection.v1",
+  "stage": "frozen_before_test",
+  "suite_sha256": "577ec133b92fcdac077be541491403e537acb96ec46baa32f054cca96cdcf672",
+  "test_results_read": false,
+  "training_selection_sha256": "f6cfb1ce6bf5054db0cfe32bcefb9d37b3a5f1ff41a4c78008bb3ea40aebf9bc",
+  "validation_policy_sha256": "4234576f3f58792fb1e67a00cc872f69131feacc574f808995d7504fcd4d8edb",
+  "validation_results_sha256": "9001fd79e688e0b9a3ae1c37bcbde396c6547b6c4a98f9b6a9a837d4a69c7ed2",
+  "validation_run_sha256": "9536e6c8db6c1c2318375b358d64e9bfc3dc5a638145d2eae8e9d978225d9d16"
+}

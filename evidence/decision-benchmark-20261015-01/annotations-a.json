@@ -1,0 +1,1291 @@
+{
+  "schema": "visual_case_proposals.v1",
+  "annotation_author": "Codex visual pre-annotation",
+  "status": "pending_main_visual_review",
+  "not_human_ground_truth": true,
+  "evidence_basis": "Original PNG pixels and catalog metadata only; no historical model replies.",
+  "assigned_catalog_indices": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "excluded_private_catalog_indices": [
+    0
+  ],
+  "notes": [
+    "Bounding boxes are visually proposed pixel regions, not DOM or accessibility bounds.",
+    "Target bboxes and expected outcomes are answer-side annotation only and must not be included in model requests.",
+    "Appearance and container describe candidate evidence without asserting that it is the correct target.",
+    "capture_id is null when absent from catalog and PNG metadata; no identifier is invented from the filename.",
+    "All proposals require Main image review; these are not independently accepted labels or a model accuracy result.",
+    "The two APG combobox images share a group and must not be split across training and holdout.",
+    "No insufficient cases were forced: the proposed checks have visibly determinate evidence."
+  ],
+  "images": [
+    {
+      "catalog_index": 1,
+      "group_id": "httpbin-order-form",
+      "cases": [
+        {
+          "id": "a01-field-name-in",
+          "category": "input_field",
+          "target": "the Customer name text input",
+          "point": {
+            "x": 230,
+            "y": 110
+          },
+          "candidate_bbox": {
+            "x": 138,
+            "y": 100,
+            "w": 177,
+            "h": 21
+          },
+          "target_bbox": {
+            "x": 138,
+            "y": 100,
+            "w": 177,
+            "h": 21
+          },
+          "expected": "condition_met",
+          "reason": "点位于Customer name标签右侧的单行输入框内部。",
+          "appearance": "A narrow white rectangular text field.",
+          "container": "The upper section of the webpage form.",
+          "condition": "The candidate point is inside the specified target input field."
+        },
+        {
+          "id": "a01-field-name-wrong-phone",
+          "category": "input_field",
+          "target": "the Customer name text input",
+          "point": {
+            "x": 180,
+            "y": 152
+          },
+          "candidate_bbox": {
+            "x": 100,
+            "y": 141,
+            "w": 176,
+            "h": 21
+          },
+          "target_bbox": {
+            "x": 138,
+            "y": 100,
+            "w": 177,
+            "h": 21
+          },
+          "expected": "condition_not_met",
+          "reason": "候选是Telephone输入框，点虽在候选框内，但不在Customer name框内。",
+          "appearance": "A narrow white rectangular text field.",
+          "container": "The upper section of the webpage form.",
+          "condition": "The candidate point is inside the specified target input field."
+        },
+        {
+          "id": "a01-graphic-bacon",
+          "category": "graphic",
+          "target": "the Bacon topping checkbox",
+          "point": {
+            "x": 38,
+            "y": 454
+          },
+          "candidate_bbox": {
+            "x": 32,
+            "y": 448,
+            "w": 13,
+            "h": 13
+          },
+          "target_bbox": {
+            "x": 32,
+            "y": 448,
+            "w": 13,
+            "h": 13
+          },
+          "expected": "condition_met",
+          "reason": "点指向Bacon文字左侧的方形复选框。",
+          "appearance": "A small empty square checkbox beside a topping label.",
+          "container": "The Pizza Toppings group on the webpage.",
+          "condition": "The visible control at the candidate point matches the specified target."
+        },
+        {
+          "id": "a01-graphic-bacon-wrong-cheese",
+          "category": "graphic",
+          "target": "the Bacon topping checkbox",
+          "point": {
+            "x": 38,
+            "y": 494
+          },
+          "candidate_bbox": {
+            "x": 32,
+            "y": 488,
+            "w": 13,
+            "h": 13
+          },
+          "target_bbox": {
+            "x": 32,
+            "y": 448,
+            "w": 13,
+            "h": 13
+          },
+          "expected": "condition_not_met",
+          "reason": "点指向Extra Cheese左侧的真实复选框，与Bacon控件不同。",
+          "appearance": "A small empty square checkbox beside a topping label.",
+          "container": "The Pizza Toppings group on the webpage.",
+          "condition": "The visible control at the candidate point matches the specified target."
+        },
+        {
+          "id": "a01-value-name-present",
+          "category": "text_value",
+          "target": "the Customer name text input",
+          "point": null,
+          "candidate_bbox": {
+            "x": 138,
+            "y": 100,
+            "w": 177,
+            "h": 21
+          },
+          "target_bbox": {
+            "x": 138,
+            "y": 100,
+            "w": 177,
+            "h": 21
+          },
+          "expected": "condition_met",
+          "reason": "输入框内清楚显示Runtime Test B。",
+          "appearance": "A narrow single-line field containing visible text.",
+          "container": "The upper section of the webpage form.",
+          "expected_text": "Runtime Test B"
+        },
+        {
+          "id": "a01-value-name-different",
+          "category": "text_value",
+          "target": "the Customer name text input",
+          "point": null,
+          "candidate_bbox": {
+            "x": 138,
+            "y": 100,
+            "w": 177,
+            "h": 21
+          },
+          "target_bbox": {
+            "x": 138,
+            "y": 100,
+            "w": 177,
+            "h": 21
+          },
+          "expected": "condition_not_met",
+          "reason": "可见姓名字段内容为Runtime Test B，与要求的末尾A不同。",
+          "appearance": "A narrow single-line field containing visible text.",
+          "container": "The upper section of the webpage form.",
+          "expected_text": "Runtime Test A"
+        },
+        {
+          "id": "a01-page-form",
+          "category": "page_result",
+          "target": "the current webpage",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "expected": "condition_met",
+          "reason": "页面可见披萨大小、配料、送达时间及Submit order按钮，没有显示提交结果。",
+          "appearance": "A plain white form with radio buttons, checkboxes and labeled fields.",
+          "container": "The webpage below the browser toolbar.",
+          "condition": "An order form with Pizza Size, Pizza Toppings and a Submit order button is visible."
+        }
+      ],
+      "source_path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260923-form-batch-resume-01\\data\\session-ed8ef3e172944871a76cca1db114446b\\runtime-output\\local-direct-steps\\local-step-ffbd0c4fa1ed4803b71b3dc4d43fd2a8\\observations\\httpbin-org-forms-post-microsoft-edge__local-direct-post-action__full-window__20260923-230216-184716.png",
+      "sha256": "44004f25d077bf7411aa2f6adeaa40044263507c25d4d744b98b8b24ae27f943",
+      "original_size": {
+        "width": 1278,
+        "height": 1285
+      },
+      "session_id": "session-ed8ef3e172944871a76cca1db114446b",
+      "capture_id": null,
+      "annotation_status": "model_proposed_pending_main_review"
+    },
+    {
+      "catalog_index": 2,
+      "group_id": "wikipedia-home",
+      "cases": [
+        {
+          "id": "a02-field-main-search-in",
+          "category": "input_field",
+          "target": "the main Wikipedia search text input below the globe",
+          "point": {
+            "x": 550,
+            "y": 574
+          },
+          "candidate_bbox": {
+            "x": 407,
+            "y": 553,
+            "w": 337,
+            "h": 42
+          },
+          "target_bbox": {
+            "x": 407,
+            "y": 553,
+            "w": 337,
+            "h": 42
+          },
+          "expected": "condition_met",
+          "reason": "点在地球图下方主搜索框的文字输入区内；右上恢复提示未遮住该框。",
+          "appearance": "A long empty white rectangular field with a blue outline.",
+          "container": "The center of the Wikipedia landing page below the globe.",
+          "condition": "The candidate point is inside the specified target input field."
+        },
+        {
+          "id": "a02-field-main-search-wrong-url",
+          "category": "input_field",
+          "target": "the main Wikipedia search text input below the globe",
+          "point": {
+            "x": 450,
+            "y": 60
+          },
+          "candidate_bbox": {
+            "x": 77,
+            "y": 43,
+            "w": 722,
+            "h": 33
+          },
+          "target_bbox": {
+            "x": 407,
+            "y": 553,
+            "w": 337,
+            "h": 42
+          },
+          "expected": "condition_not_met",
+          "reason": "点在浏览器地址栏这个真实输入控件内，不在网页主搜索框内。",
+          "appearance": "A long white rounded field in the browser chrome.",
+          "container": "The browser toolbar above the webpage.",
+          "condition": "The candidate point is inside the specified target input field."
+        },
+        {
+          "id": "a02-graphic-search-button",
+          "category": "graphic",
+          "target": "the blue Wikipedia search button with a magnifying-glass icon",
+          "point": {
+            "x": 828,
+            "y": 574
+          },
+          "candidate_bbox": {
+            "x": 800,
+            "y": 552,
+            "w": 57,
+            "h": 44
+          },
+          "target_bbox": {
+            "x": 800,
+            "y": 552,
+            "w": 57,
+            "h": 44
+          },
+          "expected": "condition_met",
+          "reason": "点位于网页主搜索框右侧蓝色放大镜按钮内部。",
+          "appearance": "A blue rectangular button containing a white magnifying-glass symbol.",
+          "container": "The right end of the main Wikipedia search row.",
+          "condition": "The visible control at the candidate point matches the specified target."
+        },
+        {
+          "id": "a02-graphic-search-wrong-restore",
+          "category": "graphic",
+          "target": "the blue Wikipedia search button with a magnifying-glass icon",
+          "point": {
+            "x": 1160,
+            "y": 182
+          },
+          "candidate_bbox": {
+            "x": 1135,
+            "y": 165,
+            "w": 49,
+            "h": 33
+          },
+          "target_bbox": {
+            "x": 800,
+            "y": 552,
+            "w": 57,
+            "h": 44
+          },
+          "expected": "condition_not_met",
+          "reason": "候选是恢复页面提示中的深色恢复按钮，与网页搜索按钮不同。",
+          "appearance": "A compact dark rounded button with a short text label.",
+          "container": "The browser restore-pages popup near the upper right.",
+          "condition": "The visible control at the candidate point matches the specified target."
+        },
+        {
+          "id": "a02-value-address-present",
+          "category": "text_value",
+          "target": "the browser address bar",
+          "point": null,
+          "candidate_bbox": {
+            "x": 77,
+            "y": 43,
+            "w": 722,
+            "h": 33
+          },
+          "target_bbox": {
+            "x": 77,
+            "y": 43,
+            "w": 722,
+            "h": 33
+          },
+          "expected": "condition_met",
+          "reason": "地址栏可见https://www.wikipedia.org。",
+          "appearance": "A long rounded field displaying a URL.",
+          "container": "The browser toolbar.",
+          "expected_text": "https://www.wikipedia.org"
+        },
+        {
+          "id": "a02-value-address-different",
+          "category": "text_value",
+          "target": "the browser address bar",
+          "point": null,
+          "candidate_bbox": {
+            "x": 77,
+            "y": 43,
+            "w": 722,
+            "h": 33
+          },
+          "target_bbox": {
+            "x": 77,
+            "y": 43,
+            "w": 722,
+            "h": 33
+          },
+          "expected": "condition_not_met",
+          "reason": "地址栏显示Wikipedia域名，不是要求的Google网址。",
+          "appearance": "A long rounded field displaying a URL.",
+          "container": "The browser toolbar.",
+          "expected_text": "https://www.google.com"
+        },
+        {
+          "id": "a02-page-article-not-open",
+          "category": "page_result",
+          "target": "the current webpage",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "expected": "condition_not_met",
+          "reason": "画面是Wikipedia语言入口与地球图首页，没有Python文章正文。",
+          "appearance": "A landing page with a globe, language links and a central search row.",
+          "container": "The webpage below the browser toolbar.",
+          "condition": "A Wikipedia article titled Python is visible."
+        }
+      ],
+      "source_path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260922-learning-v1-live-03\\data\\session-fc70dae5d3d44c9cb35d75f04baeb038\\runtime-output\\local-direct-steps\\local-step-c9b0b875e9154a2d8ef5b517d5caf6d8\\observations\\wikipedia-microsoft-edge__local-direct-post-action__full-window__20260922-004149-394991.png",
+      "sha256": "7b46d9cff77bc8bd985c462405fff8f971ebf33c62cfebb0e239e6d42fccfc8b",
+      "original_size": {
+        "width": 1278,
+        "height": 953
+      },
+      "session_id": "session-fc70dae5d3d44c9cb35d75f04baeb038",
+      "capture_id": null,
+      "annotation_status": "model_proposed_pending_main_review"
+    },
+    {
+      "catalog_index": 3,
+      "group_id": "select2-basic-usage",
+      "cases": [
+        {
+          "id": "a03-field-site-search-in",
+          "category": "input_field",
+          "target": "the site Search field in the dark header",
+          "point": {
+            "x": 1530,
+            "y": 108
+          },
+          "candidate_bbox": {
+            "x": 1405,
+            "y": 87,
+            "w": 280,
+            "h": 43
+          },
+          "target_bbox": {
+            "x": 1405,
+            "y": 87,
+            "w": 280,
+            "h": 43
+          },
+          "expected": "condition_met",
+          "reason": "点位于深色页眉中的Search控件内部。",
+          "appearance": "A dark rectangular search field with a magnifying-glass symbol.",
+          "container": "The website header at the top of the webpage.",
+          "condition": "The candidate point is inside the specified target input field."
+        },
+        {
+          "id": "a03-field-site-search-wrong-select",
+          "category": "input_field",
+          "target": "the site Search field in the dark header",
+          "point": {
+            "x": 1050,
+            "y": 534
+          },
+          "candidate_bbox": {
+            "x": 860,
+            "y": 525,
+            "w": 825,
+            "h": 19
+          },
+          "target_bbox": {
+            "x": 1405,
+            "y": 87,
+            "w": 280,
+            "h": 43
+          },
+          "expected": "condition_not_met",
+          "reason": "候选是正文中显示Alaska的原生下拉框，点在该控件内但不在页眉Search框内。",
+          "appearance": "A long narrow white native select control with a right-side arrow.",
+          "container": "The Single select boxes example in the main article.",
+          "condition": "The candidate point is inside the specified target input field."
+        },
+        {
+          "id": "a03-graphic-basic-usage-link",
+          "category": "graphic",
+          "target": "the Basic usage link in the left navigation",
+          "point": {
+            "x": 620,
+            "y": 342
+          },
+          "candidate_bbox": {
+            "x": 573,
+            "y": 331,
+            "w": 101,
+            "h": 24
+          },
+          "target_bbox": {
+            "x": 573,
+            "y": 331,
+            "w": 101,
+            "h": 24
+          },
+          "expected": "condition_met",
+          "reason": "点位于左侧导航蓝色Basic usage链接文字上。",
+          "appearance": "A short text navigation link.",
+          "container": "The Getting started section in the left sidebar.",
+          "condition": "The visible control at the candidate point matches the specified target."
+        },
+        {
+          "id": "a03-graphic-basic-usage-wrong-installation",
+          "category": "graphic",
+          "target": "the Basic usage link in the left navigation",
+          "point": {
+            "x": 621,
+            "y": 310
+          },
+          "candidate_bbox": {
+            "x": 573,
+            "y": 299,
+            "w": 106,
+            "h": 24
+          },
+          "target_bbox": {
+            "x": 573,
+            "y": 331,
+            "w": 101,
+            "h": 24
+          },
+          "expected": "condition_not_met",
+          "reason": "候选为上一行Installation链接，Basic usage在下一行。",
+          "appearance": "A short text navigation link.",
+          "container": "The Getting started section in the left sidebar.",
+          "condition": "The visible control at the candidate point matches the specified target."
+        },
+        {
+          "id": "a03-value-native-select-present",
+          "category": "text_value",
+          "target": "the first native state select control above the enhanced example",
+          "point": null,
+          "candidate_bbox": {
+            "x": 860,
+            "y": 525,
+            "w": 825,
+            "h": 19
+          },
+          "target_bbox": {
+            "x": 860,
+            "y": 525,
+            "w": 825,
+            "h": 19
+          },
+          "expected": "condition_met",
+          "reason": "上方原生下拉框当前可见值为Alaska。",
+          "appearance": "A long narrow select control showing its current value.",
+          "container": "The Single select boxes section in the main article.",
+          "expected_text": "Alaska"
+        },
+        {
+          "id": "a03-value-native-select-different",
+          "category": "text_value",
+          "target": "the first native state select control above the enhanced example",
+          "point": null,
+          "candidate_bbox": {
+            "x": 860,
+            "y": 525,
+            "w": 825,
+            "h": 19
+          },
+          "target_bbox": {
+            "x": 860,
+            "y": 525,
+            "w": 825,
+            "h": 19
+          },
+          "expected": "condition_not_met",
+          "reason": "原生下拉框显示Alaska；下方代码中的Alabama不是该控件当前显示值。",
+          "appearance": "A long narrow select control showing its current value.",
+          "container": "The Single select boxes section in the main article.",
+          "expected_text": "Alabama"
+        },
+        {
+          "id": "a03-page-basic-usage",
+          "category": "page_result",
+          "target": "the current webpage",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "expected": "condition_met",
+          "reason": "正文标题Basic usage、Single select boxes以及示例控件均可见。",
+          "appearance": "A documentation article with left navigation and select examples.",
+          "container": "The webpage content area.",
+          "condition": "The Select2 Basic usage documentation and its Single select boxes section are visible."
+        }
+      ],
+      "source_path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260923-full-form-03\\data\\session-15248fbd61f04de18e1d5d42f72689c5\\captures\\basic-usage-select2-microsoft-edge__live-latency-observation__full-window__20260923-141532-712468.png",
+      "sha256": "bf9d89d2dce7a6dd355d3ad6627fea192ca299674665dcebbc59bde0281d4770",
+      "original_size": {
+        "width": 2560,
+        "height": 1400
+      },
+      "session_id": "session-15248fbd61f04de18e1d5d42f72689c5",
+      "capture_id": null,
+      "annotation_status": "model_proposed_pending_main_review"
+    },
+    {
+      "catalog_index": 4,
+      "group_id": "w3c-apg-combobox-family",
+      "cases": [
+        {
+          "id": "a04-field-address-in",
+          "category": "input_field",
+          "target": "the browser address bar",
+          "point": {
+            "x": 900,
+            "y": 60
+          },
+          "candidate_bbox": {
+            "x": 77,
+            "y": 43,
+            "w": 2005,
+            "h": 33
+          },
+          "target_bbox": {
+            "x": 77,
+            "y": 43,
+            "w": 2005,
+            "h": 33
+          },
+          "expected": "condition_met",
+          "reason": "点在顶部浏览器地址栏内部。",
+          "appearance": "A long white rounded URL field.",
+          "container": "The browser toolbar above the APG webpage.",
+          "condition": "The candidate point is inside the specified target input field."
+        },
+        {
+          "id": "a04-field-address-wrong-fruit",
+          "category": "input_field",
+          "target": "the browser address bar",
+          "point": {
+            "x": 900,
+            "y": 1140
+          },
+          "candidate_bbox": {
+            "x": 640,
+            "y": 1112,
+            "w": 401,
+            "h": 56
+          },
+          "target_bbox": {
+            "x": 77,
+            "y": 43,
+            "w": 2005,
+            "h": 33
+          },
+          "expected": "condition_not_met",
+          "reason": "点位于Favorite Fruit选择控件内部，不在浏览器地址栏内。",
+          "appearance": "A wide rectangular value control with a down-chevron at the right.",
+          "container": "The Favorite Fruit example near the lower left of the article.",
+          "condition": "The candidate point is inside the specified target input field."
+        },
+        {
+          "id": "a04-graphic-apple-option",
+          "category": "graphic",
+          "target": "the Apple option in the open Favorite Fruit list",
+          "point": {
+            "x": 680,
+            "y": 1235
+          },
+          "candidate_bbox": {
+            "x": 643,
+            "y": 1212,
+            "w": 381,
+            "h": 46
+          },
+          "target_bbox": {
+            "x": 643,
+            "y": 1212,
+            "w": 381,
+            "h": 46
+          },
+          "expected": "condition_met",
+          "reason": "点在展开列表Apple这一行的文字与选项区域内。",
+          "appearance": "A white list option row with a short fruit label.",
+          "container": "The open Favorite Fruit popup below the value control.",
+          "condition": "The visible control at the candidate point matches the specified target."
+        },
+        {
+          "id": "a04-graphic-apple-wrong-banana",
+          "category": "graphic",
+          "target": "the Apple option in the open Favorite Fruit list",
+          "point": {
+            "x": 700,
+            "y": 1282
+          },
+          "candidate_bbox": {
+            "x": 642,
+            "y": 1261,
+            "w": 383,
+            "h": 45
+          },
+          "target_bbox": {
+            "x": 643,
+            "y": 1212,
+            "w": 381,
+            "h": 46
+          },
+          "expected": "condition_not_met",
+          "reason": "点在带对勾的Banana选项行，Apple在上一行。",
+          "appearance": "A bordered list option row with a right-side check mark.",
+          "container": "The open Favorite Fruit popup below the value control.",
+          "condition": "The visible control at the candidate point matches the specified target."
+        },
+        {
+          "id": "a04-value-fruit-present",
+          "category": "text_value",
+          "target": "the Favorite Fruit value control above the open list",
+          "point": null,
+          "candidate_bbox": {
+            "x": 640,
+            "y": 1112,
+            "w": 401,
+            "h": 56
+          },
+          "target_bbox": {
+            "x": 640,
+            "y": 1112,
+            "w": 401,
+            "h": 56
+          },
+          "expected": "condition_met",
+          "reason": "控件显示Banana；列表中同名项也有当前选择对勾。",
+          "appearance": "A wide rectangular control displaying the selected fruit.",
+          "container": "The Favorite Fruit example in the article.",
+          "expected_text": "Banana"
+        },
+        {
+          "id": "a04-value-fruit-different",
+          "category": "text_value",
+          "target": "the Favorite Fruit value control above the open list",
+          "point": null,
+          "candidate_bbox": {
+            "x": 640,
+            "y": 1112,
+            "w": 401,
+            "h": 56
+          },
+          "target_bbox": {
+            "x": 640,
+            "y": 1112,
+            "w": 401,
+            "h": 56
+          },
+          "expected": "condition_not_met",
+          "reason": "Apple虽出现在下方选项中，当前值控件仍显示Banana。",
+          "appearance": "A wide rectangular control displaying the selected fruit.",
+          "container": "The Favorite Fruit example in the article.",
+          "expected_text": "Apple"
+        },
+        {
+          "id": "a04-page-list-closed",
+          "category": "page_result",
+          "target": "the Favorite Fruit example",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "expected": "condition_not_met",
+          "reason": "控件下方清楚展开了含Apple、Banana和Blueberry的列表。",
+          "appearance": "A fruit selector with a visible list of options.",
+          "container": "The lower section of the APG example page.",
+          "condition": "The Favorite Fruit popup is closed and no options list is visible."
+        }
+      ],
+      "source_path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260923-advanced-form-03\\data\\session-0a5d54afc89b4b36883a925221d0b3f2\\runtime-output\\local-direct-steps\\local-step-d5c7ac3302bb4604871d7974b004cf5a\\observations\\select-only-combobox-example-apg-wai-w3c-microsoft-edge__local-direct-post-action__full-window__20260923-132043-492463.png",
+      "sha256": "3fbfb4ae5a05070b985693aa3882590ad1f71b2311ab916425f2a0ae3189a0ed",
+      "original_size": {
+        "width": 2560,
+        "height": 1400
+      },
+      "session_id": "session-0a5d54afc89b4b36883a925221d0b3f2",
+      "capture_id": null,
+      "annotation_status": "model_proposed_pending_main_review"
+    },
+    {
+      "catalog_index": 5,
+      "group_id": "w3c-apg-combobox-family",
+      "cases": [
+        {
+          "id": "a05-field-date-in",
+          "category": "input_field",
+          "target": "the Date text entry field in the Example section",
+          "point": {
+            "x": 725,
+            "y": 1190
+          },
+          "candidate_bbox": {
+            "x": 641,
+            "y": 1175,
+            "w": 171,
+            "h": 29
+          },
+          "target_bbox": {
+            "x": 641,
+            "y": 1175,
+            "w": 171,
+            "h": 29
+          },
+          "expected": "condition_met",
+          "reason": "点在Date标签下方日期文字输入区内，位于右侧下拉按钮左边。",
+          "appearance": "A short rectangular text field beside a small down-arrow button.",
+          "container": "The Example section near the lower left of the article.",
+          "condition": "The candidate point is inside the specified target input field."
+        },
+        {
+          "id": "a05-field-date-wrong-url",
+          "category": "input_field",
+          "target": "the Date text entry field in the Example section",
+          "point": {
+            "x": 600,
+            "y": 60
+          },
+          "candidate_bbox": {
+            "x": 77,
+            "y": 43,
+            "w": 2005,
+            "h": 33
+          },
+          "target_bbox": {
+            "x": 641,
+            "y": 1175,
+            "w": 171,
+            "h": 29
+          },
+          "expected": "condition_not_met",
+          "reason": "点位于顶部浏览器地址栏，不在正文Date字段内。",
+          "appearance": "A long rounded URL field.",
+          "container": "The browser toolbar above the webpage.",
+          "condition": "The candidate point is inside the specified target input field."
+        },
+        {
+          "id": "a05-graphic-choose-date-button",
+          "category": "graphic",
+          "target": "the down-arrow button immediately to the right of the Date entry field",
+          "point": {
+            "x": 822,
+            "y": 1189
+          },
+          "candidate_bbox": {
+            "x": 812,
+            "y": 1175,
+            "w": 22,
+            "h": 29
+          },
+          "target_bbox": {
+            "x": 812,
+            "y": 1175,
+            "w": 22,
+            "h": 29
+          },
+          "expected": "condition_met",
+          "reason": "点在Date文字区右侧的小下拉箭头按钮内。",
+          "appearance": "A small rectangular button containing a black downward triangle.",
+          "container": "The right edge of the Date control in the Example section.",
+          "condition": "The visible control at the candidate point matches the specified target."
+        },
+        {
+          "id": "a05-graphic-choose-date-wrong-codepen",
+          "category": "graphic",
+          "target": "the down-arrow button immediately to the right of the Date entry field",
+          "point": {
+            "x": 710,
+            "y": 1097
+          },
+          "candidate_bbox": {
+            "x": 641,
+            "y": 1078,
+            "w": 136,
+            "h": 39
+          },
+          "target_bbox": {
+            "x": 812,
+            "y": 1175,
+            "w": 22,
+            "h": 29
+          },
+          "expected": "condition_not_met",
+          "reason": "候选是上方Open In CodePen文本按钮，与日期框旁的小箭头按钮不同。",
+          "appearance": "A dark teal rectangular text button.",
+          "container": "The top of the Example section.",
+          "condition": "The visible control at the candidate point matches the specified target."
+        },
+        {
+          "id": "a05-value-date-present",
+          "category": "text_value",
+          "target": "the Date entry field",
+          "point": null,
+          "candidate_bbox": {
+            "x": 641,
+            "y": 1175,
+            "w": 171,
+            "h": 29
+          },
+          "target_bbox": {
+            "x": 641,
+            "y": 1175,
+            "w": 171,
+            "h": 29
+          },
+          "expected": "condition_met",
+          "reason": "日期字段中的完整可见值为09/30/2026。",
+          "appearance": "A short date text field showing a numeric date.",
+          "container": "The Example section of the date-picker page.",
+          "expected_text": "09/30/2026"
+        },
+        {
+          "id": "a05-value-date-different",
+          "category": "text_value",
+          "target": "the Date entry field",
+          "point": null,
+          "candidate_bbox": {
+            "x": 641,
+            "y": 1175,
+            "w": 171,
+            "h": 29
+          },
+          "target_bbox": {
+            "x": 641,
+            "y": 1175,
+            "w": 171,
+            "h": 29
+          },
+          "expected": "condition_not_met",
+          "reason": "字段显示的日为30，不是要求的29。",
+          "appearance": "A short date text field showing a numeric date.",
+          "container": "The Example section of the date-picker page.",
+          "expected_text": "09/29/2026"
+        },
+        {
+          "id": "a05-page-calendar-open",
+          "category": "page_result",
+          "target": "the Date Picker Combobox example",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "expected": "condition_not_met",
+          "reason": "Date字段可见，但周围没有展开的日历弹窗或月份网格。",
+          "appearance": "A documentation example with a date entry control.",
+          "container": "The lower section of the current webpage.",
+          "condition": "A calendar popup with a month grid is currently open beside the Date field."
+        }
+      ],
+      "source_path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260923-advanced-form-03\\data\\session-0a5d54afc89b4b36883a925221d0b3f2\\runtime-output\\local-direct-steps\\local-step-b11ada0cd8514dabb587d246559c632b\\observations\\date-picker-combobox-example-apg-wai-w3c-microsoft-edge__local-direct-post-action__full-window__20260923-132252-253008.png",
+      "sha256": "eacbf542efb0f1a40caaf06cbe40bad4c96297818e9e04d1c9daa5513f986174",
+      "original_size": {
+        "width": 2560,
+        "height": 1400
+      },
+      "session_id": "session-0a5d54afc89b4b36883a925221d0b3f2",
+      "capture_id": null,
+      "annotation_status": "model_proposed_pending_main_review"
+    },
+    {
+      "catalog_index": 6,
+      "group_id": "quill-home-editor-demo",
+      "cases": [
+        {
+          "id": "a06-field-address-in",
+          "category": "input_field",
+          "target": "the browser address bar",
+          "point": {
+            "x": 600,
+            "y": 60
+          },
+          "candidate_bbox": {
+            "x": 77,
+            "y": 43,
+            "w": 2005,
+            "h": 33
+          },
+          "target_bbox": {
+            "x": 77,
+            "y": 43,
+            "w": 2005,
+            "h": 33
+          },
+          "expected": "condition_met",
+          "reason": "点在浏览器顶部地址栏内部。",
+          "appearance": "A long white rounded URL field.",
+          "container": "The browser toolbar above the Quill webpage.",
+          "condition": "The candidate point is inside the specified target input field."
+        },
+        {
+          "id": "a06-field-address-wrong-site-search",
+          "category": "input_field",
+          "target": "the browser address bar",
+          "point": {
+            "x": 1810,
+            "y": 112
+          },
+          "candidate_bbox": {
+            "x": 1732,
+            "y": 94,
+            "w": 201,
+            "h": 36
+          },
+          "target_bbox": {
+            "x": 77,
+            "y": 43,
+            "w": 2005,
+            "h": 33
+          },
+          "expected": "condition_not_met",
+          "reason": "点在网站页眉的Search控件内，不在浏览器地址栏内。",
+          "appearance": "A light rounded search control with a magnifying-glass symbol.",
+          "container": "The upper-right part of the Quill website header.",
+          "condition": "The candidate point is inside the specified target input field."
+        },
+        {
+          "id": "a06-graphic-bold-button",
+          "category": "graphic",
+          "target": "the Bold formatting button marked B in the editor toolbar",
+          "point": {
+            "x": 1170,
+            "y": 610
+          },
+          "candidate_bbox": {
+            "x": 1155,
+            "y": 596,
+            "w": 28,
+            "h": 28
+          },
+          "target_bbox": {
+            "x": 1155,
+            "y": 596,
+            "w": 28,
+            "h": 28
+          },
+          "expected": "condition_met",
+          "reason": "点位于示例编辑器工具栏中粗体B按钮上。",
+          "appearance": "A compact toolbar button displaying a bold capital B.",
+          "container": "The formatting toolbar inside the large editor demo.",
+          "condition": "The visible control at the candidate point matches the specified target."
+        },
+        {
+          "id": "a06-graphic-bold-wrong-italic",
+          "category": "graphic",
+          "target": "the Bold formatting button marked B in the editor toolbar",
+          "point": {
+            "x": 1198,
+            "y": 610
+          },
+          "candidate_bbox": {
+            "x": 1184,
+            "y": 596,
+            "w": 28,
+            "h": 28
+          },
+          "target_bbox": {
+            "x": 1155,
+            "y": 596,
+            "w": 28,
+            "h": 28
+          },
+          "expected": "condition_not_met",
+          "reason": "点指向相邻的斜体I按钮，B按钮位于其左侧。",
+          "appearance": "A compact toolbar button displaying an italic capital I.",
+          "container": "The formatting toolbar inside the large editor demo.",
+          "condition": "The visible control at the candidate point matches the specified target."
+        },
+        {
+          "id": "a06-value-address-present",
+          "category": "text_value",
+          "target": "the browser address bar",
+          "point": null,
+          "candidate_bbox": {
+            "x": 77,
+            "y": 43,
+            "w": 2005,
+            "h": 33
+          },
+          "target_bbox": {
+            "x": 77,
+            "y": 43,
+            "w": 2005,
+            "h": 33
+          },
+          "expected": "condition_met",
+          "reason": "浏览器地址栏显示https://quilljs.com。",
+          "appearance": "A long rounded field displaying a URL.",
+          "container": "The browser toolbar.",
+          "expected_text": "https://quilljs.com"
+        },
+        {
+          "id": "a06-value-address-different",
+          "category": "text_value",
+          "target": "the browser address bar",
+          "point": null,
+          "candidate_bbox": {
+            "x": 77,
+            "y": 43,
+            "w": 2005,
+            "h": 33
+          },
+          "target_bbox": {
+            "x": 77,
+            "y": 43,
+            "w": 2005,
+            "h": 33
+          },
+          "expected": "condition_not_met",
+          "reason": "可见地址停留在站点根路径，没有要求的/docs路径。",
+          "appearance": "A long rounded field displaying a URL.",
+          "container": "The browser toolbar.",
+          "expected_text": "https://quilljs.com/docs"
+        },
+        {
+          "id": "a06-page-quill-home",
+          "category": "page_result",
+          "target": "the current webpage",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "expected": "condition_met",
+          "reason": "可见主标题Your powerful rich text editor及大块富文本编辑器示例。",
+          "appearance": "A product homepage with a large centered headline and an editor demonstration.",
+          "container": "The webpage content area.",
+          "condition": "The Quill homepage hero says Your powerful rich text editor and shows an editor demo."
+        }
+      ],
+      "source_path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260923-full-form-01\\data\\session-ab7c02a5d67940ac838f3abfd8d4c0cb\\captures\\quill-your-powerful-rich-text-editor-microsoft-edge__live-latency-observation__full-window__20260923-134051-051138.png",
+      "sha256": "b1877e9c9751753ec608e21d73fbfc70e9e6e11699668dc8273c80e7ad830df7",
+      "original_size": {
+        "width": 2560,
+        "height": 1400
+      },
+      "session_id": "session-ab7c02a5d67940ac838f3abfd8d4c0cb",
+      "capture_id": null,
+      "annotation_status": "model_proposed_pending_main_review"
+    },
+    {
+      "catalog_index": 7,
+      "group_id": "python-documentation-3.14.7-home",
+      "cases": [
+        {
+          "id": "a07-field-doc-search-in",
+          "category": "input_field",
+          "target": "the documentation search text field at the top right",
+          "point": {
+            "x": 2278,
+            "y": 110
+          },
+          "candidate_bbox": {
+            "x": 2206,
+            "y": 100,
+            "w": 150,
+            "h": 20
+          },
+          "target_bbox": {
+            "x": 2206,
+            "y": 100,
+            "w": 150,
+            "h": 20
+          },
+          "expected": "condition_met",
+          "reason": "点在右上方Go按钮左侧的文档搜索输入框内。",
+          "appearance": "A short white rectangular field with a clear icon at its right edge.",
+          "container": "The top-right navigation row of the documentation page.",
+          "condition": "The candidate point is inside the specified target input field."
+        },
+        {
+          "id": "a07-field-doc-search-wrong-theme",
+          "category": "input_field",
+          "target": "the documentation search text field at the top right",
+          "point": {
+            "x": 2168,
+            "y": 110
+          },
+          "candidate_bbox": {
+            "x": 2143,
+            "y": 100,
+            "w": 51,
+            "h": 20
+          },
+          "target_bbox": {
+            "x": 2206,
+            "y": 100,
+            "w": 150,
+            "h": 20
+          },
+          "expected": "condition_not_met",
+          "reason": "点在Theme的Auto下拉控件内，搜索框位于其右侧。",
+          "appearance": "A small white select control with a downward arrow.",
+          "container": "The top-right navigation row of the documentation page.",
+          "condition": "The candidate point is inside the specified target input field."
+        },
+        {
+          "id": "a07-graphic-go-button",
+          "category": "graphic",
+          "target": "the Go button beside the documentation search field",
+          "point": {
+            "x": 2380,
+            "y": 110
+          },
+          "candidate_bbox": {
+            "x": 2361,
+            "y": 100,
+            "w": 40,
+            "h": 20
+          },
+          "target_bbox": {
+            "x": 2361,
+            "y": 100,
+            "w": 40,
+            "h": 20
+          },
+          "expected": "condition_met",
+          "reason": "点在搜索框右侧标有Go的矩形按钮内。",
+          "appearance": "A small light rectangular text button.",
+          "container": "The top-right search row of the documentation page.",
+          "condition": "The visible control at the candidate point matches the specified target."
+        },
+        {
+          "id": "a07-graphic-go-wrong-clear",
+          "category": "graphic",
+          "target": "the Go button beside the documentation search field",
+          "point": {
+            "x": 2347,
+            "y": 110
+          },
+          "candidate_bbox": {
+            "x": 2340,
+            "y": 102,
+            "w": 13,
+            "h": 16
+          },
+          "target_bbox": {
+            "x": 2361,
+            "y": 100,
+            "w": 40,
+            "h": 20
+          },
+          "expected": "condition_not_met",
+          "reason": "候选是搜索输入框内部的蓝色清除叉号，Go按钮在框外右侧。",
+          "appearance": "A small blue cross icon inside the right edge of a text field.",
+          "container": "The documentation search text field at the top right.",
+          "condition": "The visible control at the candidate point matches the specified target."
+        },
+        {
+          "id": "a07-value-search-present",
+          "category": "text_value",
+          "target": "the documentation search text field",
+          "point": null,
+          "candidate_bbox": {
+            "x": 2206,
+            "y": 100,
+            "w": 150,
+            "h": 20
+          },
+          "target_bbox": {
+            "x": 2206,
+            "y": 100,
+            "w": 150,
+            "h": 20
+          },
+          "expected": "condition_met",
+          "reason": "搜索框内清楚显示csv。",
+          "appearance": "A short search field with visible text and a clear icon.",
+          "container": "The top-right navigation row.",
+          "expected_text": "csv"
+        },
+        {
+          "id": "a07-value-search-different",
+          "category": "text_value",
+          "target": "the documentation search text field",
+          "point": null,
+          "candidate_bbox": {
+            "x": 2206,
+            "y": 100,
+            "w": 150,
+            "h": 20
+          },
+          "target_bbox": {
+            "x": 2206,
+            "y": 100,
+            "w": 150,
+            "h": 20
+          },
+          "expected": "condition_not_met",
+          "reason": "搜索框显示csv，不是要求的json。",
+          "appearance": "A short search field with visible text and a clear icon.",
+          "container": "The top-right navigation row.",
+          "expected_text": "json"
+        },
+        {
+          "id": "a07-page-search-not-submitted",
+          "category": "page_result",
+          "target": "the current documentation page",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "expected": "condition_not_met",
+          "reason": "页面仍显示Python 3.14.7 documentation首页和目录入口，没有搜索结果列表。",
+          "appearance": "A documentation homepage with version selectors and lists of documentation sections.",
+          "container": "The webpage content area.",
+          "condition": "Search results for csv are displayed."
+        }
+      ],
+      "source_path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260921-candidate10-19\\session-0fd640c2d9c54d63bc61a0ef4086ead2\\runtime-output\\local-direct-steps\\local-step-bd73aa9bb2af40e7ba77df4779dec6fa\\observations\\3-14-7-documentation-microsoft-edge__local-direct-post-action__full-window__20260921-132720-812697.png",
+      "sha256": "95a305a24f32ffd03375fe696321c605a0e4413e39e14f694792710183f6aa04",
+      "original_size": {
+        "width": 2560,
+        "height": 1400
+      },
+      "session_id": "session-0fd640c2d9c54d63bc61a0ef4086ead2",
+      "capture_id": null,
+      "annotation_status": "model_proposed_pending_main_review"
+    }
+  ],
+  "source_catalog_sha256": "99ff91c119c5f4d56966cbff655d45769134cb0bbe18173bc79414b83ee00a6a",
+  "summary": {
+    "images": 7,
+    "cases": 49,
+    "categories": {
+      "input_field": 14,
+      "graphic": 14,
+      "text_value": 14,
+      "page_result": 7
+    },
+    "expected": {
+      "condition_met": 24,
+      "condition_not_met": 25
+    }
+  }
+}

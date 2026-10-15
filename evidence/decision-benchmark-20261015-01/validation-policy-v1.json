@@ -1,0 +1,13 @@
+{
+  "schema": "validation_rejection_policy.v1",
+  "created_before_validation_dispatch": true,
+  "suite_sha256": "577ec133b92fcdac077be541491403e537acb96ec46baa32f054cca96cdcf672",
+  "selection_sha256": "f6cfb1ce6bf5054db0cfe32bcefb9d37b3a5f1ff41a4c78008bb3ea40aebf9bc",
+  "variants_sha256": "cdf1e7722861401d8266f478de35e08d89120c839fdc88ea3ccd50febc23f7b9",
+  "split": "validation",
+  "repeats": 2,
+  "seed": 20261015,
+  "rule": "For each changed category retain only if exact_correct is not lower, false_accepts/false_rejects/errors/unknown_usage are not higher than paired baseline, and at least one of exact_correct, false_accepts, false_rejects, input_tokens or observed median HTTP latency improves. Otherwise revert that category to baseline. No new wording may be designed from validation. Freeze final mix before any test dispatch.",
+  "test_may_retune": false,
+  "latency_limit": "Observed tie-break, not proof of a statistically reliable latency gain."
+}

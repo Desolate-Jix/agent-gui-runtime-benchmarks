@@ -1,0 +1,17 @@
+{
+  "suite_cases": 254,
+  "split_counts": {
+    "train": 104,
+    "validation": 70,
+    "test": 80
+  },
+  "category_counts": {
+    "input_field": 56,
+    "graphic": 95,
+    "text_value": 28,
+    "page_result": 75
+  },
+  "frozen_train_requests_verified": 312,
+  "real_api_preflight": "passed",
+  "api_requests_so_far": 0
+}

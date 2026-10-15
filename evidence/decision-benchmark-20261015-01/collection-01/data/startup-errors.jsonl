@@ -1,0 +1,1 @@
+{"timestamp_unix": 1791978042.5465815, "status": "start_rejected", "host_launch_attempted": false, "automatic_retry_allowed": false, "error": {"code": "api_key_missing", "message": "api_key_missing"}, "next": "Check the API profile JSON and its named environment variable in the server process; then reconnect."}

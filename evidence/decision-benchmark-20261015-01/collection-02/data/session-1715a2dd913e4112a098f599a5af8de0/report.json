@@ -1,0 +1,68 @@
+{
+  "started_at": "2026-10-14T11:41:53.842933+00:00",
+  "phase": "stopped",
+  "runner_pid": 87228,
+  "learning_enabled": false,
+  "legacy_learning_executor_enabled": false,
+  "learning_recording": {
+    "recording_enabled": false,
+    "learning_id": null,
+    "status": "disabled"
+  },
+  "observer": "minimal",
+  "completed_commands": [
+    {
+      "name": "collect-0-launch.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-0-capture-0.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-0-capture-1.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-0-close.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-1-launch.json",
+      "status": "failed"
+    },
+    {
+      "name": "close-32d405e912384f97b13e898cf886644f.json",
+      "status": "returned"
+    }
+  ],
+  "host_is_admin": false,
+  "decision_service": {
+    "enabled": false,
+    "mode": "off",
+    "model": "gpt-6-luna",
+    "contract_version": "decision_profile.v1",
+    "configured": false,
+    "request_cap": 20,
+    "timeout_seconds": 8,
+    "closed": false,
+    "used": 0,
+    "remaining": 20,
+    "unknown_dispatches": 0,
+    "budget_scope": "execution",
+    "budget_status": "available"
+  },
+  "recognition_source": "agent_current",
+  "delegate_profile": null,
+  "api_profile": null,
+  "model_configuration": null,
+  "learning_recording_error": null,
+  "target": null,
+  "agent_command_cleanup": {
+    "status": "stopped"
+  },
+  "cleanup_errors": [],
+  "finished_at": "2026-10-14T11:42:03.893567+00:00",
+  "host_phase": "stopped",
+  "sampler_stopped": true
+}

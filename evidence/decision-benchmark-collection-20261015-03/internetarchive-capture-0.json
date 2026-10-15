@@ -1,0 +1,102 @@
+{
+  "request_id": "collect-24-capture-0",
+  "received_at": "2026-10-14T12:50:30.743373+00:00",
+  "started_at": "2026-10-14T12:50:30.743373+00:00",
+  "observation": {
+    "image_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\data\\session-201ae9b32f2d439c8de47f0bc6c77bac\\captures\\internet-archive-digital-library-of-free-borrowable-texts-movies-music-9bf8cce2__live-latency-observation__full-window__20261015-015030-768373.png",
+    "image_width": 1264,
+    "image_height": 892,
+    "image_size": {
+      "width": 1264,
+      "height": 892
+    },
+    "window_rect": [
+      18,
+      10,
+      1282,
+      902
+    ],
+    "roi": null,
+    "roi_adjusted": false,
+    "capture_purpose": "live-latency-observation",
+    "window_size": {
+      "width": 1264,
+      "height": 892
+    },
+    "capture_timings": {
+      "contract_version": "window_capture_timing_v1",
+      "total_ms": 44.839,
+      "steps": [
+        {
+          "name": "backend_and_binding",
+          "elapsed_ms": 1.493
+        },
+        {
+          "name": "foreground_preparation",
+          "elapsed_ms": 0.004
+        },
+        {
+          "name": "geometry_and_pre_visibility",
+          "elapsed_ms": 0.106
+        },
+        {
+          "name": "backend_open_and_grab",
+          "elapsed_ms": 17.941
+        },
+        {
+          "name": "post_binding_and_visibility",
+          "elapsed_ms": 0.444
+        },
+        {
+          "name": "pixel_conversion",
+          "elapsed_ms": 4.251
+        },
+        {
+          "name": "backend_close_and_mask",
+          "elapsed_ms": 0.247
+        },
+        {
+          "name": "output_path",
+          "elapsed_ms": 0.657
+        },
+        {
+          "name": "png_encode_and_write",
+          "elapsed_ms": 11.074
+        },
+        {
+          "name": "retention_cleanup",
+          "elapsed_ms": 8.616
+        }
+      ],
+      "nested_timings_additive": false
+    },
+    "capture_visibility": {
+      "contract_version": "bound_capture_visibility_v2",
+      "allowed": true,
+      "reason": "capture_window_visible",
+      "bound_window_handle": 2099610,
+      "masked": false,
+      "coordinate_space": "window"
+    },
+    "window": {
+      "handle": 2099610,
+      "process_id": 38080
+    },
+    "window_identity": {
+      "handle": 2099610,
+      "process_id": 38080,
+      "process_create_time": 1791982226.6277964
+    },
+    "sha256": "2019830824d96f6eadf9b8b3b4fc80febe75c83f8b008f68402ba91d7d44c20b"
+  },
+  "status": "returned",
+  "finished_at": "2026-10-14T12:50:30.789373+00:00",
+  "command_wall_ms": 46.636,
+  "response_available_at": "2026-10-14T12:50:30.789373+00:00",
+  "operation_succeeded": true,
+  "task_effect_verified": false,
+  "automatic_retry_allowed": false,
+  "original_request_id": "collect-24-capture-0",
+  "current_status_request_id": null,
+  "client_state": "terminal"
+}

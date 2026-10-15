@@ -1,0 +1,7 @@
+{
+  "baseline": {},
+  "frozen_mix": {
+    "page_result": "Check only this visible current result: {condition}. Choose condition_met if shown, condition_not_met if contradicted, otherwise evidence_insufficient. One static image cannot establish temporal progress or hidden persistence.",
+    "text_value": "Does the entered field text exactly equal {expected_text}? Ignore separate icons and shortcut hints. If gray unaccepted completion is attached, choose evidence_insufficient."
+  }
+}

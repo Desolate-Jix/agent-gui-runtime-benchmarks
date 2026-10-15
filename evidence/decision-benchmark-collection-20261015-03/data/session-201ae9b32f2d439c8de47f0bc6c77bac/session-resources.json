@@ -1,0 +1,15 @@
+{
+  "contract_version": "session_resources.v1",
+  "session_name": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+  "recognition_source": "agent_current",
+  "host_identity": {
+    "pid": 18004,
+    "created": 1791982043.3203032
+  },
+  "runner_identity": {
+    "pid": 62408,
+    "create_time_ns": 1791982043340698368
+  },
+  "phase": "ready",
+  "resources": {}
+}

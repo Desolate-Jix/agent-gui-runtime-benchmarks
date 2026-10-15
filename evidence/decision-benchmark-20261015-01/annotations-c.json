@@ -1,0 +1,1505 @@
+{
+  "schema": "visual_case_proposals.v1",
+  "annotation_author": "Codex visual pre-annotation",
+  "status": "pending_main_visual_review",
+  "not_human_ground_truth": true,
+  "evidence_basis": "Original retained PNG pixels and new-catalog metadata only; no historical model replies.",
+  "assigned_catalog_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "skipped_images": [],
+  "notes": [
+    "All ten assigned originals were viewed and show loaded public webpages.",
+    "Bounding boxes are visually proposed pixel regions, not DOM or accessibility bounds.",
+    "Target bboxes and expected outcomes are answer-side annotation only and must not be included in model requests.",
+    "Images without an open webpage text field use an additional graphic pair rather than repeating browser address-bar input cases.",
+    "Embedded application screenshots and promotional image buttons are not labeled as actionable positive controls.",
+    "All proposals require Main image review; these are not independently accepted labels or a model accuracy result.",
+    "No insufficient outcomes were forced: the proposed claims have visibly determinate evidence."
+  ],
+  "images": [
+    {
+      "catalog_index": 0,
+      "group_id": "gimp",
+      "annotation_status": "model_proposed_pending_main_review",
+      "cases": [
+        {
+          "id": "c00-field-site-search-match",
+          "category": "input_field",
+          "target": "the Search GIMP.org text field in the site navigation",
+          "point": {
+            "x": 947,
+            "y": 101
+          },
+          "candidate_bbox": {
+            "x": 874,
+            "y": 90,
+            "w": 150,
+            "h": 22
+          },
+          "target_bbox": {
+            "x": 874,
+            "y": 90,
+            "w": 150,
+            "h": 22
+          },
+          "condition": "The candidate point is inside the specified target input field.",
+          "expected": "condition_met",
+          "reason": "点位于网站导航条右侧Search GIMP.org文字输入框内。",
+          "appearance": "A short dark rectangular search field.",
+          "container": "The top of the browser window and website navigation."
+        },
+        {
+          "id": "c00-field-site-search-wrong-control",
+          "category": "input_field",
+          "target": "the Search GIMP.org text field in the site navigation",
+          "point": {
+            "x": 500,
+            "y": 60
+          },
+          "candidate_bbox": {
+            "x": 77,
+            "y": 43,
+            "w": 962,
+            "h": 33
+          },
+          "target_bbox": {
+            "x": 874,
+            "y": 90,
+            "w": 150,
+            "h": 22
+          },
+          "condition": "The candidate point is inside the specified target input field.",
+          "expected": "condition_not_met",
+          "reason": "候选点在浏览器地址栏内，与网页导航中的搜索框不同。",
+          "appearance": "A long light rounded URL field.",
+          "container": "The top of the browser window and website navigation."
+        },
+        {
+          "id": "c00-graphic-download-match",
+          "category": "graphic",
+          "target": "the red Download 3.2.6 button in the main GIMP banner",
+          "point": {
+            "x": 810,
+            "y": 323
+          },
+          "candidate_bbox": {
+            "x": 716,
+            "y": 301,
+            "w": 185,
+            "h": 44
+          },
+          "target_bbox": {
+            "x": 716,
+            "y": 301,
+            "w": 185,
+            "h": 44
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_met",
+          "reason": "点指向主横幅中的红色下载按钮。",
+          "appearance": "A red rectangular button with a download symbol and text.",
+          "container": "The main GIMP hero banner."
+        },
+        {
+          "id": "c00-graphic-download-wrong-control",
+          "category": "graphic",
+          "target": "the red Download 3.2.6 button in the main GIMP banner",
+          "point": {
+            "x": 995,
+            "y": 323
+          },
+          "candidate_bbox": {
+            "x": 920,
+            "y": 301,
+            "w": 157,
+            "h": 44
+          },
+          "target_bbox": {
+            "x": 716,
+            "y": 301,
+            "w": 185,
+            "h": 44
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_not_met",
+          "reason": "候选是旁边的Release Notes按钮，不是红色下载按钮。",
+          "appearance": "A dark rectangular text button.",
+          "container": "The main GIMP hero banner."
+        },
+        {
+          "id": "c00-page-present",
+          "category": "page_result",
+          "target": "the current webpage",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The GIMP homepage shows its mascot, a download button and Recent News.",
+          "expected": "condition_met",
+          "reason": "吉祥物、GIMP主标题、下载按钮及Recent News都在网页内可见。",
+          "appearance": "A product homepage with a large mascot banner and news text.",
+          "container": "The webpage content below the browser toolbar."
+        },
+        {
+          "id": "c00-page-absent",
+          "category": "page_result",
+          "target": "the current webpage",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "An image-editing application with a canvas and editing tool panels is open as the main content.",
+          "expected": "condition_not_met",
+          "reason": "当前内容是GIMP产品网站；没有正在编辑图像的应用画布和工具面板。",
+          "appearance": "A product homepage with a large mascot banner and news text.",
+          "container": "The webpage content below the browser toolbar."
+        }
+      ],
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\gimp-capture-1.png",
+      "sha256": "aa9cde33c5e18b86bc44cf531471183b76ddce78368eb71749597a945dab6f35",
+      "original_size": {
+        "width": 1264,
+        "height": 892
+      },
+      "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+      "capture_id": null
+    },
+    {
+      "catalog_index": 1,
+      "group_id": "audacity",
+      "annotation_status": "model_proposed_pending_main_review",
+      "cases": [
+        {
+          "id": "c01-graphic-download-match",
+          "category": "graphic",
+          "target": "the large pink Download Audacity 4.0.1 button",
+          "point": {
+            "x": 190,
+            "y": 479
+          },
+          "candidate_bbox": {
+            "x": 68,
+            "y": 451,
+            "w": 244,
+            "h": 56
+          },
+          "target_bbox": {
+            "x": 68,
+            "y": 451,
+            "w": 244,
+            "h": 56
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_met",
+          "reason": "点在大号粉色下载按钮内。",
+          "appearance": "A large pink pill-shaped text button.",
+          "container": "The left side of the Audacity hero section."
+        },
+        {
+          "id": "c01-graphic-download-wrong-control",
+          "category": "graphic",
+          "target": "the large pink Download Audacity 4.0.1 button",
+          "point": {
+            "x": 190,
+            "y": 535
+          },
+          "candidate_bbox": {
+            "x": 87,
+            "y": 524,
+            "w": 208,
+            "h": 22
+          },
+          "target_bbox": {
+            "x": 68,
+            "y": 451,
+            "w": 244,
+            "h": 56
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_not_met",
+          "reason": "点在其下方Download without MuseHub文字链接上，两者是不同控件。",
+          "appearance": "An underlined white text link.",
+          "container": "The left side of the Audacity hero section."
+        },
+        {
+          "id": "c01-graphic-cookie-reject-match",
+          "category": "graphic",
+          "target": "the Reject button in the cookie banner",
+          "point": {
+            "x": 957,
+            "y": 832
+          },
+          "candidate_bbox": {
+            "x": 902,
+            "y": 808,
+            "w": 111,
+            "h": 48
+          },
+          "target_bbox": {
+            "x": 902,
+            "y": 808,
+            "w": 111,
+            "h": 48
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_met",
+          "reason": "点指向底部Cookie提示中的Reject按钮。",
+          "appearance": "A white rectangular button with a thin light border.",
+          "container": "The cookie banner at the bottom of the webpage."
+        },
+        {
+          "id": "c01-graphic-cookie-reject-wrong-control",
+          "category": "graphic",
+          "target": "the Reject button in the cookie banner",
+          "point": {
+            "x": 1079,
+            "y": 832
+          },
+          "candidate_bbox": {
+            "x": 1022,
+            "y": 808,
+            "w": 115,
+            "h": 48
+          },
+          "target_bbox": {
+            "x": 902,
+            "y": 808,
+            "w": 111,
+            "h": 48
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_not_met",
+          "reason": "候选为相邻粉色Accept按钮，不是Reject。",
+          "appearance": "A pink rectangular button.",
+          "container": "The cookie banner at the bottom of the webpage."
+        },
+        {
+          "id": "c01-page-present",
+          "category": "page_result",
+          "target": "the current webpage",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The Audacity product homepage and a Your privacy matters cookie banner are visible.",
+          "expected": "condition_met",
+          "reason": "页面显示音频编辑产品介绍，底部有Your privacy matters及两个选择按钮。",
+          "appearance": "A dark product hero with a laptop illustration and a light cookie banner.",
+          "container": "The webpage content below the browser toolbar."
+        },
+        {
+          "id": "c01-page-absent",
+          "category": "page_result",
+          "target": "the current webpage",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "No cookie or privacy banner is visible on the webpage.",
+          "expected": "condition_not_met",
+          "reason": "底部明确存在Cookie隐私横幅，不能判为无横幅。",
+          "appearance": "A dark product hero with a laptop illustration and a light cookie banner.",
+          "container": "The webpage content below the browser toolbar."
+        }
+      ],
+      "field_substitution_reason": "No webpage text entry field is visibly open in this frame; the input-field pair is replaced with a second graphic pair.",
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\audacity-capture-1.png",
+      "sha256": "29f4650e83777e8b6582bdb8e62bf5bd1642b2a8df4a59a335d819ed9ab4322b",
+      "original_size": {
+        "width": 1264,
+        "height": 892
+      },
+      "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+      "capture_id": null
+    },
+    {
+      "catalog_index": 2,
+      "group_id": "blender",
+      "annotation_status": "model_proposed_pending_main_review",
+      "cases": [
+        {
+          "id": "c02-graphic-whats-coming-match",
+          "category": "graphic",
+          "target": "the What's Coming button in the Blender hero",
+          "point": {
+            "x": 190,
+            "y": 748
+          },
+          "candidate_bbox": {
+            "x": 80,
+            "y": 728,
+            "w": 226,
+            "h": 40
+          },
+          "target_bbox": {
+            "x": 80,
+            "y": 728,
+            "w": 226,
+            "h": 40
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_met",
+          "reason": "点在左侧浅色What's Coming按钮内。",
+          "appearance": "A wide light rectangular text button.",
+          "container": "The lower-left part of the Blender hero banner."
+        },
+        {
+          "id": "c02-graphic-whats-coming-wrong-control",
+          "category": "graphic",
+          "target": "the What's Coming button in the Blender hero",
+          "point": {
+            "x": 405,
+            "y": 748
+          },
+          "candidate_bbox": {
+            "x": 315,
+            "y": 728,
+            "w": 178,
+            "h": 40
+          },
+          "target_bbox": {
+            "x": 80,
+            "y": 728,
+            "w": 226,
+            "h": 40
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_not_met",
+          "reason": "候选是相邻Download & Test按钮，文字和控件均不同。",
+          "appearance": "A brown rectangular text button.",
+          "container": "The lower-left part of the Blender hero banner."
+        },
+        {
+          "id": "c02-graphic-donate-match",
+          "category": "graphic",
+          "target": "the blue Donate button with a heart in the page header",
+          "point": {
+            "x": 1140,
+            "y": 160
+          },
+          "candidate_bbox": {
+            "x": 1090,
+            "y": 144,
+            "w": 104,
+            "h": 33
+          },
+          "target_bbox": {
+            "x": 1090,
+            "y": 144,
+            "w": 104,
+            "h": 33
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_met",
+          "reason": "点在右上蓝色带心形的Donate按钮内。",
+          "appearance": "A blue rounded button with a heart outline and text.",
+          "container": "The website header above the hero illustration."
+        },
+        {
+          "id": "c02-graphic-donate-wrong-control",
+          "category": "graphic",
+          "target": "the blue Donate button with a heart in the page header",
+          "point": {
+            "x": 704,
+            "y": 161
+          },
+          "candidate_bbox": {
+            "x": 668,
+            "y": 151,
+            "w": 67,
+            "h": 20
+          },
+          "target_bbox": {
+            "x": 1090,
+            "y": 144,
+            "w": 104,
+            "h": 33
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_not_met",
+          "reason": "点在页眉Download链接上，不是右侧Donate按钮。",
+          "appearance": "A short plain navigation text link.",
+          "container": "The website header above the hero illustration."
+        },
+        {
+          "id": "c02-page-present",
+          "category": "page_result",
+          "target": "the current webpage",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The Blender homepage displays the Blender 5.3 Beta hero banner.",
+          "expected": "condition_met",
+          "reason": "主横幅可见Blender 5.3 Beta标题和两枚介绍按钮。",
+          "appearance": "A product homepage with an illustrated hero and top navigation.",
+          "container": "The webpage content below the browser toolbar."
+        },
+        {
+          "id": "c02-page-absent",
+          "category": "page_result",
+          "target": "the current webpage",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "A donation checkout form with payment input fields is visible.",
+          "expected": "condition_not_met",
+          "reason": "画面只有产品首页及Donate入口，没有支付输入表单。",
+          "appearance": "A product homepage with an illustrated hero and top navigation.",
+          "container": "The webpage content below the browser toolbar."
+        }
+      ],
+      "field_substitution_reason": "No webpage text entry field is visibly open in this frame; the input-field pair is replaced with a second graphic pair.",
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\blender-capture-1.png",
+      "sha256": "e389e39281e0bc402941489e5e26c5e26c8a4f9db2b3ffeca37280523e449522",
+      "original_size": {
+        "width": 1264,
+        "height": 892
+      },
+      "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+      "capture_id": null
+    },
+    {
+      "catalog_index": 3,
+      "group_id": "rust",
+      "annotation_status": "model_proposed_pending_main_review",
+      "cases": [
+        {
+          "id": "c03-graphic-get-started-match",
+          "category": "graphic",
+          "target": "the yellow GET STARTED button",
+          "point": {
+            "x": 995,
+            "y": 254
+          },
+          "candidate_bbox": {
+            "x": 829,
+            "y": 213,
+            "w": 338,
+            "h": 85
+          },
+          "target_bbox": {
+            "x": 829,
+            "y": 213,
+            "w": 338,
+            "h": 85
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_met",
+          "reason": "点位于右侧大号黄色GET STARTED按钮内。",
+          "appearance": "A large yellow rectangular text button.",
+          "container": "The right side of the Rust introduction section."
+        },
+        {
+          "id": "c03-graphic-get-started-wrong-control",
+          "category": "graphic",
+          "target": "the yellow GET STARTED button",
+          "point": {
+            "x": 995,
+            "y": 331
+          },
+          "candidate_bbox": {
+            "x": 914,
+            "y": 317,
+            "w": 168,
+            "h": 29
+          },
+          "target_bbox": {
+            "x": 829,
+            "y": 213,
+            "w": 338,
+            "h": 85
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_not_met",
+          "reason": "候选是按钮下方的版本链接，不是黄色开始按钮。",
+          "appearance": "An underlined light-blue version text link.",
+          "container": "The right side of the Rust introduction section."
+        },
+        {
+          "id": "c03-graphic-install-match",
+          "category": "graphic",
+          "target": "the Install navigation link",
+          "point": {
+            "x": 215,
+            "y": 124
+          },
+          "candidate_bbox": {
+            "x": 190,
+            "y": 113,
+            "w": 51,
+            "h": 20
+          },
+          "target_bbox": {
+            "x": 190,
+            "y": 113,
+            "w": 51,
+            "h": 20
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_met",
+          "reason": "点指向页眉Install链接。",
+          "appearance": "A short underlined navigation text link.",
+          "container": "The top navigation row of the Rust webpage."
+        },
+        {
+          "id": "c03-graphic-install-wrong-control",
+          "category": "graphic",
+          "target": "the Install navigation link",
+          "point": {
+            "x": 312,
+            "y": 124
+          },
+          "candidate_bbox": {
+            "x": 290,
+            "y": 113,
+            "w": 46,
+            "h": 20
+          },
+          "target_bbox": {
+            "x": 190,
+            "y": 113,
+            "w": 51,
+            "h": 20
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_not_met",
+          "reason": "候选为旁边Learn链接，与Install不同。",
+          "appearance": "A short underlined navigation text link.",
+          "container": "The top navigation row of the Rust webpage."
+        },
+        {
+          "id": "c03-page-present",
+          "category": "page_result",
+          "target": "the current webpage",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The Rust homepage shows its introduction and the Why Rust section.",
+          "expected": "condition_met",
+          "reason": "页面可见Rust标题、语言介绍及Why Rust栏目。",
+          "appearance": "A language homepage with introductory text, a yellow action button and feature columns.",
+          "container": "The webpage content below the browser toolbar."
+        },
+        {
+          "id": "c03-page-absent",
+          "category": "page_result",
+          "target": "the current webpage",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "An interactive Playground editor with a code pane and Run button is visible.",
+          "expected": "condition_not_met",
+          "reason": "Playground只在页眉作为链接出现，没有代码编辑区或Run按钮。",
+          "appearance": "A language homepage with introductory text, a yellow action button and feature columns.",
+          "container": "The webpage content below the browser toolbar."
+        }
+      ],
+      "field_substitution_reason": "No webpage text entry field is visibly open in this frame; the input-field pair is replaced with a second graphic pair.",
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\rust-capture-1.png",
+      "sha256": "7ae8e40567f819ecc5e1af5612f725cd525af9d5abb0b95858fdfb1e448fc182",
+      "original_size": {
+        "width": 1264,
+        "height": 892
+      },
+      "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+      "capture_id": null
+    },
+    {
+      "catalog_index": 4,
+      "group_id": "go",
+      "annotation_status": "model_proposed_pending_main_review",
+      "cases": [
+        {
+          "id": "c04-graphic-get-started-match",
+          "category": "graphic",
+          "target": "the yellow Get Started button in the Go hero",
+          "point": {
+            "x": 180,
+            "y": 415
+          },
+          "candidate_bbox": {
+            "x": 43,
+            "y": 383,
+            "w": 281,
+            "h": 64
+          },
+          "target_bbox": {
+            "x": 43,
+            "y": 383,
+            "w": 281,
+            "h": 64
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_met",
+          "reason": "点在左侧黄色Get Started按钮内。",
+          "appearance": "A yellow rectangular text button.",
+          "container": "The main Go homepage hero."
+        },
+        {
+          "id": "c04-graphic-get-started-wrong-control",
+          "category": "graphic",
+          "target": "the yellow Get Started button in the Go hero",
+          "point": {
+            "x": 484,
+            "y": 415
+          },
+          "candidate_bbox": {
+            "x": 344,
+            "y": 383,
+            "w": 280,
+            "h": 64
+          },
+          "target_bbox": {
+            "x": 43,
+            "y": 383,
+            "w": 281,
+            "h": 64
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_not_met",
+          "reason": "候选是右侧描边Download按钮，不是Get Started。",
+          "appearance": "A teal rectangular button with a white outline.",
+          "container": "The main Go homepage hero."
+        },
+        {
+          "id": "c04-graphic-docs-match",
+          "category": "graphic",
+          "target": "the Docs navigation control with a down arrow",
+          "point": {
+            "x": 867,
+            "y": 109
+          },
+          "candidate_bbox": {
+            "x": 847,
+            "y": 96,
+            "w": 53,
+            "h": 26
+          },
+          "target_bbox": {
+            "x": 847,
+            "y": 96,
+            "w": 53,
+            "h": 26
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_met",
+          "reason": "点位于页眉Docs文字及下拉箭头控件内。",
+          "appearance": "A short navigation label with a downward triangle.",
+          "container": "The top navigation bar of the Go website."
+        },
+        {
+          "id": "c04-graphic-docs-wrong-control",
+          "category": "graphic",
+          "target": "the Docs navigation control with a down arrow",
+          "point": {
+            "x": 995,
+            "y": 109
+          },
+          "candidate_bbox": {
+            "x": 964,
+            "y": 96,
+            "w": 65,
+            "h": 26
+          },
+          "target_bbox": {
+            "x": 847,
+            "y": 96,
+            "w": 53,
+            "h": 26
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_not_met",
+          "reason": "候选为其右侧Packages链接，与Docs不同。",
+          "appearance": "A short navigation text link.",
+          "container": "The top navigation bar of the Go website."
+        },
+        {
+          "id": "c04-page-present",
+          "category": "page_result",
+          "target": "the current webpage",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The Go homepage shows its main introduction, gopher illustration and Companies using Go section.",
+          "expected": "condition_met",
+          "reason": "可见Go介绍、吉祥物及Companies using Go栏目。",
+          "appearance": "A teal language homepage hero above a row of company logos.",
+          "container": "The webpage content below the browser toolbar."
+        },
+        {
+          "id": "c04-page-absent",
+          "category": "page_result",
+          "target": "the current webpage",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "A file-download table listing Go installation archives and checksums is visible.",
+          "expected": "condition_not_met",
+          "reason": "这里只显示首页下载入口，没有安装归档与校验和列表。",
+          "appearance": "A teal language homepage hero above a row of company logos.",
+          "container": "The webpage content below the browser toolbar."
+        }
+      ],
+      "field_substitution_reason": "No webpage text entry field is visibly open in this frame; the input-field pair is replaced with a second graphic pair.",
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\go-capture-1.png",
+      "sha256": "722b16f4f85b90603d034f1a07b1799466a7dd758217f7eb68a196b7737a024c",
+      "original_size": {
+        "width": 1264,
+        "height": 892
+      },
+      "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+      "capture_id": null
+    },
+    {
+      "catalog_index": 5,
+      "group_id": "sqlite",
+      "annotation_status": "model_proposed_pending_main_review",
+      "cases": [
+        {
+          "id": "c05-graphic-latest-download-match",
+          "category": "graphic",
+          "target": "the Download button next to the Latest Release version",
+          "point": {
+            "x": 300,
+            "y": 418
+          },
+          "candidate_bbox": {
+            "x": 257,
+            "y": 407,
+            "w": 90,
+            "h": 21
+          },
+          "target_bbox": {
+            "x": 257,
+            "y": 407,
+            "w": 90,
+            "h": 21
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_met",
+          "reason": "点指向最新版本旁的Download小按钮。",
+          "appearance": "A compact gray native-style text button.",
+          "container": "The Latest Release section of the SQLite homepage."
+        },
+        {
+          "id": "c05-graphic-latest-download-wrong-control",
+          "category": "graphic",
+          "target": "the Download button next to the Latest Release version",
+          "point": {
+            "x": 412,
+            "y": 418
+          },
+          "candidate_bbox": {
+            "x": 353,
+            "y": 407,
+            "w": 121,
+            "h": 21
+          },
+          "target_bbox": {
+            "x": 257,
+            "y": 407,
+            "w": 90,
+            "h": 21
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_not_met",
+          "reason": "候选为相邻Prior Releases按钮，不是Download。",
+          "appearance": "A compact gray native-style text button.",
+          "container": "The Latest Release section of the SQLite homepage."
+        },
+        {
+          "id": "c05-graphic-documentation-match",
+          "category": "graphic",
+          "target": "the Documentation link in the main navigation bar",
+          "point": {
+            "x": 225,
+            "y": 204
+          },
+          "candidate_bbox": {
+            "x": 167,
+            "y": 190,
+            "w": 124,
+            "h": 26
+          },
+          "target_bbox": {
+            "x": 167,
+            "y": 190,
+            "w": 124,
+            "h": 26
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_met",
+          "reason": "点在深色导航条Documentation文字链接上。",
+          "appearance": "A white text navigation link on a dark teal bar.",
+          "container": "The horizontal navigation bar below the SQLite logo."
+        },
+        {
+          "id": "c05-graphic-documentation-wrong-control",
+          "category": "graphic",
+          "target": "the Documentation link in the main navigation bar",
+          "point": {
+            "x": 352,
+            "y": 204
+          },
+          "candidate_bbox": {
+            "x": 313,
+            "y": 190,
+            "w": 81,
+            "h": 26
+          },
+          "target_bbox": {
+            "x": 167,
+            "y": 190,
+            "w": 124,
+            "h": 26
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_not_met",
+          "reason": "候选为旁边Download导航链接，与Documentation不同。",
+          "appearance": "A white text navigation link on a dark teal bar.",
+          "container": "The horizontal navigation bar below the SQLite logo."
+        },
+        {
+          "id": "c05-page-present",
+          "category": "page_result",
+          "target": "the current webpage",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The SQLite home page shows Latest Release, Sponsors and Common Links.",
+          "expected": "condition_met",
+          "reason": "页面可见Latest Release、Sponsors和右侧Common Links。",
+          "appearance": "A compact database project homepage with navigation links and sponsor logos.",
+          "container": "The webpage content below the browser toolbar."
+        },
+        {
+          "id": "c05-page-absent",
+          "category": "page_result",
+          "target": "the current webpage",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "An SQL query editor with an executed query result table is visible.",
+          "expected": "condition_not_met",
+          "reason": "Try it live只是链接，画面没有SQL编辑器及查询结果表。",
+          "appearance": "A compact database project homepage with navigation links and sponsor logos.",
+          "container": "The webpage content below the browser toolbar."
+        }
+      ],
+      "field_substitution_reason": "No webpage text entry field is visibly open in this frame; the input-field pair is replaced with a second graphic pair.",
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\sqlite-capture-1.png",
+      "sha256": "1f3afa691f33d7866c0653e860d1cc9638686f4f3d2a315159660796be6b556f",
+      "original_size": {
+        "width": 1264,
+        "height": 892
+      },
+      "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+      "capture_id": null
+    },
+    {
+      "catalog_index": 6,
+      "group_id": "postgresql",
+      "annotation_status": "model_proposed_pending_main_review",
+      "cases": [
+        {
+          "id": "c06-graphic-search-match",
+          "category": "graphic",
+          "target": "the magnifying-glass search button in the website header",
+          "point": {
+            "x": 1147,
+            "y": 107
+          },
+          "candidate_bbox": {
+            "x": 1126,
+            "y": 88,
+            "w": 42,
+            "h": 38
+          },
+          "target_bbox": {
+            "x": 1126,
+            "y": 88,
+            "w": 42,
+            "h": 38
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_met",
+          "reason": "点位于页眉右侧放大镜图标按钮内。",
+          "appearance": "A square outlined button with a blue magnifying-glass icon.",
+          "container": "The upper-right website header."
+        },
+        {
+          "id": "c06-graphic-search-wrong-control",
+          "category": "graphic",
+          "target": "the magnifying-glass search button in the website header",
+          "point": {
+            "x": 1193,
+            "y": 107
+          },
+          "candidate_bbox": {
+            "x": 1172,
+            "y": 88,
+            "w": 42,
+            "h": 38
+          },
+          "target_bbox": {
+            "x": 1126,
+            "y": 88,
+            "w": 42,
+            "h": 38
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_not_met",
+          "reason": "候选是相邻月牙图标按钮，不是放大镜搜索按钮。",
+          "appearance": "A square outlined button with a blue crescent icon.",
+          "container": "The upper-right website header."
+        },
+        {
+          "id": "c06-graphic-download-match",
+          "category": "graphic",
+          "target": "the Download button in the center of the elephant hero",
+          "point": {
+            "x": 510,
+            "y": 414
+          },
+          "candidate_bbox": {
+            "x": 399,
+            "y": 394,
+            "w": 224,
+            "h": 39
+          },
+          "target_bbox": {
+            "x": 399,
+            "y": 394,
+            "w": 224,
+            "h": 39
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_met",
+          "reason": "点在主横幅中Download箭头按钮内。",
+          "appearance": "A wide gray button with text and a right arrow.",
+          "container": "The center of the elephant hero banner."
+        },
+        {
+          "id": "c06-graphic-download-wrong-control",
+          "category": "graphic",
+          "target": "the Download button in the center of the elephant hero",
+          "point": {
+            "x": 737,
+            "y": 414
+          },
+          "candidate_bbox": {
+            "x": 626,
+            "y": 394,
+            "w": 224,
+            "h": 39
+          },
+          "target_bbox": {
+            "x": 399,
+            "y": 394,
+            "w": 224,
+            "h": 39
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_not_met",
+          "reason": "候选是右侧New to PostgreSQL?按钮，不是Download。",
+          "appearance": "A wide gray text button.",
+          "container": "The center of the elephant hero banner."
+        },
+        {
+          "id": "c06-page-present",
+          "category": "page_result",
+          "target": "the current webpage",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The PostgreSQL homepage shows its main relational database headline and Latest Releases.",
+          "expected": "condition_met",
+          "reason": "可见数据库产品主标题、象群横幅及Latest Releases。",
+          "appearance": "A database project homepage with an elephant hero image.",
+          "container": "The webpage content below the browser toolbar."
+        },
+        {
+          "id": "c06-page-absent",
+          "category": "page_result",
+          "target": "the current webpage",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "A database administration view with a table of SQL query results is visible.",
+          "expected": "condition_not_met",
+          "reason": "当前为产品网站首页，没有数据库管理结果网格。",
+          "appearance": "A database project homepage with an elephant hero image.",
+          "container": "The webpage content below the browser toolbar."
+        }
+      ],
+      "field_substitution_reason": "No webpage text entry field is visibly open in this frame; the input-field pair is replaced with a second graphic pair.",
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\postgresql-capture-1.png",
+      "sha256": "25b60da582256d496410afa1ca5ed903c08fb8eae33b932fa652c473cd1809a1",
+      "original_size": {
+        "width": 1264,
+        "height": 892
+      },
+      "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+      "capture_id": null
+    },
+    {
+      "catalog_index": 7,
+      "group_id": "mysql",
+      "annotation_status": "model_proposed_pending_main_review",
+      "cases": [
+        {
+          "id": "c07-graphic-documentation-match",
+          "category": "graphic",
+          "target": "the DOCUMENTATION link in the upper MySQL navigation",
+          "point": {
+            "x": 610,
+            "y": 189
+          },
+          "candidate_bbox": {
+            "x": 536,
+            "y": 174,
+            "w": 152,
+            "h": 30
+          },
+          "target_bbox": {
+            "x": 536,
+            "y": 174,
+            "w": 152,
+            "h": 30
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_met",
+          "reason": "点位于上层导航DOCUMENTATION文字链接上。",
+          "appearance": "A wide uppercase navigation text link.",
+          "container": "The upper navigation row below the MySQL logo and header line."
+        },
+        {
+          "id": "c07-graphic-documentation-wrong-control",
+          "category": "graphic",
+          "target": "the DOCUMENTATION link in the upper MySQL navigation",
+          "point": {
+            "x": 450,
+            "y": 189
+          },
+          "candidate_bbox": {
+            "x": 393,
+            "y": 174,
+            "w": 114,
+            "h": 30
+          },
+          "target_bbox": {
+            "x": 536,
+            "y": 174,
+            "w": 152,
+            "h": 30
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_not_met",
+          "reason": "候选为左侧DOWNLOADS链接，不是DOCUMENTATION。",
+          "appearance": "An uppercase navigation text link.",
+          "container": "The upper navigation row below the MySQL logo and header line."
+        },
+        {
+          "id": "c07-graphic-login-match",
+          "category": "graphic",
+          "target": "the Login link in the upper-right page header",
+          "point": {
+            "x": 1107,
+            "y": 122
+          },
+          "candidate_bbox": {
+            "x": 1090,
+            "y": 113,
+            "w": 37,
+            "h": 20
+          },
+          "target_bbox": {
+            "x": 1090,
+            "y": 113,
+            "w": 37,
+            "h": 20
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_met",
+          "reason": "点指向右上方Login链接。",
+          "appearance": "A short blue text link.",
+          "container": "The upper-right account links in the website header."
+        },
+        {
+          "id": "c07-graphic-login-wrong-control",
+          "category": "graphic",
+          "target": "the Login link in the upper-right page header",
+          "point": {
+            "x": 1162,
+            "y": 122
+          },
+          "candidate_bbox": {
+            "x": 1139,
+            "y": 113,
+            "w": 47,
+            "h": 20
+          },
+          "target_bbox": {
+            "x": 1090,
+            "y": 113,
+            "w": 37,
+            "h": 20
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_not_met",
+          "reason": "候选为紧邻的Register链接，不是Login。",
+          "appearance": "A short blue text link.",
+          "container": "The upper-right account links in the website header."
+        },
+        {
+          "id": "c07-page-present",
+          "category": "page_result",
+          "target": "the current webpage",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The MySQL homepage shows a MySQL 9.7 LTS promotional banner and MySQL HeatWave section.",
+          "expected": "condition_met",
+          "reason": "页面可见MySQL 9.7 LTS横幅及下方MySQL HeatWave介绍。",
+          "appearance": "A product homepage with a promotional carousel and feature columns.",
+          "container": "The webpage content below the browser toolbar."
+        },
+        {
+          "id": "c07-page-absent",
+          "category": "page_result",
+          "target": "the current webpage",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "A sign-in form with username and password input fields is visible.",
+          "expected": "condition_not_met",
+          "reason": "右上只有Login入口，页面没有用户名和密码输入表单。",
+          "appearance": "A product homepage with a promotional carousel and feature columns.",
+          "container": "The webpage content below the browser toolbar."
+        }
+      ],
+      "field_substitution_reason": "No webpage text entry field is visibly open in this frame; the input-field pair is replaced with a second graphic pair.",
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\mysql-capture-1.png",
+      "sha256": "a7e896639866046e3dbdbe4346b5a88f830279879c0c4c2d2b5f6a0d888982cc",
+      "original_size": {
+        "width": 1264,
+        "height": 892
+      },
+      "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+      "capture_id": null
+    },
+    {
+      "catalog_index": 8,
+      "group_id": "debian",
+      "annotation_status": "model_proposed_pending_main_review",
+      "cases": [
+        {
+          "id": "c08-field-site-search-match",
+          "category": "input_field",
+          "target": "the empty site search text field at the upper right",
+          "point": {
+            "x": 1119,
+            "y": 94
+          },
+          "candidate_bbox": {
+            "x": 1055,
+            "y": 83,
+            "w": 135,
+            "h": 22
+          },
+          "target_bbox": {
+            "x": 1055,
+            "y": 83,
+            "w": 135,
+            "h": 22
+          },
+          "condition": "The candidate point is inside the specified target input field.",
+          "expected": "condition_met",
+          "reason": "点位于网页右上方搜索按钮左侧的白色文本框内。",
+          "appearance": "A short empty white rectangular input field.",
+          "container": "The top-right area of the browser and website header."
+        },
+        {
+          "id": "c08-field-site-search-wrong-control",
+          "category": "input_field",
+          "target": "the empty site search text field at the upper right",
+          "point": {
+            "x": 500,
+            "y": 60
+          },
+          "candidate_bbox": {
+            "x": 77,
+            "y": 43,
+            "w": 962,
+            "h": 33
+          },
+          "target_bbox": {
+            "x": 1055,
+            "y": 83,
+            "w": 135,
+            "h": 22
+          },
+          "condition": "The candidate point is inside the specified target input field.",
+          "expected": "condition_not_met",
+          "reason": "候选点在浏览器地址栏中，不在网页搜索框内。",
+          "appearance": "A long light rounded URL field.",
+          "container": "The top-right area of the browser and website header."
+        },
+        {
+          "id": "c08-graphic-download-match",
+          "category": "graphic",
+          "target": "the large Download Debian button over the Debian swirl",
+          "point": {
+            "x": 935,
+            "y": 807
+          },
+          "candidate_bbox": {
+            "x": 757,
+            "y": 770,
+            "w": 356,
+            "h": 73
+          },
+          "target_bbox": {
+            "x": 757,
+            "y": 770,
+            "w": 356,
+            "h": 73
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_met",
+          "reason": "点在Debian旋涡图下方的大号深色下载按钮内。",
+          "appearance": "A large dark rounded button with white text.",
+          "container": "The operating-system column on the right side of the Debian homepage."
+        },
+        {
+          "id": "c08-graphic-download-wrong-control",
+          "category": "graphic",
+          "target": "the large Download Debian button over the Debian swirl",
+          "point": {
+            "x": 935,
+            "y": 863
+          },
+          "candidate_bbox": {
+            "x": 890,
+            "y": 853,
+            "w": 91,
+            "h": 21
+          },
+          "target_bbox": {
+            "x": 757,
+            "y": 770,
+            "w": 356,
+            "h": 73
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_not_met",
+          "reason": "候选是下方其他下载链接文字，不是大号下载按钮。",
+          "appearance": "A short blue underlined text link.",
+          "container": "The operating-system column on the right side of the Debian homepage."
+        },
+        {
+          "id": "c08-page-present",
+          "category": "page_result",
+          "target": "the current webpage",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The Debian homepage displays Community and Operating System sections with a Download Debian control.",
+          "expected": "condition_met",
+          "reason": "页面可见社区与操作系统两栏、活动照片及下载Debian入口。",
+          "appearance": "A Chinese-language project homepage with community and operating-system columns.",
+          "container": "The webpage content below the browser toolbar."
+        },
+        {
+          "id": "c08-page-absent",
+          "category": "page_result",
+          "target": "the current webpage",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "A package-search results table with package names and descriptions is visible.",
+          "expected": "condition_not_met",
+          "reason": "画面是网站首页，没有软件包搜索结果表。",
+          "appearance": "A Chinese-language project homepage with community and operating-system columns.",
+          "container": "The webpage content below the browser toolbar."
+        }
+      ],
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\debian-capture-1.png",
+      "sha256": "fb5f72ac3e40c227d8ba3a14460cb5ff563f22335b7dc9718b28ffc5422aebc5",
+      "original_size": {
+        "width": 1264,
+        "height": 892
+      },
+      "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+      "capture_id": null
+    },
+    {
+      "catalog_index": 9,
+      "group_id": "ubuntu",
+      "annotation_status": "model_proposed_pending_main_review",
+      "cases": [
+        {
+          "id": "c09-graphic-get-badge-match",
+          "category": "graphic",
+          "target": "the green Get your badge button in the hero",
+          "point": {
+            "x": 100,
+            "y": 490
+          },
+          "candidate_bbox": {
+            "x": 28,
+            "y": 472,
+            "w": 144,
+            "h": 35
+          },
+          "target_bbox": {
+            "x": 28,
+            "y": 472,
+            "w": 144,
+            "h": 35
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_met",
+          "reason": "点在主介绍区绿色Get your badge按钮内。",
+          "appearance": "A green rectangular text button.",
+          "container": "The left side of the Ubuntu qualification hero."
+        },
+        {
+          "id": "c09-graphic-get-badge-wrong-control",
+          "category": "graphic",
+          "target": "the green Get your badge button in the hero",
+          "point": {
+            "x": 245,
+            "y": 491
+          },
+          "candidate_bbox": {
+            "x": 192,
+            "y": 478,
+            "w": 108,
+            "h": 25
+          },
+          "target_bbox": {
+            "x": 28,
+            "y": 472,
+            "w": 144,
+            "h": 35
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_not_met",
+          "reason": "候选为右侧Exam content链接，不是绿色按钮。",
+          "appearance": "A blue text link with a small right chevron.",
+          "container": "The left side of the Ubuntu qualification hero."
+        },
+        {
+          "id": "c09-graphic-manage-trackers-match",
+          "category": "graphic",
+          "target": "the Manage your tracker settings link in the cookie panel",
+          "point": {
+            "x": 960,
+            "y": 789
+          },
+          "candidate_bbox": {
+            "x": 856,
+            "y": 774,
+            "w": 209,
+            "h": 27
+          },
+          "target_bbox": {
+            "x": 856,
+            "y": 774,
+            "w": 209,
+            "h": 27
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_met",
+          "reason": "点位于底部设置面板Manage your tracker settings链接上。",
+          "appearance": "A blue text link.",
+          "container": "The tracker-settings panel at the bottom of the webpage."
+        },
+        {
+          "id": "c09-graphic-manage-trackers-wrong-control",
+          "category": "graphic",
+          "target": "the Manage your tracker settings link in the cookie panel",
+          "point": {
+            "x": 1136,
+            "y": 787
+          },
+          "candidate_bbox": {
+            "x": 1084,
+            "y": 770,
+            "w": 104,
+            "h": 35
+          },
+          "target_bbox": {
+            "x": 856,
+            "y": 774,
+            "w": 209,
+            "h": 27
+          },
+          "condition": "The visible control at the candidate point matches the specified target.",
+          "expected": "condition_not_met",
+          "reason": "候选是绿色Accept all按钮，与管理设置链接不同。",
+          "appearance": "A green rectangular text button.",
+          "container": "The tracker-settings panel at the bottom of the webpage."
+        },
+        {
+          "id": "c09-page-present",
+          "category": "page_result",
+          "target": "the current webpage",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The Ubuntu homepage shows Real-world SysAdmin qualification and an open Your tracker settings panel.",
+          "expected": "condition_met",
+          "reason": "主标题与底部Your tracker settings面板均可见。",
+          "appearance": "A dark product homepage partly covered by a tracker-settings panel.",
+          "container": "The webpage content below the browser toolbar."
+        },
+        {
+          "id": "c09-page-absent",
+          "category": "page_result",
+          "target": "the current webpage",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "A sign-in form with visible email and password fields is open.",
+          "expected": "condition_not_met",
+          "reason": "顶部只有Sign in导航入口，画面没有邮箱和密码登录表单。",
+          "appearance": "A dark product homepage partly covered by a tracker-settings panel.",
+          "container": "The webpage content below the browser toolbar."
+        }
+      ],
+      "field_substitution_reason": "No webpage text entry field is visibly open in this frame; the input-field pair is replaced with a second graphic pair.",
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\ubuntu-capture-1.png",
+      "sha256": "50ab26cba166a861ccb2465c6a2898da5694ea59c6a508ceb1f3484f840c5d65",
+      "original_size": {
+        "width": 1264,
+        "height": 892
+      },
+      "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+      "capture_id": null
+    }
+  ],
+  "source_catalog": "new-catalog.json",
+  "source_catalog_sha256": "2688e8b85a8aee1590acad3b063eef0508e09344ecda2ae9740800210fdb3cc5",
+  "summary": {
+    "images": 10,
+    "skipped_images": 0,
+    "cases": 60,
+    "categories": {
+      "input_field": 4,
+      "graphic": 36,
+      "page_result": 20
+    },
+    "expected": {
+      "condition_met": 30,
+      "condition_not_met": 30
+    }
+  }
+}

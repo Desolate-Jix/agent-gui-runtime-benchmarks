@@ -1,0 +1,26 @@
+{
+  "api_calls_before_correction": 0,
+  "v1_preserved": true,
+  "changes": [
+    {
+      "case": "b10-value-05",
+      "change": "display text is a page result, not entered input text",
+      "expected_unchanged": "condition_met"
+    },
+    {
+      "case": "b10-value-06",
+      "change": "display text is a page result, not entered input text",
+      "expected_unchanged": "condition_not_met"
+    },
+    {
+      "case": "b14-value-07",
+      "change": "display text is a page result, not entered input text",
+      "expected_unchanged": "condition_met"
+    },
+    {
+      "case": "b14-value-08",
+      "change": "display text is a page result, not entered input text",
+      "expected_unchanged": "condition_not_met"
+    }
+  ]
+}

@@ -1,0 +1,1275 @@
+{
+  "schema": "decision_benchmark_preannotations.v1",
+  "annotator": "Sol",
+  "review_status": "pending_main_image_review",
+  "annotation_basis": "Direct inspection of original screenshots only; no historical model responses were read. These are Sol pre-annotations, not human ground truth.",
+  "catalog_path": "D:/AgentGUI-Projects/evidence/decision-benchmark-20261015-01/candidate-catalog.json",
+  "coordinate_space": "original_image_pixels",
+  "notes": [
+    "仅预标注 catalog 索引 8..15；各原图均先由 view_image 查看，必要时以内存中只读裁剪辅助确认坐标。",
+    "expected、reason、target_bbox 是待 Main 逐图复核的标注真值；不得拼接进模型请求。candidate_bbox 和 point 使用原图像素坐标。",
+    "input_field 与 graphic 的 condition 判断候选点所指控件；负例 candidate_bbox 覆盖真实错误控件，point 保持在该错误控件内部。",
+    "text_value 的 expected_text 是问题待核对的内容，允许空字符串表示空文档；expected 是核对结果。page_result 使用可观察页面状态 condition，point 和 bbox 为 null。",
+    "text_value 建议使用 candidate_bbox 内的原始像素；page_result 应使用完整网页或应用内容区域，不只裁某个单词。裁剪前后坐标变换需由后续 suite loader 明确保存。",
+    "同一 Python 文档族统一 python-docs；Wikipedia 首页搜索态和文章态统一 wikipedia。跨 worker 合并时同族与近重复不得拆入不同 split。",
+    "索引 9 因私人通知浮层跳过；索引 11 因主体黑块遮挡跳过。未强造 evidence_insufficient。"
+  ],
+  "images": [
+    {
+      "catalog_index": 8,
+      "source_path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260921-candidate10-19\\session-0fd640c2d9c54d63bc61a0ef4086ead2\\runtime-output\\local-direct-steps\\local-step-49610583ce0d4337988e40c8a4a54daf\\observations\\search-python-3-14-7-documentation-microsoft-edge__local-direct-post-action__full-window__20260921-132723-119423.png",
+      "sha256": "031ae8ec322e64e34ced995709dcba90abca5b2706d49f2f201206ef32e399fb",
+      "original_size": {
+        "width": 2560,
+        "height": 1400
+      },
+      "capture_id": "search-python-3-14-7-documentation-microsoft-edge__local-direct-post-action__full-window__20260921-132723-119423.png",
+      "session_id": "session-0fd640c2d9c54d63bc61a0ef4086ead2",
+      "group_id": "python-docs",
+      "status": "preannotated",
+      "cases": [
+        {
+          "id": "b08-field-01",
+          "category": "input_field",
+          "target": "Python documentation search query field",
+          "point": {
+            "x": 470,
+            "y": 282
+          },
+          "candidate_bbox": {
+            "x": 389,
+            "y": 272,
+            "w": 177,
+            "h": 21
+          },
+          "target_bbox": {
+            "x": 389,
+            "y": 272,
+            "w": 177,
+            "h": 21
+          },
+          "condition": "The point is inside the documentation search text input.",
+          "expected": "condition_met",
+          "reason": "点位于白色文本输入框内，框内可见 csv，右侧另有独立 search 按钮。",
+          "appearance": "A narrow white single-line input immediately to the left of the search button.",
+          "container": "The Python documentation search form below the Search heading."
+        },
+        {
+          "id": "b08-field-02",
+          "category": "input_field",
+          "target": "Python documentation search query field",
+          "point": {
+            "x": 598,
+            "y": 282
+          },
+          "candidate_bbox": {
+            "x": 571,
+            "y": 272,
+            "w": 56,
+            "h": 21
+          },
+          "target_bbox": {
+            "x": 389,
+            "y": 272,
+            "w": 177,
+            "h": 21
+          },
+          "condition": "The point is inside the documentation search text input.",
+          "expected": "condition_not_met",
+          "reason": "点及候选框落在右侧 search 按钮上，属于按钮而非左侧文本输入框。",
+          "appearance": "A narrow white single-line input immediately to the left of the search button.",
+          "container": "The Python documentation search form below the Search heading."
+        },
+        {
+          "id": "b08-graphic-03",
+          "category": "graphic",
+          "target": "Search button beside the Python documentation query field",
+          "point": {
+            "x": 598,
+            "y": 282
+          },
+          "candidate_bbox": {
+            "x": 571,
+            "y": 272,
+            "w": 56,
+            "h": 21
+          },
+          "target_bbox": {
+            "x": 571,
+            "y": 272,
+            "w": 56,
+            "h": 21
+          },
+          "condition": "The point is on the search button beside the query field.",
+          "expected": "condition_met",
+          "reason": "点在带边框的 search 按钮中央，紧邻查询输入框右侧。",
+          "appearance": "A small outlined rectangular button labeled search.",
+          "container": "The Python documentation search form below the Search heading."
+        },
+        {
+          "id": "b08-graphic-04",
+          "category": "graphic",
+          "target": "Search button beside the Python documentation query field",
+          "point": {
+            "x": 550,
+            "y": 457
+          },
+          "candidate_bbox": {
+            "x": 430,
+            "y": 445,
+            "w": 276,
+            "h": 23
+          },
+          "target_bbox": {
+            "x": 571,
+            "y": 272,
+            "w": 56,
+            "h": 21
+          },
+          "condition": "The point is on the search button beside the query field.",
+          "expected": "condition_not_met",
+          "reason": "点及候选框位于下方 csv 文档结果链接，不是表单右侧的 search 按钮。",
+          "appearance": "A small outlined rectangular button labeled search.",
+          "container": "The Python documentation search form below the Search heading."
+        },
+        {
+          "id": "b08-value-05",
+          "category": "text_value",
+          "target": "Current text in the Python documentation search query field",
+          "point": {
+            "x": 470,
+            "y": 282
+          },
+          "candidate_bbox": {
+            "x": 389,
+            "y": 272,
+            "w": 177,
+            "h": 21
+          },
+          "target_bbox": {
+            "x": 389,
+            "y": 272,
+            "w": 177,
+            "h": 21
+          },
+          "expected_text": "csv",
+          "expected": "condition_met",
+          "reason": "输入框内清楚显示三个小写字符 csv。",
+          "appearance": "A narrow white single-line input immediately to the left of the search button.",
+          "container": "The Python documentation search form below the Search heading."
+        },
+        {
+          "id": "b08-value-06",
+          "category": "text_value",
+          "target": "Current text in the Python documentation search query field",
+          "point": {
+            "x": 470,
+            "y": 282
+          },
+          "candidate_bbox": {
+            "x": 389,
+            "y": 272,
+            "w": 177,
+            "h": 21
+          },
+          "target_bbox": {
+            "x": 389,
+            "y": 272,
+            "w": 177,
+            "h": 21
+          },
+          "expected_text": "json",
+          "expected": "condition_not_met",
+          "reason": "同一输入框显示 csv，与要求的 json 不一致。",
+          "appearance": "A narrow white single-line input immediately to the left of the search button.",
+          "container": "The Python documentation search form below the Search heading."
+        },
+        {
+          "id": "b08-page-07",
+          "category": "page_result",
+          "target": "Python documentation search results for csv",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The main page shows Search Results and csv-related result links.",
+          "expected": "condition_met",
+          "reason": "主区域有 Search Results 标题、66 条匹配结果说明及多条 csv 高亮结果。",
+          "appearance": "A Search Results heading followed by a bulleted list of documentation links.",
+          "container": "The main content of the Python documentation page."
+        },
+        {
+          "id": "b08-page-08",
+          "category": "page_result",
+          "target": "Python CSV module reference page",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The main page displays the CSV File Reading and Writing module reference.",
+          "expected": "condition_not_met",
+          "reason": "当前主标题为 Search，正文是搜索结果列表；CSV 文档只作为结果链接出现。",
+          "appearance": "A module reference article headed csv — CSV File Reading and Writing.",
+          "container": "The main content of the Python documentation page."
+        }
+      ]
+    },
+    {
+      "catalog_index": 9,
+      "source_path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260923-test6-browser-live-04\\data\\session-56a19140597341dd92af9e0e6f1d8f06\\runtime-output\\local-direct-steps\\local-step-cfa98e6e021a408d9ad98daa1f8190a1\\observations\\google-maps-auckland-google-microsoft-edge__local-direct-post-action__full-window__20260923-015607-608553.png",
+      "sha256": "11ac4c082534ad67722bef9c78749a8b7fccdef565ff5df7c5e812ffa40c6016",
+      "original_size": {
+        "width": 2560,
+        "height": 1400
+      },
+      "capture_id": "google-maps-auckland-google-microsoft-edge__local-direct-post-action__full-window__20260923-015607-608553.png",
+      "session_id": "session-56a19140597341dd92af9e0e6f1d8f06",
+      "group_id": "google-search-maps",
+      "status": "skipped",
+      "skip_reason": "原图含私人通知浮层，保留源文件但不纳入整图公开基准；不复述通知内容。",
+      "cases": []
+    },
+    {
+      "catalog_index": 10,
+      "source_path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\aion-wikipedia-20260920-15\\data\\session-cef2320c90234c47aa5d4ba3d39444c9\\runtime-output\\local-direct-steps\\local-step-ba09c492335b45af938a63e5e45be5b5\\observations\\wellington-wikipedia-microsoft-edge__local-direct-post-action__full-window__20260920-124442-736587.png",
+      "sha256": "19105ab1a3b4122cda279348d9158ae3f3fe4c44cfb2b13ae60bbde3a8a0db62",
+      "original_size": {
+        "width": 2560,
+        "height": 1400
+      },
+      "capture_id": "wellington-wikipedia-microsoft-edge__local-direct-post-action__full-window__20260920-124442-736587.png",
+      "session_id": "session-cef2320c90234c47aa5d4ba3d39444c9",
+      "group_id": "wikipedia",
+      "status": "preannotated",
+      "cases": [
+        {
+          "id": "b10-field-01",
+          "category": "input_field",
+          "target": "Wikipedia header search input",
+          "point": {
+            "x": 1000,
+            "y": 113
+          },
+          "candidate_bbox": {
+            "x": 801,
+            "y": 97,
+            "w": 403,
+            "h": 32
+          },
+          "target_bbox": {
+            "x": 801,
+            "y": 97,
+            "w": 403,
+            "h": 32
+          },
+          "condition": "The point is inside the Wikipedia header search input.",
+          "expected": "condition_met",
+          "reason": "点在页面顶部带放大镜和 Search Wikipedia 占位文字的输入框内。",
+          "appearance": "A wide outlined single-line search input with a magnifying-glass icon.",
+          "container": "The Wikipedia header, immediately left of the Search button."
+        },
+        {
+          "id": "b10-field-02",
+          "category": "input_field",
+          "target": "Wikipedia header search input",
+          "point": {
+            "x": 1240,
+            "y": 113
+          },
+          "candidate_bbox": {
+            "x": 1203,
+            "y": 97,
+            "w": 72,
+            "h": 32
+          },
+          "target_bbox": {
+            "x": 801,
+            "y": 97,
+            "w": 403,
+            "h": 32
+          },
+          "condition": "The point is inside the Wikipedia header search input.",
+          "expected": "condition_not_met",
+          "reason": "点及候选框在输入框右端的 Search 按钮内，没有落入文本输入区域。",
+          "appearance": "A wide outlined single-line search input with a magnifying-glass icon.",
+          "container": "The Wikipedia header, immediately left of the Search button."
+        },
+        {
+          "id": "b10-graphic-03",
+          "category": "graphic",
+          "target": "Wikipedia Search button",
+          "point": {
+            "x": 1240,
+            "y": 113
+          },
+          "candidate_bbox": {
+            "x": 1203,
+            "y": 97,
+            "w": 72,
+            "h": 32
+          },
+          "target_bbox": {
+            "x": 1203,
+            "y": 97,
+            "w": 72,
+            "h": 32
+          },
+          "condition": "The point is on the Search button in the Wikipedia header.",
+          "expected": "condition_met",
+          "reason": "点落在右侧标有 Search 的矩形按钮上。",
+          "appearance": "A rectangular button labeled Search at the right end of the search input.",
+          "container": "The Wikipedia header, immediately left of the Search button."
+        },
+        {
+          "id": "b10-graphic-04",
+          "category": "graphic",
+          "target": "Wikipedia Search button",
+          "point": {
+            "x": 877,
+            "y": 231
+          },
+          "candidate_bbox": {
+            "x": 857,
+            "y": 219,
+            "w": 43,
+            "h": 24
+          },
+          "target_bbox": {
+            "x": 1203,
+            "y": 97,
+            "w": 72,
+            "h": 32
+          },
+          "condition": "The point is on the Search button in the Wikipedia header.",
+          "expected": "condition_not_met",
+          "reason": "点及候选框落在文章标题下的 Talk 标签，不是顶部 Search 按钮。",
+          "appearance": "A rectangular button labeled Search at the right end of the search input.",
+          "container": "The Wikipedia header, immediately left of the Search button."
+        },
+        {
+          "id": "b10-value-05",
+          "category": "text_value",
+          "target": "Visible Wikipedia article title",
+          "point": {
+            "x": 883,
+            "y": 193
+          },
+          "candidate_bbox": {
+            "x": 798,
+            "y": 175,
+            "w": 180,
+            "h": 35
+          },
+          "target_bbox": {
+            "x": 798,
+            "y": 175,
+            "w": 180,
+            "h": 35
+          },
+          "expected_text": "Wellington",
+          "expected": "condition_met",
+          "reason": "文章顶部的大号标题完整显示 Wellington。",
+          "appearance": "The large black Wellington article heading.",
+          "container": "The top of the Wikipedia article main column."
+        },
+        {
+          "id": "b10-value-06",
+          "category": "text_value",
+          "target": "Visible Wikipedia article title",
+          "point": {
+            "x": 883,
+            "y": 193
+          },
+          "candidate_bbox": {
+            "x": 798,
+            "y": 175,
+            "w": 180,
+            "h": 35
+          },
+          "target_bbox": {
+            "x": 798,
+            "y": 175,
+            "w": 180,
+            "h": 35
+          },
+          "expected_text": "Auckland",
+          "expected": "condition_not_met",
+          "reason": "同一大号文章标题为 Wellington，不是 Auckland。",
+          "appearance": "The large black Wellington article heading.",
+          "container": "The top of the Wikipedia article main column."
+        },
+        {
+          "id": "b10-page-07",
+          "category": "page_result",
+          "target": "Wellington Wikipedia article",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The main article is headed Wellington and describes the capital city of New Zealand.",
+          "expected": "condition_met",
+          "reason": "大标题为 Wellington，首段清楚写明 capital city of New Zealand，右侧有 Wellington 信息框。",
+          "appearance": "An article heading Wellington with a text introduction and city infobox.",
+          "container": "The Wikipedia article main content."
+        },
+        {
+          "id": "b10-page-08",
+          "category": "page_result",
+          "target": "Wikipedia main page",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The main content is the Wikipedia Main Page with featured-article and news panels.",
+          "expected": "condition_not_met",
+          "reason": "当前显示 Wellington 专题文章、目录和城市信息框，未显示首页的特色文章与新闻双栏。",
+          "appearance": "The Wikipedia home-page layout with featured-article and news panels.",
+          "container": "The Wikipedia main content."
+        }
+      ]
+    },
+    {
+      "catalog_index": 11,
+      "source_path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260922-instant-v5-desktop-01\\data\\session-b3b017aa9f2a4ae1bbce585658f4f53e\\runtime-output\\local-direct-steps\\local-step-82032c2062164a8cb97a1f1d89d694ec\\observations\\explorer-exe__local-direct-post-action__full-window__20260922-201253-856982.png",
+      "sha256": "589c091d9d491cce2135b3aeb1d4873242ad269126fa00f8d4c75206e0427a96",
+      "original_size": {
+        "width": 2560,
+        "height": 1440
+      },
+      "capture_id": "explorer-exe__local-direct-post-action__full-window__20260922-201253-856982.png",
+      "session_id": "session-b3b017aa9f2a4ae1bbce585658f4f53e",
+      "group_id": "windows-desktop-obscured",
+      "status": "skipped",
+      "skip_reason": "原图主体被大面积不透明黑块遮挡，缺少足够可读的应用控件，不强凑判断题。",
+      "cases": []
+    },
+    {
+      "catalog_index": 12,
+      "source_path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260923-test6-aion-candidate06\\data\\session-1042d0581cef4fd9a92f81372042bd09\\runtime-output\\local-direct-steps\\local-step-bd8b286a9996455e94a8d74aee5c2ea6\\observations\\auckland-art-gallery-google-microsoft-edge__local-direct-post-action__full-window__20260923-054013-488776.png",
+      "sha256": "9cc4b7e55ec75dab7cce0b104d075eef007f7d2b8bc4671d41dcd3f61fefc2f3",
+      "original_size": {
+        "width": 800,
+        "height": 1155
+      },
+      "capture_id": "auckland-art-gallery-google-microsoft-edge__local-direct-post-action__full-window__20260923-054013-488776.png",
+      "session_id": "session-1042d0581cef4fd9a92f81372042bd09",
+      "group_id": "google-maps-place",
+      "status": "preannotated",
+      "cases": [
+        {
+          "id": "b12-field-01",
+          "category": "input_field",
+          "target": "Google Maps place search input",
+          "point": {
+            "x": 185,
+            "y": 120
+          },
+          "candidate_bbox": {
+            "x": 84,
+            "y": 98,
+            "w": 236,
+            "h": 42
+          },
+          "target_bbox": {
+            "x": 84,
+            "y": 98,
+            "w": 236,
+            "h": 42
+          },
+          "condition": "The point is inside the Maps place search text input.",
+          "expected": "condition_met",
+          "reason": "点位于左上圆角白色搜索栏的文字输入区域，栏内显示 Auckland Art Gallery。",
+          "appearance": "A rounded white search input displaying Auckland Art Gallery.",
+          "container": "The Google Maps search bar at the top of the left place panel."
+        },
+        {
+          "id": "b12-field-02",
+          "category": "input_field",
+          "target": "Google Maps place search input",
+          "point": {
+            "x": 74,
+            "y": 453
+          },
+          "candidate_bbox": {
+            "x": 44,
+            "y": 433,
+            "w": 60,
+            "h": 40
+          },
+          "target_bbox": {
+            "x": 84,
+            "y": 98,
+            "w": 236,
+            "h": 42
+          },
+          "condition": "The point is inside the Maps place search text input.",
+          "expected": "condition_not_met",
+          "reason": "点及候选框落在地点面板的概览标签上，位置在搜索栏下方，属于标签而非输入框。",
+          "appearance": "A rounded white search input displaying Auckland Art Gallery.",
+          "container": "The Google Maps search bar at the top of the left place panel."
+        },
+        {
+          "id": "b12-graphic-03",
+          "category": "graphic",
+          "target": "Directions button for Auckland Art Gallery",
+          "point": {
+            "x": 78,
+            "y": 507
+          },
+          "candidate_bbox": {
+            "x": 57,
+            "y": 485,
+            "w": 43,
+            "h": 44
+          },
+          "target_bbox": {
+            "x": 57,
+            "y": 485,
+            "w": 43,
+            "h": 44
+          },
+          "condition": "The point is on the Directions route button in the place action row.",
+          "expected": "condition_met",
+          "reason": "点落在地点操作行最左侧的青色路线按钮，图标为白色转向箭头。",
+          "appearance": "A teal circular button with a white diamond and right-turn arrow, above the route label.",
+          "container": "The action-button row beneath the Auckland Art Gallery place tabs."
+        },
+        {
+          "id": "b12-graphic-04",
+          "category": "graphic",
+          "target": "Directions button for Auckland Art Gallery",
+          "point": {
+            "x": 149,
+            "y": 507
+          },
+          "candidate_bbox": {
+            "x": 128,
+            "y": 485,
+            "w": 43,
+            "h": 44
+          },
+          "target_bbox": {
+            "x": 57,
+            "y": 485,
+            "w": 43,
+            "h": 44
+          },
+          "condition": "The point is on the Directions route button in the place action row.",
+          "expected": "condition_not_met",
+          "reason": "点及候选框位于相邻的书签形保存按钮，正确路线按钮在其左侧。",
+          "appearance": "A teal circular button with a white diamond and right-turn arrow, above the route label.",
+          "container": "The action-button row beneath the Auckland Art Gallery place tabs."
+        },
+        {
+          "id": "b12-value-05",
+          "category": "text_value",
+          "target": "Current Google Maps place search text",
+          "point": {
+            "x": 185,
+            "y": 120
+          },
+          "candidate_bbox": {
+            "x": 84,
+            "y": 98,
+            "w": 236,
+            "h": 42
+          },
+          "target_bbox": {
+            "x": 84,
+            "y": 98,
+            "w": 236,
+            "h": 42
+          },
+          "expected_text": "Auckland Art Gallery",
+          "expected": "condition_met",
+          "reason": "搜索栏中完整可见 Auckland Art Gallery。",
+          "appearance": "A rounded white search input displaying Auckland Art Gallery.",
+          "container": "The Google Maps search bar at the top of the left place panel."
+        },
+        {
+          "id": "b12-value-06",
+          "category": "text_value",
+          "target": "Current Google Maps place search text",
+          "point": {
+            "x": 185,
+            "y": 120
+          },
+          "candidate_bbox": {
+            "x": 84,
+            "y": 98,
+            "w": 236,
+            "h": 42
+          },
+          "target_bbox": {
+            "x": 84,
+            "y": 98,
+            "w": 236,
+            "h": 42
+          },
+          "expected_text": "Auckland Museum",
+          "expected": "condition_not_met",
+          "reason": "搜索栏显示 Auckland Art Gallery，与 Auckland Museum 不一致。",
+          "appearance": "A rounded white search input displaying Auckland Art Gallery.",
+          "container": "The Google Maps search bar at the top of the left place panel."
+        },
+        {
+          "id": "b12-page-07",
+          "category": "page_result",
+          "target": "Auckland Art Gallery place details in Google Maps",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The place details panel and map show Auckland Art Gallery.",
+          "expected": "condition_met",
+          "reason": "左侧地点标题为 Auckland Art Gallery，右侧地图同名红色地点标记可见。",
+          "appearance": "A place-details panel with a gallery photo and a matching red map marker.",
+          "container": "The Google Maps page."
+        },
+        {
+          "id": "b12-page-08",
+          "category": "page_result",
+          "target": "Auckland Museum place details in Google Maps",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The active place details panel is for Auckland Museum.",
+          "expected": "condition_not_met",
+          "reason": "当前地点面板的明确标题是 Auckland Art Gallery，并非 Auckland Museum。",
+          "appearance": "A place-details panel headed Auckland Museum.",
+          "container": "The Google Maps page."
+        }
+      ]
+    },
+    {
+      "catalog_index": 13,
+      "source_path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\aion-wikipedia-20260920-15\\data\\session-cef2320c90234c47aa5d4ba3d39444c9\\runtime-output\\local-direct-steps\\local-step-ba09c492335b45af938a63e5e45be5b5\\captures\\wikipedia-the-free-encyclopedia-microsoft-edge__local-direct-no-learning__full-window__20260920-124440-586091.png",
+      "sha256": "22f4c87b2a6a2a7f7243177146cb51146ab01ea6290318a327a61a8964edb362",
+      "original_size": {
+        "width": 2560,
+        "height": 1400
+      },
+      "capture_id": "wikipedia-the-free-encyclopedia-microsoft-edge__local-direct-no-learning__full-window__20260920-124440-586091.png",
+      "session_id": "session-cef2320c90234c47aa5d4ba3d39444c9",
+      "group_id": "wikipedia",
+      "status": "preannotated",
+      "cases": [
+        {
+          "id": "b13-field-01",
+          "category": "input_field",
+          "target": "Wikipedia search input containing Wellington",
+          "point": {
+            "x": 1000,
+            "y": 113
+          },
+          "candidate_bbox": {
+            "x": 775,
+            "y": 97,
+            "w": 429,
+            "h": 32
+          },
+          "target_bbox": {
+            "x": 775,
+            "y": 97,
+            "w": 429,
+            "h": 32
+          },
+          "condition": "The point is inside the Wikipedia search text input.",
+          "expected": "condition_met",
+          "reason": "点位于蓝色边框输入框内，框内有 Wellington 及其末尾插入光标。",
+          "appearance": "A blue-outlined single-line search field containing Wellington.",
+          "container": "The Wikipedia header above an open autocomplete suggestion panel."
+        },
+        {
+          "id": "b13-field-02",
+          "category": "input_field",
+          "target": "Wikipedia search input containing Wellington",
+          "point": {
+            "x": 1240,
+            "y": 113
+          },
+          "candidate_bbox": {
+            "x": 1203,
+            "y": 97,
+            "w": 72,
+            "h": 32
+          },
+          "target_bbox": {
+            "x": 775,
+            "y": 97,
+            "w": 429,
+            "h": 32
+          },
+          "condition": "The point is inside the Wikipedia search text input.",
+          "expected": "condition_not_met",
+          "reason": "点及候选框落在紧邻右侧的 Search 按钮内，而不是 Wellington 输入框。",
+          "appearance": "A blue-outlined single-line search field containing Wellington.",
+          "container": "The Wikipedia header above an open autocomplete suggestion panel."
+        },
+        {
+          "id": "b13-graphic-03",
+          "category": "graphic",
+          "target": "Wellington city autocomplete suggestion",
+          "point": {
+            "x": 1000,
+            "y": 164
+          },
+          "candidate_bbox": {
+            "x": 777,
+            "y": 132,
+            "w": 425,
+            "h": 63
+          },
+          "target_bbox": {
+            "x": 777,
+            "y": 132,
+            "w": 425,
+            "h": 63
+          },
+          "condition": "The point is on the Wellington suggestion whose subtitle is Capital city of New Zealand.",
+          "expected": "condition_met",
+          "reason": "点位于第一条 Wellington 候选行，副标题清楚标注为新西兰首都。",
+          "appearance": "The first suggestion row labeled Wellington with the subtitle Capital city of New Zealand.",
+          "container": "The open Wikipedia autocomplete list directly below the search field."
+        },
+        {
+          "id": "b13-graphic-04",
+          "category": "graphic",
+          "target": "Wellington city autocomplete suggestion",
+          "point": {
+            "x": 1000,
+            "y": 226
+          },
+          "candidate_bbox": {
+            "x": 777,
+            "y": 195,
+            "w": 425,
+            "h": 62
+          },
+          "target_bbox": {
+            "x": 777,
+            "y": 132,
+            "w": 425,
+            "h": 63
+          },
+          "condition": "The point is on the Wellington suggestion whose subtitle is Capital city of New Zealand.",
+          "expected": "condition_not_met",
+          "reason": "点及候选框落在第二条 Arthur Wellesley, 1st Duke of Wellington 人物候选行，不是第一条城市候选。",
+          "appearance": "The first suggestion row labeled Wellington with the subtitle Capital city of New Zealand.",
+          "container": "The open Wikipedia autocomplete list directly below the search field."
+        },
+        {
+          "id": "b13-value-05",
+          "category": "text_value",
+          "target": "Current text in the Wikipedia search input",
+          "point": {
+            "x": 1000,
+            "y": 113
+          },
+          "candidate_bbox": {
+            "x": 775,
+            "y": 97,
+            "w": 429,
+            "h": 32
+          },
+          "target_bbox": {
+            "x": 775,
+            "y": 97,
+            "w": 429,
+            "h": 32
+          },
+          "expected_text": "Wellington",
+          "expected": "condition_met",
+          "reason": "输入框可见完整文字 Wellington，没有 Airport 后缀。",
+          "appearance": "A blue-outlined single-line search field containing Wellington.",
+          "container": "The Wikipedia header above an open autocomplete suggestion panel."
+        },
+        {
+          "id": "b13-value-06",
+          "category": "text_value",
+          "target": "Current text in the Wikipedia search input",
+          "point": {
+            "x": 1000,
+            "y": 113
+          },
+          "candidate_bbox": {
+            "x": 775,
+            "y": 97,
+            "w": 429,
+            "h": 32
+          },
+          "target_bbox": {
+            "x": 775,
+            "y": 97,
+            "w": 429,
+            "h": 32
+          },
+          "expected_text": "Wellington Airport",
+          "expected": "condition_not_met",
+          "reason": "当前输入文字只有 Wellington，未包含要求中的 Airport。",
+          "appearance": "A blue-outlined single-line search field containing Wellington.",
+          "container": "The Wikipedia header above an open autocomplete suggestion panel."
+        },
+        {
+          "id": "b13-page-07",
+          "category": "page_result",
+          "target": "Wikipedia search autocomplete for Wellington",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "An autocomplete suggestion list is open under the Wellington search input.",
+          "expected": "condition_met",
+          "reason": "输入框下展开多条 Wellington 相关候选，背景仍是 Wikipedia 首页的特色文章和新闻面板。",
+          "appearance": "A tall suggestion dropdown beneath the focused Wellington search input.",
+          "container": "The upper part of the Wikipedia page."
+        },
+        {
+          "id": "b13-page-08",
+          "category": "page_result",
+          "target": "Wellington Wikipedia article loaded",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The main content has navigated to the Wellington city article.",
+          "expected": "condition_not_met",
+          "reason": "截图仍有首页特色文章与新闻面板及展开的搜索候选列表，没有 Wellington 城市文章正文。",
+          "appearance": "A Wellington article heading followed by the city article and infobox.",
+          "container": "The Wikipedia main content."
+        }
+      ]
+    },
+    {
+      "catalog_index": 14,
+      "source_path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260909-calculator-01\\artifacts\\screenshots\\-bbbf3aed__fresh-native-acceptance__calculator-initial__full-window__20260909-035806-162402.png",
+      "sha256": "3b2ba6a2130f095bb58b66aaca6752c36ac537248c074dda4ecfe3d23bfa595b",
+      "original_size": {
+        "width": 900,
+        "height": 1000
+      },
+      "capture_id": "-bbbf3aed__fresh-native-acceptance__calculator-initial__full-window__20260909-035806-162402.png",
+      "session_id": "20260909-calculator-01",
+      "group_id": "windows-calculator",
+      "status": "preannotated",
+      "cases": [
+        {
+          "id": "b14-graphic-01",
+          "category": "graphic",
+          "target": "Calculator digit 7 button",
+          "point": {
+            "x": 80,
+            "y": 612
+          },
+          "candidate_bbox": {
+            "x": 12,
+            "y": 560,
+            "w": 137,
+            "h": 106
+          },
+          "target_bbox": {
+            "x": 12,
+            "y": 560,
+            "w": 137,
+            "h": 106
+          },
+          "condition": "The point is on the digit 7 button.",
+          "expected": "condition_met",
+          "reason": "点位于显示数字 7 的白色按键中央，该键在 4 键上方。",
+          "appearance": "A white rectangular key labeled 7.",
+          "container": "The main keypad in Windows Calculator Standard mode."
+        },
+        {
+          "id": "b14-graphic-02",
+          "category": "graphic",
+          "target": "Calculator digit 7 button",
+          "point": {
+            "x": 360,
+            "y": 612
+          },
+          "candidate_bbox": {
+            "x": 291,
+            "y": 560,
+            "w": 138,
+            "h": 106
+          },
+          "target_bbox": {
+            "x": 12,
+            "y": 560,
+            "w": 137,
+            "h": 106
+          },
+          "condition": "The point is on the digit 7 button.",
+          "expected": "condition_not_met",
+          "reason": "点及候选框落在同排数字 9 按键，正确 7 键在该排左侧。",
+          "appearance": "A white rectangular key labeled 7.",
+          "container": "The main keypad in Windows Calculator Standard mode."
+        },
+        {
+          "id": "b14-graphic-03",
+          "category": "graphic",
+          "target": "Calculator equals button",
+          "point": {
+            "x": 500,
+            "y": 935
+          },
+          "candidate_bbox": {
+            "x": 431,
+            "y": 883,
+            "w": 137,
+            "h": 104
+          },
+          "target_bbox": {
+            "x": 431,
+            "y": 883,
+            "w": 137,
+            "h": 104
+          },
+          "condition": "The point is on the equals button.",
+          "expected": "condition_met",
+          "reason": "点位于右下角蓝色按键内，中央图形是等号。",
+          "appearance": "A blue rectangular key labeled with an equals sign.",
+          "container": "The main keypad in Windows Calculator Standard mode."
+        },
+        {
+          "id": "b14-graphic-04",
+          "category": "graphic",
+          "target": "Calculator equals button",
+          "point": {
+            "x": 500,
+            "y": 827
+          },
+          "candidate_bbox": {
+            "x": 431,
+            "y": 775,
+            "w": 137,
+            "h": 106
+          },
+          "target_bbox": {
+            "x": 431,
+            "y": 883,
+            "w": 137,
+            "h": 104
+          },
+          "condition": "The point is on the equals button.",
+          "expected": "condition_not_met",
+          "reason": "点及候选框落在蓝色等号键正上方的白色加号键。",
+          "appearance": "A blue rectangular key labeled with an equals sign.",
+          "container": "The main keypad in Windows Calculator Standard mode."
+        },
+        {
+          "id": "b14-graphic-05",
+          "category": "graphic",
+          "target": "Calculator decimal point button",
+          "point": {
+            "x": 360,
+            "y": 935
+          },
+          "candidate_bbox": {
+            "x": 291,
+            "y": 883,
+            "w": 138,
+            "h": 104
+          },
+          "target_bbox": {
+            "x": 291,
+            "y": 883,
+            "w": 138,
+            "h": 104
+          },
+          "condition": "The point is on the decimal point button.",
+          "expected": "condition_met",
+          "reason": "点在底排小数点按键中央，右侧为蓝色等号键。",
+          "appearance": "A white rectangular key with a small decimal dot.",
+          "container": "The main keypad in Windows Calculator Standard mode."
+        },
+        {
+          "id": "b14-graphic-06",
+          "category": "graphic",
+          "target": "Calculator decimal point button",
+          "point": {
+            "x": 221,
+            "y": 935
+          },
+          "candidate_bbox": {
+            "x": 152,
+            "y": 883,
+            "w": 137,
+            "h": 104
+          },
+          "target_bbox": {
+            "x": 291,
+            "y": 883,
+            "w": 138,
+            "h": 104
+          },
+          "condition": "The point is on the decimal point button.",
+          "expected": "condition_not_met",
+          "reason": "点及候选框位于底排数字 0 按键，小数点按键在其右侧。",
+          "appearance": "A white rectangular key with a small decimal dot.",
+          "container": "The main keypad in Windows Calculator Standard mode."
+        },
+        {
+          "id": "b14-value-07",
+          "category": "text_value",
+          "target": "Current Calculator display value",
+          "point": {
+            "x": 40,
+            "y": 179
+          },
+          "candidate_bbox": {
+            "x": 18,
+            "y": 145,
+            "w": 44,
+            "h": 65
+          },
+          "target_bbox": {
+            "x": 18,
+            "y": 145,
+            "w": 44,
+            "h": 65
+          },
+          "expected_text": "0",
+          "expected": "condition_met",
+          "reason": "计算器左上方的大号显示值为单个 0。",
+          "appearance": "A large black number in the calculator display area.",
+          "container": "The display above the Standard-mode keypad."
+        },
+        {
+          "id": "b14-value-08",
+          "category": "text_value",
+          "target": "Current Calculator display value",
+          "point": {
+            "x": 40,
+            "y": 179
+          },
+          "candidate_bbox": {
+            "x": 18,
+            "y": 145,
+            "w": 44,
+            "h": 65
+          },
+          "target_bbox": {
+            "x": 18,
+            "y": 145,
+            "w": 44,
+            "h": 65
+          },
+          "expected_text": "7",
+          "expected": "condition_not_met",
+          "reason": "当前大号显示值清楚为 0，没有显示 7。",
+          "appearance": "A large black number in the calculator display area.",
+          "container": "The display above the Standard-mode keypad."
+        }
+      ]
+    },
+    {
+      "catalog_index": 15,
+      "source_path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260909-notepad-01\\artifacts\\screenshots\\-03faf5c9__fresh-native-acceptance__notepad-initial__full-window__20260909-042130-077500.png",
+      "sha256": "f574ebd225eea72b1f89665722dda5858c4b96a771138211aeb53837687e30ea",
+      "original_size": {
+        "width": 1487,
+        "height": 1001
+      },
+      "capture_id": "-03faf5c9__fresh-native-acceptance__notepad-initial__full-window__20260909-042130-077500.png",
+      "session_id": "20260909-notepad-01",
+      "group_id": "windows-notepad",
+      "status": "preannotated",
+      "cases": [
+        {
+          "id": "b15-field-01",
+          "category": "input_field",
+          "target": "Notepad document editing area",
+          "point": {
+            "x": 600,
+            "y": 400
+          },
+          "candidate_bbox": {
+            "x": 9,
+            "y": 51,
+            "w": 1454,
+            "h": 904
+          },
+          "target_bbox": {
+            "x": 9,
+            "y": 51,
+            "w": 1454,
+            "h": 904
+          },
+          "condition": "The point is inside the document text editing area.",
+          "expected": "condition_met",
+          "reason": "点位于菜单栏下方的大块白色编辑区，左上角可见文本插入光标。",
+          "appearance": "A large blank white editing area below the menu bar, with a caret at the upper-left.",
+          "container": "The untitled Notepad document window."
+        },
+        {
+          "id": "b15-field-02",
+          "category": "input_field",
+          "target": "Notepad document editing area",
+          "point": {
+            "x": 33,
+            "y": 39
+          },
+          "candidate_bbox": {
+            "x": 12,
+            "y": 30,
+            "w": 44,
+            "h": 18
+          },
+          "target_bbox": {
+            "x": 9,
+            "y": 51,
+            "w": 1454,
+            "h": 904
+          },
+          "condition": "The point is inside the document text editing area.",
+          "expected": "condition_not_met",
+          "reason": "点及候选框位于顶部 文件(F) 菜单项，处于文本编辑区上方。",
+          "appearance": "A large blank white editing area below the menu bar, with a caret at the upper-left.",
+          "container": "The untitled Notepad document window."
+        },
+        {
+          "id": "b15-graphic-03",
+          "category": "graphic",
+          "target": "Notepad Edit menu",
+          "point": {
+            "x": 86,
+            "y": 39
+          },
+          "candidate_bbox": {
+            "x": 65,
+            "y": 30,
+            "w": 44,
+            "h": 18
+          },
+          "target_bbox": {
+            "x": 65,
+            "y": 30,
+            "w": 44,
+            "h": 18
+          },
+          "condition": "The point is on the Edit menu item.",
+          "expected": "condition_met",
+          "reason": "点落在顶部 编辑(E) 菜单文字内，该菜单位于文件和格式之间。",
+          "appearance": "The menu item labeled 编辑(E), between 文件(F) and 格式(O).",
+          "container": "The Notepad menu bar beneath the title bar."
+        },
+        {
+          "id": "b15-graphic-04",
+          "category": "graphic",
+          "target": "Notepad Edit menu",
+          "point": {
+            "x": 140,
+            "y": 39
+          },
+          "candidate_bbox": {
+            "x": 116,
+            "y": 30,
+            "w": 49,
+            "h": 18
+          },
+          "target_bbox": {
+            "x": 65,
+            "y": 30,
+            "w": 44,
+            "h": 18
+          },
+          "condition": "The point is on the Edit menu item.",
+          "expected": "condition_not_met",
+          "reason": "点及候选框落在相邻 格式(O) 菜单项，而不是左侧 编辑(E)。",
+          "appearance": "The menu item labeled 编辑(E), between 文件(F) and 格式(O).",
+          "container": "The Notepad menu bar beneath the title bar."
+        },
+        {
+          "id": "b15-value-05",
+          "category": "text_value",
+          "target": "Current Notepad document text",
+          "point": {
+            "x": 600,
+            "y": 400
+          },
+          "candidate_bbox": {
+            "x": 9,
+            "y": 51,
+            "w": 1454,
+            "h": 904
+          },
+          "target_bbox": {
+            "x": 9,
+            "y": 51,
+            "w": 1454,
+            "h": 904
+          },
+          "expected_text": "",
+          "expected": "condition_met",
+          "reason": "整块可见文档编辑区为空白，仅左上有插入光标，没有已输入字符。",
+          "appearance": "A large blank white editing area below the menu bar, with a caret at the upper-left.",
+          "container": "The untitled Notepad document window."
+        },
+        {
+          "id": "b15-value-06",
+          "category": "text_value",
+          "target": "Current Notepad document text",
+          "point": {
+            "x": 600,
+            "y": 400
+          },
+          "candidate_bbox": {
+            "x": 9,
+            "y": 51,
+            "w": 1454,
+            "h": 904
+          },
+          "target_bbox": {
+            "x": 9,
+            "y": 51,
+            "w": 1454,
+            "h": 904
+          },
+          "expected_text": "Hello",
+          "expected": "condition_not_met",
+          "reason": "文档编辑区为空白，未出现 Hello 文字。",
+          "appearance": "A large blank white editing area below the menu bar, with a caret at the upper-left.",
+          "container": "The untitled Notepad document window."
+        },
+        {
+          "id": "b15-page-07",
+          "category": "page_result",
+          "target": "Empty untitled Notepad document",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The untitled Notepad document is open with an empty editing area.",
+          "expected": "condition_met",
+          "reason": "标题栏显示无标题记事本，编辑区空白，状态栏位于第 1 行第 1 列。",
+          "appearance": "An untitled Notepad window with a blank editing pane.",
+          "container": "The full Notepad application window."
+        },
+        {
+          "id": "b15-page-08",
+          "category": "page_result",
+          "target": "Notepad document containing Hello",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The Notepad document visibly contains the text Hello.",
+          "expected": "condition_not_met",
+          "reason": "可见编辑区没有任何正文字符，标题为无标题，不能视为已经输入 Hello。",
+          "appearance": "A Notepad document with visible Hello text in its editing pane.",
+          "container": "The full Notepad application window."
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "source_sha256_matches_catalog": true,
+    "original_images_viewed": 8,
+    "annotated_images": 6,
+    "skipped_images": 2,
+    "case_count": 48,
+    "expected_counts": {
+      "condition_met": 24,
+      "condition_not_met": 24,
+      "evidence_insufficient": 0
+    },
+    "coordinates_in_original_bounds": true,
+    "candidate_points_inside_candidate_boxes": true,
+    "negative_control_boxes_distinct_from_target_boxes": true,
+    "production_files_modified": false,
+    "api_calls": 0,
+    "desktop_actions": 0
+  }
+}

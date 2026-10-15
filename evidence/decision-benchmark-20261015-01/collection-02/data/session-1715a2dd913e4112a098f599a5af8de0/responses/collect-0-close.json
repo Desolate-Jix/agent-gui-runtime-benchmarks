@@ -1,0 +1,19 @@
+{
+  "command": {
+    "kind": "close_launched_window",
+    "handle": 395768,
+    "process_id": 82388
+  },
+  "received_at": "2026-10-14T11:42:03.474568+00:00",
+  "started_at": "2026-10-14T11:42:03.474568+00:00",
+  "result": {
+    "status": "window_closed",
+    "success": true,
+    "close_requested": true,
+    "automatic_retry_allowed": false
+  },
+  "status": "returned",
+  "finished_at": "2026-10-14T11:42:03.536569+00:00",
+  "command_wall_ms": 61.799,
+  "response_available_at": "2026-10-14T11:42:03.536569+00:00"
+}

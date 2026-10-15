@@ -1,0 +1,63 @@
+{
+  "request_id": "collect-14-launch",
+  "received_at": "2026-10-14T12:49:11.108603+00:00",
+  "started_at": "2026-10-14T12:49:11.108603+00:00",
+  "preparation_preview": {
+    "source": "app_catalog",
+    "app_id": "discovered-70f1f5a29dad0e661be3e70e4f09eca5",
+    "name": "ubuntu",
+    "working_directory": "c:\\program files (x86)\\microsoft\\edge\\application",
+    "url": null,
+    "command": [
+      "c:\\program files (x86)\\microsoft\\edge\\application\\msedge.exe",
+      "--user-data-dir=D:\\AgentGUI-Projects\\test-profiles\\amadeus-codex-runtime-edge",
+      "--profile-directory=Default",
+      "--new-window",
+      "--window-size=1280,900",
+      "https://ubuntu.com/"
+    ],
+    "executable_path": "c:\\program files (x86)\\microsoft\\edge\\application\\msedge.exe",
+    "catalog_entry_sha256": "6138535048fcf56424fb84a6e7d0da7790a99236185897721eea8b2ab7e585e0",
+    "executable_sha256": "4bb4545b4ab80a3cf463a588ce570ca42de38fe6db16e3baeb0798ac75b4648b",
+    "contract_version": "native_window_preparation_v1",
+    "preparation_id": "c02266c8-ad36-45c3-8535-cbb36856ccc3",
+    "mode": "launch",
+    "identity": null,
+    "expires_in_seconds": 60
+  },
+  "result": {
+    "status": "launched_window_ready",
+    "process_id": 30812,
+    "window": {
+      "handle": 1835386,
+      "process_id": 30812,
+      "title": "无标题 - 个人 - Microsoft​ Edge"
+    },
+    "launch_ownership": {
+      "contract_version": "launched_window_ownership.v1",
+      "newly_launched": true,
+      "identity": {
+        "contract_version": "windows_native_identity_observation_v1",
+        "provider": "windows_native_identity",
+        "status": "observed",
+        "target_window_handle": 1835386,
+        "process_id": 30812,
+        "process_create_time": 1791982151.1361704,
+        "executable_path": "c:\\program files (x86)\\microsoft\\edge\\application\\msedge.exe"
+      }
+    },
+    "presentation_wait_ms": 500,
+    "content_ready": null,
+    "next_action": "capture_and_inspect_current_content"
+  },
+  "status": "returned",
+  "finished_at": "2026-10-14T12:49:12.118640+00:00",
+  "command_wall_ms": 1010.084,
+  "response_available_at": "2026-10-14T12:49:12.118640+00:00",
+  "operation_succeeded": true,
+  "task_effect_verified": false,
+  "automatic_retry_allowed": false,
+  "original_request_id": "collect-14-launch",
+  "current_status_request_id": null,
+  "client_state": "terminal"
+}

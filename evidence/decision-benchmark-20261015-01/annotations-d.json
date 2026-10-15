@@ -1,0 +1,1494 @@
+{
+  "schema": "decision_benchmark_preannotations.v1",
+  "annotator": "Sol",
+  "review_status": "pending_main_image_review",
+  "annotation_basis": "Direct inspection of original screenshots only; no historical model responses were read. These are Sol pre-annotations, not human ground truth.",
+  "catalog_path": "D:/AgentGUI-Projects/evidence/decision-benchmark-20261015-01/new-catalog.json",
+  "coordinate_space": "original_image_pixels",
+  "notes": [
+    "仅预标注 new-catalog 索引 10..19，每张原图均先由 view_image 查看；只读 retained-sources 原图。",
+    "source_path 使用 catalog.path；sha256、original_size、session_id、capture_id、group_id 沿用对应 catalog 值，包括原有的 null capture_id。",
+    "expected、reason、target_bbox 为待 Main 逐图复核的标注真值，不得进入模型请求。所有坐标使用原图像素。",
+    "每图 6 条，正负各 3 条；Kernel 与 W3C 首屏没有合适输入框，其输入框题改为图形链接或按钮题。",
+    "控件负例 candidate_bbox 覆盖真实错误控件，point 在该候选框内；正确目标单独记录在 target_bbox。",
+    "page_result 使用完整可见页面或网页内容区域判断，point 与 bbox 均为 null。控件题可用候选局部图加上下文，但裁剪变换需由 suite loader 明确保存。",
+    "网页中的代码示例、宣传图片或视频内容不作为原生可操作输入框；本批未把其中控件作为正例。",
+    "本批均为已加载的公开网页，未发现需跳过的私密、未加载或纯反机器人页面；没有强造 evidence_insufficient。",
+    "本文件为 AI 预标注，不是人工真值；同族和同次近重复截图不得因合并不同批次而分入不同 split。"
+  ],
+  "images": [
+    {
+      "catalog_index": 10,
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\archlinux-capture-1.png",
+      "sha256": "47916419b924a72e91a2f703ede377173b9458d0fbb3a32edfeafa11d1f55cfd",
+      "original_size": {
+        "width": 1264,
+        "height": 892
+      },
+      "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+      "capture_id": null,
+      "group_id": "archlinux",
+      "status": "preannotated",
+      "cases": [
+        {
+          "id": "d10-field-01",
+          "category": "input_field",
+          "target": "Arch Linux package search input",
+          "point": {
+            "x": 1135,
+            "y": 190
+          },
+          "candidate_bbox": {
+            "x": 1069,
+            "y": 178,
+            "w": 134,
+            "h": 23
+          },
+          "target_bbox": {
+            "x": 1069,
+            "y": 178,
+            "w": 134,
+            "h": 23
+          },
+          "condition": "The point is inside the Package Search text input.",
+          "expected": "condition_met",
+          "reason": "点在右上 Package Search 蓝色面板中的白色输入框内。",
+          "appearance": "A small white single-line input on the right side of a cyan Package Search panel.",
+          "container": "The top of the Arch Linux home-page right sidebar."
+        },
+        {
+          "id": "d10-field-02",
+          "category": "input_field",
+          "target": "Arch Linux package search input",
+          "point": {
+            "x": 1080,
+            "y": 257
+          },
+          "candidate_bbox": {
+            "x": 1051,
+            "y": 246,
+            "w": 59,
+            "h": 21
+          },
+          "target_bbox": {
+            "x": 1069,
+            "y": 178,
+            "w": 134,
+            "h": 23
+          },
+          "condition": "The point is inside the Package Search text input.",
+          "expected": "condition_not_met",
+          "reason": "点及候选框在下方 Recent Updates 标题旁的 more 链接内，未落入上方白色输入框。",
+          "appearance": "A small white single-line input on the right side of a cyan Package Search panel.",
+          "container": "The top of the Arch Linux home-page right sidebar."
+        },
+        {
+          "id": "d10-graphic-03",
+          "category": "graphic",
+          "target": "Arch Linux Download navigation link",
+          "point": {
+            "x": 1180,
+            "y": 115
+          },
+          "candidate_bbox": {
+            "x": 1141,
+            "y": 101,
+            "w": 81,
+            "h": 27
+          },
+          "target_bbox": {
+            "x": 1141,
+            "y": 101,
+            "w": 81,
+            "h": 27
+          },
+          "condition": "The point is on the Download navigation link.",
+          "expected": "condition_met",
+          "reason": "点在顶部深色导航栏最右侧的 Download 链接文字上。",
+          "appearance": "The Download text link at the far right of the dark navigation bar.",
+          "container": "The dark Arch Linux top navigation bar."
+        },
+        {
+          "id": "d10-graphic-04",
+          "category": "graphic",
+          "target": "Arch Linux Download navigation link",
+          "point": {
+            "x": 879,
+            "y": 115
+          },
+          "candidate_bbox": {
+            "x": 861,
+            "y": 101,
+            "w": 37,
+            "h": 27
+          },
+          "target_bbox": {
+            "x": 1141,
+            "y": 101,
+            "w": 81,
+            "h": 27
+          },
+          "condition": "The point is on the Download navigation link.",
+          "expected": "condition_not_met",
+          "reason": "点及候选框落在同一导航栏的 Wiki 链接，Download 在其右侧更远处。",
+          "appearance": "The Download text link at the far right of the dark navigation bar.",
+          "container": "The dark Arch Linux top navigation bar."
+        },
+        {
+          "id": "d10-page-05",
+          "category": "page_result",
+          "target": "Arch Linux home page",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The page shows the Arch Linux introduction, Latest News, and Package Search sidebar.",
+          "expected": "condition_met",
+          "reason": "主区显示 A simple, lightweight distribution 和 Latest News，右侧有 Package Search 与 Recent Updates。",
+          "appearance": "An Arch Linux introduction above a Latest News list, with a package-search sidebar.",
+          "container": "The Arch Linux page main content."
+        },
+        {
+          "id": "d10-page-06",
+          "category": "page_result",
+          "target": "Arch Linux package search results",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The main content shows a package-search results table for a submitted query.",
+          "expected": "condition_not_met",
+          "reason": "当前主区是发行版介绍和新闻列表，未显示已提交查询的包搜索结果表。",
+          "appearance": "A package-search results table listing packages matching a query.",
+          "container": "The Arch Linux page main content."
+        }
+      ]
+    },
+    {
+      "catalog_index": 11,
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\kernel-capture-1.png",
+      "sha256": "0a6bba8cc080543629bd3be01776a29ac54ef04f281ed80a85d6d0a8a8e471b1",
+      "original_size": {
+        "width": 1264,
+        "height": 892
+      },
+      "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+      "capture_id": null,
+      "group_id": "kernel",
+      "status": "preannotated",
+      "cases": [
+        {
+          "id": "d11-graphic-01",
+          "category": "graphic",
+          "target": "Linux kernel latest release download button",
+          "point": {
+            "x": 884,
+            "y": 353
+          },
+          "candidate_bbox": {
+            "x": 780,
+            "y": 302,
+            "w": 209,
+            "h": 103
+          },
+          "target_bbox": {
+            "x": 780,
+            "y": 302,
+            "w": 209,
+            "h": 103
+          },
+          "condition": "The point is on the yellow Latest Release download button.",
+          "expected": "condition_met",
+          "reason": "点位于黄色 Latest Release 按钮内，可见版本号和向下箭头。",
+          "appearance": "A large yellow Latest Release download button displaying version 7.2.10 and a down-arrow icon.",
+          "container": "The upper-right area of the Linux Kernel Archives release panel."
+        },
+        {
+          "id": "d11-graphic-02",
+          "category": "graphic",
+          "target": "Linux kernel latest release download button",
+          "point": {
+            "x": 277,
+            "y": 341
+          },
+          "candidate_bbox": {
+            "x": 256,
+            "y": 331,
+            "w": 44,
+            "h": 22
+          },
+          "target_bbox": {
+            "x": 780,
+            "y": 302,
+            "w": 209,
+            "h": 103
+          },
+          "condition": "The point is on the yellow Latest Release download button.",
+          "expected": "condition_not_met",
+          "reason": "点及候选框位于左侧 Protocol 列中的 HTTP 链接，不在右侧黄色最新版本按钮上。",
+          "appearance": "A large yellow Latest Release download button displaying version 7.2.10 and a down-arrow icon.",
+          "container": "The upper-right area of the Linux Kernel Archives release panel."
+        },
+        {
+          "id": "d11-graphic-03",
+          "category": "graphic",
+          "target": "Linux Kernel Archives Releases navigation link",
+          "point": {
+            "x": 594,
+            "y": 204
+          },
+          "candidate_bbox": {
+            "x": 560,
+            "y": 190,
+            "w": 69,
+            "h": 28
+          },
+          "target_bbox": {
+            "x": 560,
+            "y": 190,
+            "w": 69,
+            "h": 28
+          },
+          "condition": "The point is on the Releases navigation link.",
+          "expected": "condition_met",
+          "reason": "点在标题下方导航中的 Releases 文字上。",
+          "appearance": "The Releases text link in the header navigation.",
+          "container": "The navigation row beneath The Linux Kernel Archives heading."
+        },
+        {
+          "id": "d11-graphic-04",
+          "category": "graphic",
+          "target": "Linux Kernel Archives Releases navigation link",
+          "point": {
+            "x": 702,
+            "y": 204
+          },
+          "candidate_bbox": {
+            "x": 663,
+            "y": 190,
+            "w": 82,
+            "h": 28
+          },
+          "target_bbox": {
+            "x": 560,
+            "y": 190,
+            "w": 69,
+            "h": 28
+          },
+          "condition": "The point is on the Releases navigation link.",
+          "expected": "condition_not_met",
+          "reason": "点及候选框落在右邻 Signatures 链接，不是 Releases。",
+          "appearance": "The Releases text link in the header navigation.",
+          "container": "The navigation row beneath The Linux Kernel Archives heading."
+        },
+        {
+          "id": "d11-page-05",
+          "category": "page_result",
+          "target": "Linux Kernel Archives release overview",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The page displays a Latest Release button and a table of mainline, stable, and longterm kernel versions.",
+          "expected": "condition_met",
+          "reason": "截图有 Latest Release 黄色按钮，以及 mainline、stable、longterm 多行版本和下载链接。",
+          "appearance": "A kernel release overview with version rows and download links.",
+          "container": "The Linux Kernel Archives main content."
+        },
+        {
+          "id": "d11-page-06",
+          "category": "page_result",
+          "target": "Linux kernel source-code file browser",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The main content is a source-code directory browser with a file and folder listing.",
+          "expected": "condition_not_met",
+          "reason": "主区为内核版本与 tarball、patch 等下载链接表，没有源码目录的文件夹和文件列表。",
+          "appearance": "A source-code browser listing files and directories.",
+          "container": "The Linux Kernel Archives main content."
+        }
+      ]
+    },
+    {
+      "catalog_index": 12,
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\gnu-capture-1.png",
+      "sha256": "ef1c419d2e8c4c4ee9a5f2386f69cad6fbb973deb2a16545abcfee651963049f",
+      "original_size": {
+        "width": 1264,
+        "height": 892
+      },
+      "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+      "capture_id": null,
+      "group_id": "gnu",
+      "status": "preannotated",
+      "cases": [
+        {
+          "id": "d12-field-01",
+          "category": "input_field",
+          "target": "GNU supporter email address input",
+          "point": {
+            "x": 260,
+            "y": 102
+          },
+          "candidate_bbox": {
+            "x": 168,
+            "y": 87,
+            "w": 193,
+            "h": 30
+          },
+          "target_bbox": {
+            "x": 168,
+            "y": 87,
+            "w": 193,
+            "h": 30
+          },
+          "condition": "The point is inside the supporter email address input.",
+          "expected": "condition_met",
+          "reason": "点在顶部 email address 白色单行输入框内，右侧有独立注册按钮。",
+          "appearance": "A white email-address input in the supporter signup strip at the top.",
+          "container": "The GNU home-page supporter signup strip above the logo."
+        },
+        {
+          "id": "d12-field-02",
+          "category": "input_field",
+          "target": "GNU supporter email address input",
+          "point": {
+            "x": 387,
+            "y": 102
+          },
+          "candidate_bbox": {
+            "x": 364,
+            "y": 87,
+            "w": 47,
+            "h": 30
+          },
+          "target_bbox": {
+            "x": 168,
+            "y": 87,
+            "w": 193,
+            "h": 30
+          },
+          "condition": "The point is inside the supporter email address input.",
+          "expected": "condition_not_met",
+          "reason": "点及候选框落在右侧注册按钮，不是左侧 email address 文本框。",
+          "appearance": "A white email-address input in the supporter signup strip at the top.",
+          "container": "The GNU home-page supporter signup strip above the logo."
+        },
+        {
+          "id": "d12-graphic-03",
+          "category": "graphic",
+          "target": "GNU site search icon",
+          "point": {
+            "x": 1030,
+            "y": 161
+          },
+          "candidate_bbox": {
+            "x": 1014,
+            "y": 144,
+            "w": 33,
+            "h": 35
+          },
+          "target_bbox": {
+            "x": 1014,
+            "y": 144,
+            "w": 33,
+            "h": 35
+          },
+          "condition": "The point is on the site search magnifying-glass icon.",
+          "expected": "condition_met",
+          "reason": "点位于 GNU 标志右侧的黑色放大镜图标。",
+          "appearance": "A black magnifying-glass search icon to the right of the GNU logo.",
+          "container": "The GNU page header above the red navigation bar."
+        },
+        {
+          "id": "d12-graphic-04",
+          "category": "graphic",
+          "target": "GNU site search icon",
+          "point": {
+            "x": 1114,
+            "y": 161
+          },
+          "candidate_bbox": {
+            "x": 1092,
+            "y": 144,
+            "w": 43,
+            "h": 35
+          },
+          "target_bbox": {
+            "x": 1014,
+            "y": 144,
+            "w": 33,
+            "h": 35
+          },
+          "condition": "The point is on the site search magnifying-glass icon.",
+          "expected": "condition_not_met",
+          "reason": "点及候选框落在更右侧的语言翻译图标，黑色搜索放大镜位于其左侧。",
+          "appearance": "A black magnifying-glass search icon to the right of the GNU logo.",
+          "container": "The GNU page header above the red navigation bar."
+        },
+        {
+          "id": "d12-page-05",
+          "category": "page_result",
+          "target": "Chinese GNU operating system home page",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The GNU home page is displayed in Chinese with the GNU operating-system heading and GNU introduction.",
+          "expected": "condition_met",
+          "reason": "页眉有 GNU 操作系统，正文可见 GNU 是什么，且导航和介绍主要使用中文。",
+          "appearance": "A Chinese GNU home page with the GNU logo, red navigation bar, and introductory content.",
+          "container": "The GNU web page."
+        },
+        {
+          "id": "d12-page-06",
+          "category": "page_result",
+          "target": "Full GNU General Public License document",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The main content displays the full text of the GNU General Public License with numbered legal sections.",
+          "expected": "condition_not_met",
+          "reason": "当前显示 GNU 首页的介绍、视频和导航，并非带编号条款的 GPL 完整文本页面。",
+          "appearance": "A license document with numbered GPL sections.",
+          "container": "The GNU page main content."
+        }
+      ]
+    },
+    {
+      "catalog_index": 13,
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\w3c-capture-1.png",
+      "sha256": "3def4f364d38d2d8259286724b84c43b9658a65250e9d8fb8bd49467559e1d19",
+      "original_size": {
+        "width": 1264,
+        "height": 892
+      },
+      "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+      "capture_id": null,
+      "group_id": "w3c",
+      "status": "preannotated",
+      "cases": [
+        {
+          "id": "d13-graphic-01",
+          "category": "graphic",
+          "target": "W3C main Menu button",
+          "point": {
+            "x": 1166,
+            "y": 210
+          },
+          "candidate_bbox": {
+            "x": 1102,
+            "y": 193,
+            "w": 80,
+            "h": 34
+          },
+          "target_bbox": {
+            "x": 1102,
+            "y": 193,
+            "w": 80,
+            "h": 34
+          },
+          "condition": "The point is on the W3C Menu button with the hamburger icon.",
+          "expected": "condition_met",
+          "reason": "点位于页面右上 Menu 旁的三条横线图标内。",
+          "appearance": "A Menu label followed by three horizontal black lines.",
+          "container": "The upper-right corner of the W3C page header."
+        },
+        {
+          "id": "d13-graphic-02",
+          "category": "graphic",
+          "target": "W3C main Menu button",
+          "point": {
+            "x": 170,
+            "y": 510
+          },
+          "candidate_bbox": {
+            "x": 66,
+            "y": 487,
+            "w": 209,
+            "h": 46
+          },
+          "target_bbox": {
+            "x": 1102,
+            "y": 193,
+            "w": 80,
+            "h": 34
+          },
+          "condition": "The point is on the W3C Menu button with the hamburger icon.",
+          "expected": "condition_not_met",
+          "reason": "点及候选框位于主介绍下方的 Read more about W3C 按钮，不是右上菜单按钮。",
+          "appearance": "A Menu label followed by three horizontal black lines.",
+          "container": "The upper-right corner of the W3C page header."
+        },
+        {
+          "id": "d13-graphic-03",
+          "category": "graphic",
+          "target": "Read more about W3C button",
+          "point": {
+            "x": 170,
+            "y": 510
+          },
+          "candidate_bbox": {
+            "x": 66,
+            "y": 487,
+            "w": 209,
+            "h": 46
+          },
+          "target_bbox": {
+            "x": 66,
+            "y": 487,
+            "w": 209,
+            "h": 46
+          },
+          "condition": "The point is on the Read more about W3C button.",
+          "expected": "condition_met",
+          "reason": "点落在介绍文字下方带蓝色圆角边框的 Read more about W3C 按钮。",
+          "appearance": "A blue outlined pill-shaped button labeled Read more about W3C.",
+          "container": "The Making the web work introductory section."
+        },
+        {
+          "id": "d13-graphic-04",
+          "category": "graphic",
+          "target": "Read more about W3C button",
+          "point": {
+            "x": 186,
+            "y": 401
+          },
+          "candidate_bbox": {
+            "x": 68,
+            "y": 389,
+            "w": 241,
+            "h": 24
+          },
+          "target_bbox": {
+            "x": 66,
+            "y": 487,
+            "w": 209,
+            "h": 46
+          },
+          "condition": "The point is on the Read more about W3C button.",
+          "expected": "condition_not_met",
+          "reason": "点及候选框落在段落中的 standards and guidelines 文本链接，正确按钮在下方独立边框内。",
+          "appearance": "A blue outlined pill-shaped button labeled Read more about W3C.",
+          "container": "The Making the web work introductory section."
+        },
+        {
+          "id": "d13-page-05",
+          "category": "page_result",
+          "target": "W3C home page",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The page shows Making the web work and an introduction to the World Wide Web Consortium.",
+          "expected": "condition_met",
+          "reason": "主标题为 Making the web work，正文介绍 W3C 制定标准和指南，旁边是 W3C 插画。",
+          "appearance": "A W3C introductory landing page with the Making the web work heading.",
+          "container": "The W3C page main content."
+        },
+        {
+          "id": "d13-page-06",
+          "category": "page_result",
+          "target": "W3C technical specification document",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The main content is a technical specification with a specification title, status, and numbered sections.",
+          "expected": "condition_not_met",
+          "reason": "当前是 W3C 首页简介和参与者介绍，没有技术规范文档的标题、状态和编号正文结构。",
+          "appearance": "A technical specification document with status information and numbered sections.",
+          "container": "The W3C page main content."
+        }
+      ]
+    },
+    {
+      "catalog_index": 14,
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\w3schools-capture-1.png",
+      "sha256": "b97d85caf822a9fbaed9f188da18eaa32acf4100964501990f23df6e109f3d12",
+      "original_size": {
+        "width": 1264,
+        "height": 892
+      },
+      "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+      "capture_id": null,
+      "group_id": "w3schools",
+      "status": "preannotated",
+      "cases": [
+        {
+          "id": "d14-field-01",
+          "category": "input_field",
+          "target": "W3Schools header search input",
+          "point": {
+            "x": 600,
+            "y": 109
+          },
+          "candidate_bbox": {
+            "x": 530,
+            "y": 90,
+            "w": 176,
+            "h": 37
+          },
+          "target_bbox": {
+            "x": 530,
+            "y": 90,
+            "w": 176,
+            "h": 37
+          },
+          "condition": "The point is inside the W3Schools header search input.",
+          "expected": "condition_met",
+          "reason": "点在白色页眉中的圆角 Search 输入框内。",
+          "appearance": "A rounded white search input with a Search placeholder and a magnifying-glass icon.",
+          "container": "The W3Schools white header between Certificates and the vertical three-dot menu."
+        },
+        {
+          "id": "d14-field-02",
+          "category": "input_field",
+          "target": "W3Schools header search input",
+          "point": {
+            "x": 1067,
+            "y": 109
+          },
+          "candidate_bbox": {
+            "x": 1008,
+            "y": 88,
+            "w": 118,
+            "h": 40
+          },
+          "target_bbox": {
+            "x": 530,
+            "y": 90,
+            "w": 176,
+            "h": 37
+          },
+          "condition": "The point is inside the W3Schools header search input.",
+          "expected": "condition_not_met",
+          "reason": "点及候选框落在紫色 Paid Courses 按钮上，不是左侧圆角搜索框。",
+          "appearance": "A rounded white search input with a Search placeholder and a magnifying-glass icon.",
+          "container": "The W3Schools white header between Certificates and the vertical three-dot menu."
+        },
+        {
+          "id": "d14-graphic-03",
+          "category": "graphic",
+          "target": "W3Schools header Sign In button",
+          "point": {
+            "x": 1187,
+            "y": 109
+          },
+          "candidate_bbox": {
+            "x": 1140,
+            "y": 88,
+            "w": 95,
+            "h": 40
+          },
+          "target_bbox": {
+            "x": 1140,
+            "y": 88,
+            "w": 95,
+            "h": 40
+          },
+          "condition": "The point is on the Sign In button in the top header.",
+          "expected": "condition_met",
+          "reason": "点在页眉最右端绿色 Sign In 按钮内，位于紫色 Paid Courses 按钮右侧。",
+          "appearance": "The green Sign In button at the far right of the white header.",
+          "container": "The upper-right part of the W3Schools white header."
+        },
+        {
+          "id": "d14-graphic-04",
+          "category": "graphic",
+          "target": "W3Schools header Sign In button",
+          "point": {
+            "x": 1067,
+            "y": 109
+          },
+          "candidate_bbox": {
+            "x": 1008,
+            "y": 88,
+            "w": 118,
+            "h": 40
+          },
+          "target_bbox": {
+            "x": 1140,
+            "y": 88,
+            "w": 95,
+            "h": 40
+          },
+          "condition": "The point is on the Sign In button in the top header.",
+          "expected": "condition_not_met",
+          "reason": "点及候选框位于紫色 Paid Courses 按钮，目标是右侧绿色 Sign In 按钮。",
+          "appearance": "The green Sign In button at the far right of the white header.",
+          "container": "The upper-right part of the W3Schools white header."
+        },
+        {
+          "id": "d14-page-05",
+          "category": "page_result",
+          "target": "W3Schools learning home page",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The page shows the Learn to Code landing section and a row of tutorial-topic navigation links.",
+          "expected": "condition_met",
+          "reason": "大标题为 Learn to Code，顶部可见 HTML、CSS、JAVASCRIPT 等学习主题导航。",
+          "appearance": "A dark hero section headed Learn to Code below tutorial navigation.",
+          "container": "The W3Schools page main content."
+        },
+        {
+          "id": "d14-page-06",
+          "category": "page_result",
+          "target": "W3Schools HTML tutorial lesson",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The main content is an HTML tutorial lesson with lesson content and a chapter navigation sidebar.",
+          "expected": "condition_not_met",
+          "reason": "当前显示 Learn to Code 首页宣传区，没有 HTML 课程正文或章节侧栏。",
+          "appearance": "An HTML lesson page with a chapter sidebar and tutorial content.",
+          "container": "The W3Schools page main content."
+        }
+      ]
+    },
+    {
+      "catalog_index": 15,
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\npm-capture-1.png",
+      "sha256": "a568c12197678db0d1777f148d06bb2967d5ff2aa7c1e8a1a386e0ce74950469",
+      "original_size": {
+        "width": 1264,
+        "height": 892
+      },
+      "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+      "capture_id": null,
+      "group_id": "npm",
+      "status": "preannotated",
+      "cases": [
+        {
+          "id": "d15-field-01",
+          "category": "input_field",
+          "target": "npm package search input",
+          "point": {
+            "x": 450,
+            "y": 254
+          },
+          "candidate_bbox": {
+            "x": 138,
+            "y": 228,
+            "w": 728,
+            "h": 52
+          },
+          "target_bbox": {
+            "x": 138,
+            "y": 228,
+            "w": 728,
+            "h": 52
+          },
+          "condition": "The point is inside the Search packages text input.",
+          "expected": "condition_met",
+          "reason": "点在 npm 标志右侧的浅灰色大搜索输入区域中。",
+          "appearance": "A wide light-gray package-search input with a magnifying-glass icon and Search packages placeholder.",
+          "container": "The npm search row below the top navigation links."
+        },
+        {
+          "id": "d15-field-02",
+          "category": "input_field",
+          "target": "npm package search input",
+          "point": {
+            "x": 925,
+            "y": 254
+          },
+          "candidate_bbox": {
+            "x": 866,
+            "y": 228,
+            "w": 116,
+            "h": 52
+          },
+          "target_bbox": {
+            "x": 138,
+            "y": 228,
+            "w": 728,
+            "h": 52
+          },
+          "condition": "The point is inside the Search packages text input.",
+          "expected": "condition_not_met",
+          "reason": "点及候选框落在输入区域右端的深色 Search 按钮内，未处于文本输入区。",
+          "appearance": "A wide light-gray package-search input with a magnifying-glass icon and Search packages placeholder.",
+          "container": "The npm search row below the top navigation links."
+        },
+        {
+          "id": "d15-graphic-03",
+          "category": "graphic",
+          "target": "npm package Search button",
+          "point": {
+            "x": 925,
+            "y": 254
+          },
+          "candidate_bbox": {
+            "x": 866,
+            "y": 228,
+            "w": 116,
+            "h": 52
+          },
+          "target_bbox": {
+            "x": 866,
+            "y": 228,
+            "w": 116,
+            "h": 52
+          },
+          "condition": "The point is on the package Search button.",
+          "expected": "condition_met",
+          "reason": "点在深色矩形 Search 按钮中央，该按钮紧邻 Search packages 输入框。",
+          "appearance": "A dark rectangular Search button at the right end of the package-search input.",
+          "container": "The npm search row below the top navigation links."
+        },
+        {
+          "id": "d15-graphic-04",
+          "category": "graphic",
+          "target": "npm package Search button",
+          "point": {
+            "x": 1070,
+            "y": 253
+          },
+          "candidate_bbox": {
+            "x": 1014,
+            "y": 228,
+            "w": 112,
+            "h": 50
+          },
+          "target_bbox": {
+            "x": 866,
+            "y": 228,
+            "w": 116,
+            "h": 52
+          },
+          "condition": "The point is on the package Search button.",
+          "expected": "condition_not_met",
+          "reason": "点及候选框落在右侧白色边框 Sign Up 按钮，不是深色 Search 按钮。",
+          "appearance": "A dark rectangular Search button at the right end of the package-search input.",
+          "container": "The npm search row below the top navigation links."
+        },
+        {
+          "id": "d15-page-05",
+          "category": "page_result",
+          "target": "npm home page",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The page shows the Build amazing things hero below the npm package-search bar.",
+          "expected": "condition_met",
+          "reason": "大面积彩色主视觉中清楚显示 Build amazing things，上方是 npm 包搜索栏。",
+          "appearance": "A colorful landing-page hero headed Build amazing things.",
+          "container": "The npm main page."
+        },
+        {
+          "id": "d15-page-06",
+          "category": "page_result",
+          "target": "npm package search results",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The main content displays a list of package search results with package names and descriptions.",
+          "expected": "condition_not_met",
+          "reason": "当前主区为 Build amazing things 首页宣传文字，没有包查询结果列表。",
+          "appearance": "A package-results list with package names and descriptions.",
+          "container": "The npm page main content."
+        }
+      ]
+    },
+    {
+      "catalog_index": 16,
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\pythonhome-capture-1.png",
+      "sha256": "b207b5f68639b65b288e55e2608b67259ca3df23f481ffb2ac608d2e49470682",
+      "original_size": {
+        "width": 1264,
+        "height": 892
+      },
+      "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+      "capture_id": null,
+      "group_id": "pythonhome",
+      "status": "preannotated",
+      "cases": [
+        {
+          "id": "d16-field-01",
+          "category": "input_field",
+          "target": "Python.org site search input",
+          "point": {
+            "x": 935,
+            "y": 189
+          },
+          "candidate_bbox": {
+            "x": 826,
+            "y": 170,
+            "w": 224,
+            "h": 37
+          },
+          "target_bbox": {
+            "x": 826,
+            "y": 170,
+            "w": 224,
+            "h": 37
+          },
+          "condition": "The point is inside the Python.org site search input.",
+          "expected": "condition_met",
+          "reason": "点在页眉右侧白色 Search 文本输入框内。",
+          "appearance": "A white single-line input with a Search placeholder in the dark header search panel.",
+          "container": "The Python.org header to the right of the Python logo."
+        },
+        {
+          "id": "d16-field-02",
+          "category": "input_field",
+          "target": "Python.org site search input",
+          "point": {
+            "x": 1085,
+            "y": 188
+          },
+          "candidate_bbox": {
+            "x": 1062,
+            "y": 167,
+            "w": 46,
+            "h": 40
+          },
+          "target_bbox": {
+            "x": 826,
+            "y": 170,
+            "w": 224,
+            "h": 37
+          },
+          "condition": "The point is inside the Python.org site search input.",
+          "expected": "condition_not_met",
+          "reason": "点及候选框在输入框右侧蓝色 GO 按钮内，不在白色文字输入区域。",
+          "appearance": "A white single-line input with a Search placeholder in the dark header search panel.",
+          "container": "The Python.org header to the right of the Python logo."
+        },
+        {
+          "id": "d16-graphic-03",
+          "category": "graphic",
+          "target": "Python.org Donate button",
+          "point": {
+            "x": 728,
+            "y": 190
+          },
+          "candidate_bbox": {
+            "x": 691,
+            "y": 174,
+            "w": 74,
+            "h": 32
+          },
+          "target_bbox": {
+            "x": 691,
+            "y": 174,
+            "w": 74,
+            "h": 32
+          },
+          "condition": "The point is on the yellow Donate button.",
+          "expected": "condition_met",
+          "reason": "点位于 Python.org 页眉中黄色 Donate 按钮内。",
+          "appearance": "A small yellow rounded Donate button immediately left of the search panel.",
+          "container": "The Python.org header to the right of the Python logo."
+        },
+        {
+          "id": "d16-graphic-04",
+          "category": "graphic",
+          "target": "Python.org Donate button",
+          "point": {
+            "x": 1085,
+            "y": 188
+          },
+          "candidate_bbox": {
+            "x": 1062,
+            "y": 167,
+            "w": 46,
+            "h": 40
+          },
+          "target_bbox": {
+            "x": 691,
+            "y": 174,
+            "w": 74,
+            "h": 32
+          },
+          "condition": "The point is on the yellow Donate button.",
+          "expected": "condition_not_met",
+          "reason": "点及候选框落在蓝色 GO 搜索按钮上，黄色 Donate 按钮位于搜索面板左侧。",
+          "appearance": "A small yellow rounded Donate button immediately left of the search panel.",
+          "container": "The Python.org header to the right of the Python logo."
+        },
+        {
+          "id": "d16-page-05",
+          "category": "page_result",
+          "target": "Python.org home page",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The page shows the Python logo, the main navigation, and the Functions Defined introductory carousel.",
+          "expected": "condition_met",
+          "reason": "页眉是 Python 标志，主视觉有 Functions Defined 和 Fibonacci 示例，下方有 Get Started、Download、Docs 等栏目。",
+          "appearance": "The Python home-page layout with a Functions Defined carousel and introductory columns.",
+          "container": "The Python.org main content."
+        },
+        {
+          "id": "d16-page-06",
+          "category": "page_result",
+          "target": "Python language reference documentation",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The main content is a Python language-reference document with a documentation table of contents and reference text.",
+          "expected": "condition_not_met",
+          "reason": "当前显示 Python.org 首页轮播和入门栏目；代码片段是首页示例，不是语言参考文档正文。",
+          "appearance": "A language-reference document with a table of contents and reference text.",
+          "container": "The Python.org page main content."
+        }
+      ]
+    },
+    {
+      "catalog_index": 17,
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\nasa-capture-1.png",
+      "sha256": "0e368788525365bddb7f9c6a9c6aa46ece132b93af45dc886c83c2d65972df38",
+      "original_size": {
+        "width": 1264,
+        "height": 892
+      },
+      "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+      "capture_id": null,
+      "group_id": "nasa",
+      "status": "preannotated",
+      "cases": [
+        {
+          "id": "d17-field-01",
+          "category": "input_field",
+          "target": "NASA site search input",
+          "point": {
+            "x": 264,
+            "y": 125
+          },
+          "candidate_bbox": {
+            "x": 164,
+            "y": 109,
+            "w": 200,
+            "h": 33
+          },
+          "target_bbox": {
+            "x": 164,
+            "y": 109,
+            "w": 200,
+            "h": 33
+          },
+          "condition": "The point is inside the NASA Search text input.",
+          "expected": "condition_met",
+          "reason": "点在黑色页眉中带灰色边框和 Search 占位文字的输入框内。",
+          "appearance": "A dark outlined search input with a Search placeholder near the upper-left header.",
+          "container": "The NASA black navigation header, immediately right of Explore."
+        },
+        {
+          "id": "d17-field-02",
+          "category": "input_field",
+          "target": "NASA site search input",
+          "point": {
+            "x": 82,
+            "y": 125
+          },
+          "candidate_bbox": {
+            "x": 34,
+            "y": 108,
+            "w": 100,
+            "h": 34
+          },
+          "target_bbox": {
+            "x": 164,
+            "y": 109,
+            "w": 200,
+            "h": 33
+          },
+          "condition": "The point is inside the NASA Search text input.",
+          "expected": "condition_not_met",
+          "reason": "点及候选框在左侧 Explore 菜单项内，搜索输入框在其右侧。",
+          "appearance": "A dark outlined search input with a Search placeholder near the upper-left header.",
+          "container": "The NASA black navigation header, immediately right of Explore."
+        },
+        {
+          "id": "d17-graphic-03",
+          "category": "graphic",
+          "target": "NASA Ways to Watch button",
+          "point": {
+            "x": 128,
+            "y": 620
+          },
+          "candidate_bbox": {
+            "x": 28,
+            "y": 597,
+            "w": 201,
+            "h": 46
+          },
+          "target_bbox": {
+            "x": 28,
+            "y": 597,
+            "w": 201,
+            "h": 46
+          },
+          "condition": "The point is on the red Ways to Watch button.",
+          "expected": "condition_met",
+          "reason": "点落在 CRS-35 介绍下方红色 Ways to Watch 按钮上。",
+          "appearance": "A red rectangular Ways to Watch button beneath the CRS-35 mission introduction.",
+          "container": "The left side of the NASA SpaceX CRS-35 hero section."
+        },
+        {
+          "id": "d17-graphic-04",
+          "category": "graphic",
+          "target": "NASA Ways to Watch button",
+          "point": {
+            "x": 866,
+            "y": 125
+          },
+          "candidate_bbox": {
+            "x": 791,
+            "y": 108,
+            "w": 153,
+            "h": 34
+          },
+          "target_bbox": {
+            "x": 28,
+            "y": 597,
+            "w": 201,
+            "h": 46
+          },
+          "condition": "The point is on the red Ways to Watch button.",
+          "expected": "condition_not_met",
+          "reason": "点及候选框落在顶部 News & Events 导航项，目标红色 Ways to Watch 按钮位于正文下方。",
+          "appearance": "A red rectangular Ways to Watch button beneath the CRS-35 mission introduction.",
+          "container": "The left side of the NASA SpaceX CRS-35 hero section."
+        },
+        {
+          "id": "d17-page-05",
+          "category": "page_result",
+          "target": "NASA home page featuring SpaceX CRS-35",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The page prominently shows NASA's SpaceX CRS-35 and a Ways to Watch button.",
+          "expected": "condition_met",
+          "reason": "主视觉标题清楚为 NASA’s SpaceX CRS-35，下面有任务简介和 Ways to Watch 按钮。",
+          "appearance": "A dark mission hero headed NASA’s SpaceX CRS-35 with a Ways to Watch call to action.",
+          "container": "The NASA page main content."
+        },
+        {
+          "id": "d17-page-06",
+          "category": "page_result",
+          "target": "NASA search results page",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The main content shows search results with a submitted search query and result list.",
+          "expected": "condition_not_met",
+          "reason": "当前是 CRS-35 任务主视觉和三个任务导航区，未显示搜索查询或搜索结果列表。",
+          "appearance": "A NASA search-results list below a submitted search query.",
+          "container": "The NASA page main content."
+        }
+      ]
+    },
+    {
+      "catalog_index": 18,
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\openlibrary-capture-1.png",
+      "sha256": "95e8b3a2d7cb8a7103426959b99d03c24cd72461ac994a7b046729c4e7f2cc5a",
+      "original_size": {
+        "width": 1264,
+        "height": 892
+      },
+      "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+      "capture_id": null,
+      "group_id": "openlibrary",
+      "status": "preannotated",
+      "cases": [
+        {
+          "id": "d18-field-01",
+          "category": "input_field",
+          "target": "Open Library catalog search input",
+          "point": {
+            "x": 785,
+            "y": 158
+          },
+          "candidate_bbox": {
+            "x": 634,
+            "y": 140,
+            "w": 322,
+            "h": 37
+          },
+          "target_bbox": {
+            "x": 634,
+            "y": 140,
+            "w": 322,
+            "h": 37
+          },
+          "condition": "The point is inside the Open Library catalog search input.",
+          "expected": "condition_met",
+          "reason": "点位于米色页眉中宽白色搜索输入框内，框内显示搜索占位文字。",
+          "appearance": "A wide rounded white search input in the beige header.",
+          "container": "The Open Library header between Browse and Login."
+        },
+        {
+          "id": "d18-field-02",
+          "category": "input_field",
+          "target": "Open Library catalog search input",
+          "point": {
+            "x": 1061,
+            "y": 158
+          },
+          "candidate_bbox": {
+            "x": 1029,
+            "y": 139,
+            "w": 64,
+            "h": 37
+          },
+          "target_bbox": {
+            "x": 634,
+            "y": 140,
+            "w": 322,
+            "h": 37
+          },
+          "condition": "The point is inside the Open Library catalog search input.",
+          "expected": "condition_not_met",
+          "reason": "点及候选框落在蓝色注册按钮，白色搜索输入框位于登录文字左侧。",
+          "appearance": "A wide rounded white search input in the beige header.",
+          "container": "The Open Library header between Browse and Login."
+        },
+        {
+          "id": "d18-graphic-03",
+          "category": "graphic",
+          "target": "Open Library Register button",
+          "point": {
+            "x": 1061,
+            "y": 158
+          },
+          "candidate_bbox": {
+            "x": 1029,
+            "y": 139,
+            "w": 64,
+            "h": 37
+          },
+          "target_bbox": {
+            "x": 1029,
+            "y": 139,
+            "w": 64,
+            "h": 37
+          },
+          "condition": "The point is on the blue Register button in the header.",
+          "expected": "condition_met",
+          "reason": "点在页眉右侧蓝色注册按钮内。",
+          "appearance": "A blue rounded button labeled 注册 in the upper-right header.",
+          "container": "The upper-right area of the Open Library header."
+        },
+        {
+          "id": "d18-graphic-04",
+          "category": "graphic",
+          "target": "Open Library Register button",
+          "point": {
+            "x": 992,
+            "y": 158
+          },
+          "candidate_bbox": {
+            "x": 974,
+            "y": 141,
+            "w": 38,
+            "h": 35
+          },
+          "target_bbox": {
+            "x": 1029,
+            "y": 139,
+            "w": 64,
+            "h": 37
+          },
+          "condition": "The point is on the blue Register button in the header.",
+          "expected": "condition_not_met",
+          "reason": "点及候选框落在注册按钮左侧的登录链接，不是蓝色注册按钮。",
+          "appearance": "A blue rounded button labeled 注册 in the upper-right header.",
+          "container": "The upper-right area of the Open Library header."
+        },
+        {
+          "id": "d18-page-05",
+          "category": "page_result",
+          "target": "Open Library home page",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The page shows a welcome section and a Trending Books carousel.",
+          "expected": "condition_met",
+          "reason": "主区有欢迎来到开放图书馆和三张功能介绍卡片，下方是 Trending Books 图书轮播。",
+          "appearance": "An Open Library landing page with welcome cards and book carousels.",
+          "container": "The Open Library main content."
+        },
+        {
+          "id": "d18-page-06",
+          "category": "page_result",
+          "target": "Open Library individual book detail page",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The main content is a single book's detail page with its title, author, and edition information.",
+          "expected": "condition_not_met",
+          "reason": "当前展示首页多本图书和欢迎卡片，不是某一本书的标题、作者及版本详情页。",
+          "appearance": "A single-book detail page with title, author, and edition information.",
+          "container": "The Open Library main content."
+        }
+      ]
+    },
+    {
+      "catalog_index": 19,
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\internetarchive-capture-1.png",
+      "sha256": "e68df84665a54b8fe55d9d9d4c3a1f277ffb64df92b66864a6672490d99f68e4",
+      "original_size": {
+        "width": 1264,
+        "height": 892
+      },
+      "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+      "capture_id": null,
+      "group_id": "internetarchive",
+      "status": "preannotated",
+      "cases": [
+        {
+          "id": "d19-field-01",
+          "category": "input_field",
+          "target": "Internet Archive media catalog search input",
+          "point": {
+            "x": 600,
+            "y": 612
+          },
+          "candidate_bbox": {
+            "x": 426,
+            "y": 587,
+            "w": 407,
+            "h": 51
+          },
+          "target_bbox": {
+            "x": 426,
+            "y": 587,
+            "w": 407,
+            "h": 51
+          },
+          "condition": "The point is inside the media catalog search input below the category icons.",
+          "expected": "condition_met",
+          "reason": "点在彩色媒体分类图标下方的大白色搜索框内，其左边有 All 下拉框。",
+          "appearance": "A wide white catalog-search input below the colorful media-category icons.",
+          "container": "The central Internet Archive library-search panel, to the right of the All dropdown."
+        },
+        {
+          "id": "d19-field-02",
+          "category": "input_field",
+          "target": "Internet Archive media catalog search input",
+          "point": {
+            "x": 760,
+            "y": 268
+          },
+          "candidate_bbox": {
+            "x": 626,
+            "y": 252,
+            "w": 275,
+            "h": 32
+          },
+          "target_bbox": {
+            "x": 426,
+            "y": 587,
+            "w": 407,
+            "h": 51
+          },
+          "condition": "The point is inside the media catalog search input below the category icons.",
+          "expected": "condition_not_met",
+          "reason": "点及候选框位于上方 Wayback Machine 的 Enter URL or keywords 输入框，属于网页存档查询而非下方媒体目录搜索。",
+          "appearance": "A wide white catalog-search input below the colorful media-category icons.",
+          "container": "The central Internet Archive library-search panel, to the right of the All dropdown."
+        },
+        {
+          "id": "d19-graphic-03",
+          "category": "graphic",
+          "target": "Internet Archive Advanced Search link",
+          "point": {
+            "x": 777,
+            "y": 658
+          },
+          "candidate_bbox": {
+            "x": 720,
+            "y": 647,
+            "w": 114,
+            "h": 22
+          },
+          "target_bbox": {
+            "x": 720,
+            "y": 647,
+            "w": 114,
+            "h": 22
+          },
+          "condition": "The point is on the Advanced Search link below the media catalog search field.",
+          "expected": "condition_met",
+          "reason": "点在媒体目录搜索框右下方的蓝色 Advanced Search 链接文字上。",
+          "appearance": "A blue Advanced Search text link below the right edge of the catalog-search field.",
+          "container": "The Internet Archive central library-search panel."
+        },
+        {
+          "id": "d19-graphic-04",
+          "category": "graphic",
+          "target": "Internet Archive Advanced Search link",
+          "point": {
+            "x": 1183,
+            "y": 106
+          },
+          "candidate_bbox": {
+            "x": 1137,
+            "y": 91,
+            "w": 96,
+            "h": 31
+          },
+          "target_bbox": {
+            "x": 720,
+            "y": 647,
+            "w": 114,
+            "h": 22
+          },
+          "condition": "The point is on the Advanced Search link below the media catalog search field.",
+          "expected": "condition_not_met",
+          "reason": "点及候选框落在顶部 UPLOAD 上传导航，不是中部搜索框下方的 Advanced Search 链接。",
+          "appearance": "A blue Advanced Search text link below the right edge of the catalog-search field.",
+          "container": "The Internet Archive central library-search panel."
+        },
+        {
+          "id": "d19-page-05",
+          "category": "page_result",
+          "target": "Internet Archive home page",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The page shows the Wayback Machine search panel and the Internet Archive library introduction.",
+          "expected": "condition_met",
+          "reason": "上方显示 Wayback Machine 查询栏，下方介绍 Internet Archive 为非营利图书馆并列出媒体分类图标。",
+          "appearance": "The Internet Archive landing page with Wayback Machine and media-library search areas.",
+          "container": "The Internet Archive main page."
+        },
+        {
+          "id": "d19-page-06",
+          "category": "page_result",
+          "target": "Wayback Machine capture timeline for a website",
+          "point": null,
+          "candidate_bbox": null,
+          "target_bbox": null,
+          "condition": "The main content displays a website capture timeline or calendar with archived capture dates.",
+          "expected": "condition_not_met",
+          "reason": "当前只有 Wayback Machine 的空查询入口及网站首页介绍，未显示某个网站的归档时间线或日期日历。",
+          "appearance": "A Wayback Machine results page with a website capture timeline or calendar.",
+          "container": "The Internet Archive main content."
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "source_sha256_matches_catalog": true,
+    "original_images_viewed": 10,
+    "annotated_images": 10,
+    "skipped_images": 0,
+    "case_count": 60,
+    "category_counts": {
+      "input_field": 16,
+      "graphic": 24,
+      "page_result": 20
+    },
+    "expected_counts": {
+      "condition_met": 30,
+      "condition_not_met": 30,
+      "evidence_insufficient": 0
+    },
+    "coordinates_in_original_bounds": true,
+    "candidate_points_inside_candidate_boxes": true,
+    "negative_control_boxes_distinct_from_target_boxes": true,
+    "production_files_modified": false,
+    "api_calls": 0,
+    "desktop_actions": 0
+  }
+}

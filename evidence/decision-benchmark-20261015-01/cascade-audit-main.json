@@ -1,0 +1,340 @@
+{
+  "all_primary_bindings_verified": 320,
+  "all_secondary_raw_and_usage_verified": 164,
+  "secondary_tokens": 224804,
+  "budget": {
+    "limit": 5000000,
+    "spent": 1431435,
+    "reserved": 0,
+    "remaining": 3568565
+  },
+  "errors": [
+    {
+      "case": "c08-field-site-search-wrong-control",
+      "variant": "baseline",
+      "repeat": 0,
+      "expected": "condition_not_met",
+      "choice": "condition_met",
+      "category": "input_field",
+      "primary_choice": "condition_not_met",
+      "ordinary_choice": "condition_met"
+    },
+    {
+      "case": "b15-graphic-04",
+      "variant": "frozen_mix",
+      "repeat": 0,
+      "expected": "condition_not_met",
+      "choice": "condition_met",
+      "category": "graphic",
+      "primary_choice": "condition_met",
+      "ordinary_choice": null
+    },
+    {
+      "case": "d11-graphic-04",
+      "variant": "frozen_mix",
+      "repeat": 1,
+      "expected": "condition_not_met",
+      "choice": "condition_met",
+      "category": "graphic",
+      "primary_choice": "condition_met",
+      "ordinary_choice": null
+    },
+    {
+      "case": "b15-graphic-04",
+      "variant": "frozen_mix",
+      "repeat": 1,
+      "expected": "condition_not_met",
+      "choice": "condition_met",
+      "category": "graphic",
+      "primary_choice": "condition_met",
+      "ordinary_choice": null
+    },
+    {
+      "case": "b15-field-02",
+      "variant": "baseline",
+      "repeat": 1,
+      "expected": "condition_not_met",
+      "choice": "condition_met",
+      "category": "input_field",
+      "primary_choice": "condition_not_met",
+      "ordinary_choice": "condition_met"
+    },
+    {
+      "case": "d11-graphic-04",
+      "variant": "frozen_mix",
+      "repeat": 0,
+      "expected": "condition_not_met",
+      "choice": "condition_met",
+      "category": "graphic",
+      "primary_choice": "condition_met",
+      "ordinary_choice": null
+    },
+    {
+      "case": "a04-field-address-in",
+      "variant": "baseline",
+      "repeat": 1,
+      "expected": "condition_met",
+      "choice": "condition_not_met",
+      "category": "input_field",
+      "primary_choice": "condition_not_met",
+      "ordinary_choice": "condition_not_met"
+    },
+    {
+      "case": "d11-graphic-04",
+      "variant": "baseline",
+      "repeat": 0,
+      "expected": "condition_not_met",
+      "choice": "condition_met",
+      "category": "graphic",
+      "primary_choice": "condition_met",
+      "ordinary_choice": null
+    },
+    {
+      "case": "b15-graphic-04",
+      "variant": "baseline",
+      "repeat": 1,
+      "expected": "condition_not_met",
+      "choice": "condition_met",
+      "category": "graphic",
+      "primary_choice": "condition_met",
+      "ordinary_choice": null
+    },
+    {
+      "case": "b15-field-02",
+      "variant": "baseline",
+      "repeat": 0,
+      "expected": "condition_not_met",
+      "choice": "condition_met",
+      "category": "input_field",
+      "primary_choice": "condition_not_met",
+      "ordinary_choice": "condition_met"
+    },
+    {
+      "case": "c08-field-site-search-wrong-control",
+      "variant": "baseline",
+      "repeat": 1,
+      "expected": "condition_not_met",
+      "choice": "condition_met",
+      "category": "input_field",
+      "primary_choice": "condition_not_met",
+      "ordinary_choice": "condition_met"
+    },
+    {
+      "case": "d11-graphic-04",
+      "variant": "baseline",
+      "repeat": 1,
+      "expected": "condition_not_met",
+      "choice": "condition_met",
+      "category": "graphic",
+      "primary_choice": "condition_met",
+      "ordinary_choice": null
+    },
+    {
+      "case": "b15-value-06",
+      "variant": "frozen_mix",
+      "repeat": 0,
+      "expected": "condition_not_met",
+      "choice": "evidence_insufficient",
+      "category": "text_value",
+      "primary_choice": "condition_not_met",
+      "ordinary_choice": "evidence_insufficient"
+    },
+    {
+      "case": "b15-field-02",
+      "variant": "frozen_mix",
+      "repeat": 1,
+      "expected": "condition_not_met",
+      "choice": "condition_met",
+      "category": "input_field",
+      "primary_choice": "condition_not_met",
+      "ordinary_choice": "condition_met"
+    },
+    {
+      "case": "b15-value-06",
+      "variant": "frozen_mix",
+      "repeat": 1,
+      "expected": "condition_not_met",
+      "choice": "evidence_insufficient",
+      "category": "text_value",
+      "primary_choice": "condition_not_met",
+      "ordinary_choice": "evidence_insufficient"
+    },
+    {
+      "case": "b15-value-06",
+      "variant": "baseline",
+      "repeat": 0,
+      "expected": "condition_not_met",
+      "choice": "evidence_insufficient",
+      "category": "text_value",
+      "primary_choice": "evidence_insufficient",
+      "ordinary_choice": "evidence_insufficient"
+    },
+    {
+      "case": "libreoffice-embedded-editor-decoy",
+      "variant": "frozen_mix",
+      "repeat": 0,
+      "expected": "condition_not_met",
+      "choice": "condition_met",
+      "category": "page_result",
+      "primary_choice": "condition_not_met",
+      "ordinary_choice": "condition_met"
+    },
+    {
+      "case": "libreoffice-embedded-editor-decoy",
+      "variant": "frozen_mix",
+      "repeat": 1,
+      "expected": "condition_not_met",
+      "choice": "evidence_insufficient",
+      "category": "page_result",
+      "primary_choice": "condition_not_met",
+      "ordinary_choice": "evidence_insufficient"
+    },
+    {
+      "case": "b15-field-02",
+      "variant": "frozen_mix",
+      "repeat": 0,
+      "expected": "condition_not_met",
+      "choice": "condition_met",
+      "category": "input_field",
+      "primary_choice": "condition_not_met",
+      "ordinary_choice": "condition_met"
+    },
+    {
+      "case": "b15-value-06",
+      "variant": "baseline",
+      "repeat": 1,
+      "expected": "condition_not_met",
+      "choice": "evidence_insufficient",
+      "category": "text_value",
+      "primary_choice": "evidence_insufficient",
+      "ordinary_choice": "evidence_insufficient"
+    },
+    {
+      "case": "a04-field-address-in",
+      "variant": "frozen_mix",
+      "repeat": 0,
+      "expected": "condition_met",
+      "choice": "condition_not_met",
+      "category": "input_field",
+      "primary_choice": "condition_not_met",
+      "ordinary_choice": "condition_not_met"
+    },
+    {
+      "case": "b15-graphic-04",
+      "variant": "baseline",
+      "repeat": 0,
+      "expected": "condition_not_met",
+      "choice": "condition_met",
+      "category": "graphic",
+      "primary_choice": "condition_met",
+      "ordinary_choice": null
+    }
+  ],
+  "by_variant": {
+    "baseline": {
+      "cases": 160,
+      "returned": 160,
+      "exact_correct": 149,
+      "accuracy": 0.93125,
+      "false_accepts": 8,
+      "false_rejects": 1,
+      "returned_nonpass_on_positive": 1,
+      "errors": 0,
+      "input_tokens": 291848,
+      "output_tokens": 571,
+      "unknown_usage_requests": 0,
+      "http_latency": {
+        "n": 160,
+        "p50_ms": 1089.2885999999999,
+        "p95_ms": 2772.488
+      },
+      "returned_http_latency": {
+        "n": 160,
+        "p50_ms": 1089.2885999999999,
+        "p95_ms": 2772.488
+      },
+      "unique_cases": 80,
+      "scene_groups": 9,
+      "primary_exact_correct": 148,
+      "primary_accuracy": 0.925,
+      "primary_false_passes": 4,
+      "review_triggered": 82,
+      "ordinary_dispatched": 82,
+      "corrected_positive_rejections": 3,
+      "new_false_accepts": 4,
+      "latency_definition": "Per-case primary HTTP plus ordinary HTTP; percentiles after summing. Not runtime wall time.",
+      "primary_input_tokens": 179196,
+      "primary_output_tokens": 0,
+      "ordinary_input_tokens": 112652,
+      "ordinary_output_tokens": 571,
+      "total_tokens": 292419,
+      "cached_input_tokens": 46088,
+      "reasoning_output_tokens": 0,
+      "primary_http_latency": {
+        "n": 160,
+        "p50_ms": 181.86505,
+        "p95_ms": 299.9909
+      },
+      "ordinary_http_latency": {
+        "n": 82,
+        "p50_ms": 1409.0268999999998,
+        "p95_ms": 3756.1647
+      }
+    },
+    "frozen_mix": {
+      "cases": 160,
+      "returned": 160,
+      "exact_correct": 149,
+      "accuracy": 0.93125,
+      "false_accepts": 7,
+      "false_rejects": 1,
+      "returned_nonpass_on_positive": 1,
+      "errors": 0,
+      "input_tokens": 287268,
+      "output_tokens": 573,
+      "unknown_usage_requests": 0,
+      "http_latency": {
+        "n": 160,
+        "p50_ms": 1152.47605,
+        "p95_ms": 2672.4098
+      },
+      "returned_http_latency": {
+        "n": 160,
+        "p50_ms": 1152.47605,
+        "p95_ms": 2672.4098
+      },
+      "unique_cases": 80,
+      "scene_groups": 9,
+      "primary_exact_correct": 152,
+      "primary_accuracy": 0.95,
+      "primary_false_passes": 4,
+      "review_triggered": 82,
+      "ordinary_dispatched": 82,
+      "corrected_positive_rejections": 3,
+      "new_false_accepts": 3,
+      "latency_definition": "Per-case primary HTTP plus ordinary HTTP; percentiles after summing. Not runtime wall time.",
+      "primary_input_tokens": 176260,
+      "primary_output_tokens": 0,
+      "ordinary_input_tokens": 111008,
+      "ordinary_output_tokens": 573,
+      "total_tokens": 287841,
+      "cached_input_tokens": 52196,
+      "reasoning_output_tokens": 0,
+      "primary_http_latency": {
+        "n": 160,
+        "p50_ms": 175.90005000000002,
+        "p95_ms": 314.9071
+      },
+      "ordinary_http_latency": {
+        "n": 82,
+        "p50_ms": 1340.9890500000001,
+        "p95_ms": 3045.4577
+      }
+    }
+  },
+  "files_sha256": {
+    "run.json": "4480e335232e85eead004993a7ad1e65cfc44d6b3295d79e9c0c9702f605cc50",
+    "results.json": "a9b42518a9d22251cd09c824f467deb540716f65915e5c58d63dbfb4abd80627",
+    "summary.json": "744e6b2e6229bd08b1dc2bcd3c051c97dc8a640b5b1e9ede9dc8699814625c60"
+  }
+}

@@ -1,0 +1,302 @@
+[
+  {
+    "name": "gimp",
+    "url": "https://www.gimp.org/",
+    "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\gimp-capture-1.png",
+    "sha256": "aa9cde33c5e18b86bc44cf531471183b76ddce78368eb71749597a945dab6f35",
+    "original_size": {
+      "width": 1264,
+      "height": 892
+    },
+    "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+    "capture_id": null,
+    "group_id": "gimp",
+    "original_image_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\data\\session-201ae9b32f2d439c8de47f0bc6c77bac\\captures\\gimp-gnu-image-manipulation-program-microsoft-edge__live-latency-observation__full-window__20261015-014810-836195.png",
+    "capture_receipt": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\gimp-capture-1.json"
+  },
+  {
+    "name": "audacity",
+    "url": "https://www.audacityteam.org/",
+    "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\audacity-capture-1.png",
+    "sha256": "29f4650e83777e8b6582bdb8e62bf5bd1642b2a8df4a59a335d819ed9ab4322b",
+    "original_size": {
+      "width": 1264,
+      "height": 892
+    },
+    "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+    "capture_id": null,
+    "group_id": "audacity",
+    "original_image_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\data\\session-201ae9b32f2d439c8de47f0bc6c77bac\\captures\\audacity-free-open-source-audio-editor-and-recorder-microsoft-edge__live-latency-observation__full-window__20261015-014818-302600.png",
+    "capture_receipt": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\audacity-capture-1.json"
+  },
+  {
+    "name": "blender",
+    "url": "https://www.blender.org/",
+    "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\blender-capture-1.png",
+    "sha256": "e389e39281e0bc402941489e5e26c5e26c8a4f9db2b3ffeca37280523e449522",
+    "original_size": {
+      "width": 1264,
+      "height": 892
+    },
+    "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+    "capture_id": null,
+    "group_id": "blender",
+    "original_image_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\data\\session-201ae9b32f2d439c8de47f0bc6c77bac\\captures\\blender-the-free-and-open-source-3d-creation-software-blender-org-microsoft-edge__live-latency-observation__full-window__20261015-014825-876658.png",
+    "capture_receipt": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\blender-capture-1.json"
+  },
+  {
+    "name": "rust",
+    "url": "https://rust-lang.org/",
+    "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\rust-capture-1.png",
+    "sha256": "7ae8e40567f819ecc5e1af5612f725cd525af9d5abb0b95858fdfb1e448fc182",
+    "original_size": {
+      "width": 1264,
+      "height": 892
+    },
+    "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+    "capture_id": null,
+    "group_id": "rust",
+    "original_image_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\data\\session-201ae9b32f2d439c8de47f0bc6c77bac\\captures\\rust-programming-language-microsoft-edge__live-latency-observation__full-window__20261015-014833-464975.png",
+    "capture_receipt": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\rust-capture-1.json"
+  },
+  {
+    "name": "go",
+    "url": "https://go.dev/",
+    "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\go-capture-1.png",
+    "sha256": "722b16f4f85b90603d034f1a07b1799466a7dd758217f7eb68a196b7737a024c",
+    "original_size": {
+      "width": 1264,
+      "height": 892
+    },
+    "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+    "capture_id": null,
+    "group_id": "go",
+    "original_image_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\data\\session-201ae9b32f2d439c8de47f0bc6c77bac\\captures\\the-go-programming-language-microsoft-edge__live-latency-observation__full-window__20261015-014840-934645.png",
+    "capture_receipt": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\go-capture-1.json"
+  },
+  {
+    "name": "sqlite",
+    "url": "https://www.sqlite.org/index.html",
+    "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\sqlite-capture-1.png",
+    "sha256": "1f3afa691f33d7866c0653e860d1cc9638686f4f3d2a315159660796be6b556f",
+    "original_size": {
+      "width": 1264,
+      "height": 892
+    },
+    "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+    "capture_id": null,
+    "group_id": "sqlite",
+    "original_image_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\data\\session-201ae9b32f2d439c8de47f0bc6c77bac\\captures\\sqlite-home-page-microsoft-edge__live-latency-observation__full-window__20261015-014848-416435.png",
+    "capture_receipt": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\sqlite-capture-1.json"
+  },
+  {
+    "name": "postgresql",
+    "url": "https://www.postgresql.org/",
+    "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\postgresql-capture-1.png",
+    "sha256": "25b60da582256d496410afa1ca5ed903c08fb8eae33b932fa652c473cd1809a1",
+    "original_size": {
+      "width": 1264,
+      "height": 892
+    },
+    "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+    "capture_id": null,
+    "group_id": "postgresql",
+    "original_image_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\data\\session-201ae9b32f2d439c8de47f0bc6c77bac\\captures\\postgresql-the-world-s-most-advanced-open-source-database-microsoft-edge__live-latency-observation__full-window__20261015-014855-935020.png",
+    "capture_receipt": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\postgresql-capture-1.json"
+  },
+  {
+    "name": "mysql",
+    "url": "https://www.mysql.com/",
+    "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\mysql-capture-1.png",
+    "sha256": "a7e896639866046e3dbdbe4346b5a88f830279879c0c4c2d2b5f6a0d888982cc",
+    "original_size": {
+      "width": 1264,
+      "height": 892
+    },
+    "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+    "capture_id": null,
+    "group_id": "mysql",
+    "original_image_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\data\\session-201ae9b32f2d439c8de47f0bc6c77bac\\captures\\mysql-microsoft-edge__live-latency-observation__full-window__20261015-014903-408671.png",
+    "capture_receipt": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\mysql-capture-1.json"
+  },
+  {
+    "name": "debian",
+    "url": "https://www.debian.org/",
+    "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\debian-capture-1.png",
+    "sha256": "fb5f72ac3e40c227d8ba3a14460cb5ff563f22335b7dc9718b28ffc5422aebc5",
+    "original_size": {
+      "width": 1264,
+      "height": 892
+    },
+    "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+    "capture_id": null,
+    "group_id": "debian",
+    "original_image_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\data\\session-201ae9b32f2d439c8de47f0bc6c77bac\\captures\\debian-microsoft-edge__live-latency-observation__full-window__20261015-014910-901439.png",
+    "capture_receipt": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\debian-capture-1.json"
+  },
+  {
+    "name": "ubuntu",
+    "url": "https://ubuntu.com/",
+    "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\ubuntu-capture-1.png",
+    "sha256": "50ab26cba166a861ccb2465c6a2898da5694ea59c6a508ceb1f3484f840c5d65",
+    "original_size": {
+      "width": 1264,
+      "height": 892
+    },
+    "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+    "capture_id": null,
+    "group_id": "ubuntu",
+    "original_image_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\data\\session-201ae9b32f2d439c8de47f0bc6c77bac\\captures\\enterprise-open-source-and-linux-ubuntu-microsoft-edge__live-latency-observation__full-window__20261015-014918-421991.png",
+    "capture_receipt": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\ubuntu-capture-1.json"
+  },
+  {
+    "name": "archlinux",
+    "url": "https://archlinux.org/",
+    "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\archlinux-capture-1.png",
+    "sha256": "47916419b924a72e91a2f703ede377173b9458d0fbb3a32edfeafa11d1f55cfd",
+    "original_size": {
+      "width": 1264,
+      "height": 892
+    },
+    "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+    "capture_id": null,
+    "group_id": "archlinux",
+    "original_image_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\data\\session-201ae9b32f2d439c8de47f0bc6c77bac\\captures\\arch-linux-microsoft-edge__live-latency-observation__full-window__20261015-014925-829671.png",
+    "capture_receipt": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\archlinux-capture-1.json"
+  },
+  {
+    "name": "kernel",
+    "url": "https://www.kernel.org/",
+    "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\kernel-capture-1.png",
+    "sha256": "0a6bba8cc080543629bd3be01776a29ac54ef04f281ed80a85d6d0a8a8e471b1",
+    "original_size": {
+      "width": 1264,
+      "height": 892
+    },
+    "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+    "capture_id": null,
+    "group_id": "kernel",
+    "original_image_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\data\\session-201ae9b32f2d439c8de47f0bc6c77bac\\captures\\the-linux-kernel-archives-microsoft-edge__live-latency-observation__full-window__20261015-014933-675749.png",
+    "capture_receipt": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\kernel-capture-1.json"
+  },
+  {
+    "name": "gnu",
+    "url": "https://www.gnu.org/",
+    "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\gnu-capture-1.png",
+    "sha256": "ef1c419d2e8c4c4ee9a5f2386f69cad6fbb973deb2a16545abcfee651963049f",
+    "original_size": {
+      "width": 1264,
+      "height": 892
+    },
+    "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+    "capture_id": null,
+    "group_id": "gnu",
+    "original_image_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\data\\session-201ae9b32f2d439c8de47f0bc6c77bac\\captures\\gnu-microsoft-edge__live-latency-observation__full-window__20261015-014941-163089.png",
+    "capture_receipt": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\gnu-capture-1.json"
+  },
+  {
+    "name": "w3c",
+    "url": "https://www.w3.org/",
+    "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\w3c-capture-1.png",
+    "sha256": "3def4f364d38d2d8259286724b84c43b9658a65250e9d8fb8bd49467559e1d19",
+    "original_size": {
+      "width": 1264,
+      "height": 892
+    },
+    "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+    "capture_id": null,
+    "group_id": "w3c",
+    "original_image_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\data\\session-201ae9b32f2d439c8de47f0bc6c77bac\\captures\\w3c-microsoft-edge__live-latency-observation__full-window__20261015-014948-561275.png",
+    "capture_receipt": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\w3c-capture-1.json"
+  },
+  {
+    "name": "w3schools",
+    "url": "https://www.w3schools.com/",
+    "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\w3schools-capture-1.png",
+    "sha256": "b97d85caf822a9fbaed9f188da18eaa32acf4100964501990f23df6e109f3d12",
+    "original_size": {
+      "width": 1264,
+      "height": 892
+    },
+    "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+    "capture_id": null,
+    "group_id": "w3schools",
+    "original_image_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\data\\session-201ae9b32f2d439c8de47f0bc6c77bac\\captures\\w3schools-online-web-tutorials-microsoft-edge__live-latency-observation__full-window__20261015-014956-078197.png",
+    "capture_receipt": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\w3schools-capture-1.json"
+  },
+  {
+    "name": "npm",
+    "url": "https://www.npmjs.com/",
+    "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\npm-capture-1.png",
+    "sha256": "a568c12197678db0d1777f148d06bb2967d5ff2aa7c1e8a1a386e0ce74950469",
+    "original_size": {
+      "width": 1264,
+      "height": 892
+    },
+    "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+    "capture_id": null,
+    "group_id": "npm",
+    "original_image_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\data\\session-201ae9b32f2d439c8de47f0bc6c77bac\\captures\\npm-home-microsoft-edge__live-latency-observation__full-window__20261015-015003-602978.png",
+    "capture_receipt": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\npm-capture-1.json"
+  },
+  {
+    "name": "pythonhome",
+    "url": "https://www.python.org/",
+    "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\pythonhome-capture-1.png",
+    "sha256": "b207b5f68639b65b288e55e2608b67259ca3df23f481ffb2ac608d2e49470682",
+    "original_size": {
+      "width": 1264,
+      "height": 892
+    },
+    "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+    "capture_id": null,
+    "group_id": "pythonhome",
+    "original_image_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\data\\session-201ae9b32f2d439c8de47f0bc6c77bac\\captures\\welcome-to-python-org-microsoft-edge__live-latency-observation__full-window__20261015-015010-996396.png",
+    "capture_receipt": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\pythonhome-capture-1.json"
+  },
+  {
+    "name": "nasa",
+    "url": "https://www.nasa.gov/",
+    "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\nasa-capture-1.png",
+    "sha256": "0e368788525365bddb7f9c6a9c6aa46ece132b93af45dc886c83c2d65972df38",
+    "original_size": {
+      "width": 1264,
+      "height": 892
+    },
+    "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+    "capture_id": null,
+    "group_id": "nasa",
+    "original_image_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\data\\session-201ae9b32f2d439c8de47f0bc6c77bac\\captures\\nasa-microsoft-edge__live-latency-observation__full-window__20261015-015019-005564.png",
+    "capture_receipt": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\nasa-capture-1.json"
+  },
+  {
+    "name": "openlibrary",
+    "url": "https://openlibrary.org/",
+    "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\openlibrary-capture-1.png",
+    "sha256": "95e8b3a2d7cb8a7103426959b99d03c24cd72461ac994a7b046729c4e7f2cc5a",
+    "original_size": {
+      "width": 1264,
+      "height": 892
+    },
+    "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+    "capture_id": null,
+    "group_id": "openlibrary",
+    "original_image_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\data\\session-201ae9b32f2d439c8de47f0bc6c77bac\\captures\\microsoft-edge__live-latency-observation__full-window__20261015-015026-374993.png",
+    "capture_receipt": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\openlibrary-capture-1.json"
+  },
+  {
+    "name": "internetarchive",
+    "url": "https://archive.org/",
+    "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\internetarchive-capture-1.png",
+    "sha256": "e68df84665a54b8fe55d9d9d4c3a1f277ffb64df92b66864a6672490d99f68e4",
+    "original_size": {
+      "width": 1264,
+      "height": 892
+    },
+    "session_id": "session-201ae9b32f2d439c8de47f0bc6c77bac",
+    "capture_id": null,
+    "group_id": "internetarchive",
+    "original_image_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\data\\session-201ae9b32f2d439c8de47f0bc6c77bac\\captures\\internet-archive-digital-library-of-free-borrowable-texts-movies-music-9bf8cce2__live-latency-observation__full-window__20261015-015033-904756.png",
+    "capture_receipt": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\internetarchive-capture-1.json"
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "mode": "executed",
+  "variants": {
+    "baseline": {
+      "cases": 140,
+      "exact_correct": 134,
+      "accuracy": 0.9571428571428572,
+      "false_accepts": 2,
+      "false_rejects": 2,
+      "errors": 0,
+      "input_tokens": 173264,
+      "output_tokens": 0,
+      "http_latency": {
+        "n": 140,
+        "p50_ms": 197.19664999999998,
+        "p95_ms": 416.0521
+      }
+    },
+    "frozen_mix": {
+      "cases": 140,
+      "exact_correct": 136,
+      "accuracy": 0.9714285714285714,
+      "false_accepts": 2,
+      "false_rejects": 2,
+      "errors": 0,
+      "input_tokens": 171764,
+      "output_tokens": 0,
+      "http_latency": {
+        "n": 140,
+        "p50_ms": 191.84465,
+        "p95_ms": 463.6204
+      }
+    }
+  },
+  "budget": {
+    "spent": 851175,
+    "reserved": 0,
+    "remaining": 4148825,
+    "halted": false
+  }
+}

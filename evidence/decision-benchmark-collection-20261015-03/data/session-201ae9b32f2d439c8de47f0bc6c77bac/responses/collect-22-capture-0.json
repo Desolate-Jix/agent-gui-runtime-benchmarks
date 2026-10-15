@@ -1,0 +1,98 @@
+{
+  "command": {
+    "kind": "capture"
+  },
+  "received_at": "2026-10-14T12:50:15.796851+00:00",
+  "started_at": "2026-10-14T12:50:15.796851+00:00",
+  "observation": {
+    "image_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\data\\session-201ae9b32f2d439c8de47f0bc6c77bac\\captures\\nasa-microsoft-edge__live-latency-observation__full-window__20261015-015015-837850.png",
+    "image_width": 1264,
+    "image_height": 892,
+    "image_size": {
+      "width": 1264,
+      "height": 892
+    },
+    "window_rect": [
+      18,
+      10,
+      1282,
+      902
+    ],
+    "roi": null,
+    "roi_adjusted": false,
+    "capture_purpose": "live-latency-observation",
+    "window_size": {
+      "width": 1264,
+      "height": 892
+    },
+    "capture_timings": {
+      "contract_version": "window_capture_timing_v1",
+      "total_ms": 69.18,
+      "steps": [
+        {
+          "name": "backend_and_binding",
+          "elapsed_ms": 0.632
+        },
+        {
+          "name": "foreground_preparation",
+          "elapsed_ms": 0.004
+        },
+        {
+          "name": "geometry_and_pre_visibility",
+          "elapsed_ms": 0.103
+        },
+        {
+          "name": "backend_open_and_grab",
+          "elapsed_ms": 34.784
+        },
+        {
+          "name": "post_binding_and_visibility",
+          "elapsed_ms": 0.355
+        },
+        {
+          "name": "pixel_conversion",
+          "elapsed_ms": 3.906
+        },
+        {
+          "name": "backend_close_and_mask",
+          "elapsed_ms": 0.235
+        },
+        {
+          "name": "output_path",
+          "elapsed_ms": 0.56
+        },
+        {
+          "name": "png_encode_and_write",
+          "elapsed_ms": 19.373
+        },
+        {
+          "name": "retention_cleanup",
+          "elapsed_ms": 9.222
+        }
+      ],
+      "nested_timings_additive": false
+    },
+    "capture_visibility": {
+      "contract_version": "bound_capture_visibility_v2",
+      "allowed": true,
+      "reason": "capture_window_visible",
+      "bound_window_handle": 2687368,
+      "masked": false,
+      "coordinate_space": "window"
+    },
+    "window": {
+      "handle": 2687368,
+      "process_id": 17892
+    },
+    "window_identity": {
+      "handle": 2687368,
+      "process_id": 17892,
+      "process_create_time": 1791982211.68221
+    },
+    "sha256": "e6b9b60b6bbfd22db78fca3473c148a87c53e930e3472b337da69f298490570a"
+  },
+  "status": "returned",
+  "finished_at": "2026-10-14T12:50:15.868850+00:00",
+  "command_wall_ms": 71.68,
+  "response_available_at": "2026-10-14T12:50:15.868850+00:00"
+}

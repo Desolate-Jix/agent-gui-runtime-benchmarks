@@ -1,0 +1,695 @@
+{
+  "schema": "main_visual_review.v1",
+  "human_reviewed": false,
+  "reviews": [
+    {
+      "annotation_file": "annotations-a.json",
+      "source_path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260923-form-batch-resume-01\\data\\session-ed8ef3e172944871a76cca1db114446b\\runtime-output\\local-direct-steps\\local-step-ffbd0c4fa1ed4803b71b3dc4d43fd2a8\\observations\\httpbin-org-forms-post-microsoft-edge__local-direct-post-action__full-window__20260923-230216-184716.png",
+      "source_sha256": "44004f25d077bf7411aa2f6adeaa40044263507c25d4d744b98b8b24ae27f943",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "a01-field-name-in",
+        "a01-field-name-wrong-phone",
+        "a01-graphic-bacon",
+        "a01-graphic-bacon-wrong-cheese",
+        "a01-value-name-present",
+        "a01-value-name-different",
+        "a01-page-form"
+      ],
+      "excluded": {}
+    },
+    {
+      "annotation_file": "annotations-a.json",
+      "source_path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260922-learning-v1-live-03\\data\\session-fc70dae5d3d44c9cb35d75f04baeb038\\runtime-output\\local-direct-steps\\local-step-c9b0b875e9154a2d8ef5b517d5caf6d8\\observations\\wikipedia-microsoft-edge__local-direct-post-action__full-window__20260922-004149-394991.png",
+      "source_sha256": "7b46d9cff77bc8bd985c462405fff8f971ebf33c62cfebb0e239e6d42fccfc8b",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "a02-field-main-search-in",
+        "a02-field-main-search-wrong-url",
+        "a02-graphic-search-button",
+        "a02-graphic-search-wrong-restore",
+        "a02-value-address-present",
+        "a02-value-address-different",
+        "a02-page-article-not-open"
+      ],
+      "excluded": {}
+    },
+    {
+      "annotation_file": "annotations-a.json",
+      "source_path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260923-full-form-03\\data\\session-15248fbd61f04de18e1d5d42f72689c5\\captures\\basic-usage-select2-microsoft-edge__live-latency-observation__full-window__20260923-141532-712468.png",
+      "source_sha256": "bf9d89d2dce7a6dd355d3ad6627fea192ca299674665dcebbc59bde0281d4770",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "a03-field-site-search-in",
+        "a03-field-site-search-wrong-select",
+        "a03-graphic-basic-usage-link",
+        "a03-graphic-basic-usage-wrong-installation",
+        "a03-value-native-select-present",
+        "a03-value-native-select-different",
+        "a03-page-basic-usage"
+      ],
+      "excluded": {}
+    },
+    {
+      "annotation_file": "annotations-a.json",
+      "source_path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260923-advanced-form-03\\data\\session-0a5d54afc89b4b36883a925221d0b3f2\\runtime-output\\local-direct-steps\\local-step-d5c7ac3302bb4604871d7974b004cf5a\\observations\\select-only-combobox-example-apg-wai-w3c-microsoft-edge__local-direct-post-action__full-window__20260923-132043-492463.png",
+      "source_sha256": "3fbfb4ae5a05070b985693aa3882590ad1f71b2311ab916425f2a0ae3189a0ed",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "a04-field-address-in",
+        "a04-field-address-wrong-fruit",
+        "a04-graphic-apple-option",
+        "a04-graphic-apple-wrong-banana",
+        "a04-value-fruit-present",
+        "a04-value-fruit-different",
+        "a04-page-list-closed"
+      ],
+      "excluded": {}
+    },
+    {
+      "annotation_file": "annotations-a.json",
+      "source_path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260923-advanced-form-03\\data\\session-0a5d54afc89b4b36883a925221d0b3f2\\runtime-output\\local-direct-steps\\local-step-b11ada0cd8514dabb587d246559c632b\\observations\\date-picker-combobox-example-apg-wai-w3c-microsoft-edge__local-direct-post-action__full-window__20260923-132252-253008.png",
+      "source_sha256": "eacbf542efb0f1a40caaf06cbe40bad4c96297818e9e04d1c9daa5513f986174",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "a05-field-date-in",
+        "a05-field-date-wrong-url",
+        "a05-graphic-choose-date-button",
+        "a05-graphic-choose-date-wrong-codepen",
+        "a05-value-date-present",
+        "a05-value-date-different",
+        "a05-page-calendar-open"
+      ],
+      "excluded": {}
+    },
+    {
+      "annotation_file": "annotations-a.json",
+      "source_path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260923-full-form-01\\data\\session-ab7c02a5d67940ac838f3abfd8d4c0cb\\captures\\quill-your-powerful-rich-text-editor-microsoft-edge__live-latency-observation__full-window__20260923-134051-051138.png",
+      "source_sha256": "b1877e9c9751753ec608e21d73fbfc70e9e6e11699668dc8273c80e7ad830df7",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "a06-field-address-in",
+        "a06-field-address-wrong-site-search",
+        "a06-value-address-present",
+        "a06-value-address-different",
+        "a06-page-quill-home"
+      ],
+      "excluded": {
+        "a06-graphic-bold-button": "Interactive editor versus embedded illustration is not established by the static source.",
+        "a06-graphic-bold-wrong-italic": "Interactive editor versus embedded illustration is not established by the static source."
+      }
+    },
+    {
+      "annotation_file": "annotations-a.json",
+      "source_path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260921-candidate10-19\\session-0fd640c2d9c54d63bc61a0ef4086ead2\\runtime-output\\local-direct-steps\\local-step-bd73aa9bb2af40e7ba77df4779dec6fa\\observations\\3-14-7-documentation-microsoft-edge__local-direct-post-action__full-window__20260921-132720-812697.png",
+      "source_sha256": "95a305a24f32ffd03375fe696321c605a0e4413e39e14f694792710183f6aa04",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "a07-field-doc-search-in",
+        "a07-field-doc-search-wrong-theme",
+        "a07-graphic-go-button",
+        "a07-graphic-go-wrong-clear",
+        "a07-value-search-present",
+        "a07-value-search-different",
+        "a07-page-search-not-submitted"
+      ],
+      "excluded": {}
+    },
+    {
+      "annotation_file": "annotations-b.json",
+      "source_path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260921-candidate10-19\\session-0fd640c2d9c54d63bc61a0ef4086ead2\\runtime-output\\local-direct-steps\\local-step-49610583ce0d4337988e40c8a4a54daf\\observations\\search-python-3-14-7-documentation-microsoft-edge__local-direct-post-action__full-window__20260921-132723-119423.png",
+      "source_sha256": "031ae8ec322e64e34ced995709dcba90abca5b2706d49f2f201206ef32e399fb",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "b08-field-01",
+        "b08-field-02",
+        "b08-graphic-03",
+        "b08-graphic-04",
+        "b08-value-05",
+        "b08-value-06",
+        "b08-page-07",
+        "b08-page-08"
+      ],
+      "excluded": {}
+    },
+    {
+      "annotation_file": "annotations-b.json",
+      "source_path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\aion-wikipedia-20260920-15\\data\\session-cef2320c90234c47aa5d4ba3d39444c9\\runtime-output\\local-direct-steps\\local-step-ba09c492335b45af938a63e5e45be5b5\\observations\\wellington-wikipedia-microsoft-edge__local-direct-post-action__full-window__20260920-124442-736587.png",
+      "source_sha256": "19105ab1a3b4122cda279348d9158ae3f3fe4c44cfb2b13ae60bbde3a8a0db62",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "b10-field-01",
+        "b10-field-02",
+        "b10-graphic-03",
+        "b10-graphic-04",
+        "b10-value-05",
+        "b10-value-06",
+        "b10-page-07",
+        "b10-page-08"
+      ],
+      "excluded": {}
+    },
+    {
+      "annotation_file": "annotations-b.json",
+      "source_path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260923-test6-aion-candidate06\\data\\session-1042d0581cef4fd9a92f81372042bd09\\runtime-output\\local-direct-steps\\local-step-bd8b286a9996455e94a8d74aee5c2ea6\\observations\\auckland-art-gallery-google-microsoft-edge__local-direct-post-action__full-window__20260923-054013-488776.png",
+      "source_sha256": "9cc4b7e55ec75dab7cce0b104d075eef007f7d2b8bc4671d41dcd3f61fefc2f3",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "b12-field-01",
+        "b12-field-02",
+        "b12-graphic-03",
+        "b12-graphic-04",
+        "b12-value-05",
+        "b12-value-06",
+        "b12-page-07",
+        "b12-page-08"
+      ],
+      "excluded": {}
+    },
+    {
+      "annotation_file": "annotations-b.json",
+      "source_path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\aion-wikipedia-20260920-15\\data\\session-cef2320c90234c47aa5d4ba3d39444c9\\runtime-output\\local-direct-steps\\local-step-ba09c492335b45af938a63e5e45be5b5\\captures\\wikipedia-the-free-encyclopedia-microsoft-edge__local-direct-no-learning__full-window__20260920-124440-586091.png",
+      "source_sha256": "22f4c87b2a6a2a7f7243177146cb51146ab01ea6290318a327a61a8964edb362",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "b13-field-01",
+        "b13-field-02",
+        "b13-graphic-03",
+        "b13-graphic-04",
+        "b13-value-05",
+        "b13-value-06",
+        "b13-page-07",
+        "b13-page-08"
+      ],
+      "excluded": {}
+    },
+    {
+      "annotation_file": "annotations-b.json",
+      "source_path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260909-calculator-01\\artifacts\\screenshots\\-bbbf3aed__fresh-native-acceptance__calculator-initial__full-window__20260909-035806-162402.png",
+      "source_sha256": "3b2ba6a2130f095bb58b66aaca6752c36ac537248c074dda4ecfe3d23bfa595b",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "b14-graphic-01",
+        "b14-graphic-02",
+        "b14-graphic-03",
+        "b14-graphic-04",
+        "b14-graphic-05",
+        "b14-graphic-06",
+        "b14-value-07",
+        "b14-value-08"
+      ],
+      "excluded": {}
+    },
+    {
+      "annotation_file": "annotations-b.json",
+      "source_path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260909-notepad-01\\artifacts\\screenshots\\-03faf5c9__fresh-native-acceptance__notepad-initial__full-window__20260909-042130-077500.png",
+      "source_sha256": "f574ebd225eea72b1f89665722dda5858c4b96a771138211aeb53837687e30ea",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "b15-field-01",
+        "b15-field-02",
+        "b15-graphic-03",
+        "b15-graphic-04",
+        "b15-value-05",
+        "b15-value-06",
+        "b15-page-07",
+        "b15-page-08"
+      ],
+      "excluded": {}
+    },
+    {
+      "annotation_file": "annotations-c.json",
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\gimp-capture-1.png",
+      "source_sha256": "aa9cde33c5e18b86bc44cf531471183b76ddce78368eb71749597a945dab6f35",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "c00-field-site-search-match",
+        "c00-field-site-search-wrong-control",
+        "c00-graphic-download-match",
+        "c00-graphic-download-wrong-control",
+        "c00-page-present",
+        "c00-page-absent"
+      ],
+      "excluded": {}
+    },
+    {
+      "annotation_file": "annotations-c.json",
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\audacity-capture-1.png",
+      "source_sha256": "29f4650e83777e8b6582bdb8e62bf5bd1642b2a8df4a59a335d819ed9ab4322b",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "c01-graphic-download-match",
+        "c01-graphic-download-wrong-control",
+        "c01-graphic-cookie-reject-match",
+        "c01-graphic-cookie-reject-wrong-control",
+        "c01-page-present",
+        "c01-page-absent"
+      ],
+      "excluded": {}
+    },
+    {
+      "annotation_file": "annotations-c.json",
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\blender-capture-1.png",
+      "source_sha256": "e389e39281e0bc402941489e5e26c5e26c8a4f9db2b3ffeca37280523e449522",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "c02-graphic-whats-coming-match",
+        "c02-graphic-whats-coming-wrong-control",
+        "c02-graphic-donate-match",
+        "c02-graphic-donate-wrong-control",
+        "c02-page-present",
+        "c02-page-absent"
+      ],
+      "excluded": {}
+    },
+    {
+      "annotation_file": "annotations-c.json",
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\rust-capture-1.png",
+      "source_sha256": "7ae8e40567f819ecc5e1af5612f725cd525af9d5abb0b95858fdfb1e448fc182",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "c03-graphic-get-started-match",
+        "c03-graphic-get-started-wrong-control",
+        "c03-graphic-install-match",
+        "c03-graphic-install-wrong-control",
+        "c03-page-present",
+        "c03-page-absent"
+      ],
+      "excluded": {}
+    },
+    {
+      "annotation_file": "annotations-c.json",
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\go-capture-1.png",
+      "source_sha256": "722b16f4f85b90603d034f1a07b1799466a7dd758217f7eb68a196b7737a024c",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "c04-graphic-get-started-match",
+        "c04-graphic-get-started-wrong-control",
+        "c04-graphic-docs-match",
+        "c04-graphic-docs-wrong-control",
+        "c04-page-present",
+        "c04-page-absent"
+      ],
+      "excluded": {}
+    },
+    {
+      "annotation_file": "annotations-c.json",
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\sqlite-capture-1.png",
+      "source_sha256": "1f3afa691f33d7866c0653e860d1cc9638686f4f3d2a315159660796be6b556f",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "c05-graphic-latest-download-match",
+        "c05-graphic-latest-download-wrong-control",
+        "c05-graphic-documentation-match",
+        "c05-graphic-documentation-wrong-control",
+        "c05-page-present",
+        "c05-page-absent"
+      ],
+      "excluded": {}
+    },
+    {
+      "annotation_file": "annotations-c.json",
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\postgresql-capture-1.png",
+      "source_sha256": "25b60da582256d496410afa1ca5ed903c08fb8eae33b932fa652c473cd1809a1",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "c06-graphic-search-match",
+        "c06-graphic-search-wrong-control",
+        "c06-graphic-download-match",
+        "c06-graphic-download-wrong-control",
+        "c06-page-present",
+        "c06-page-absent"
+      ],
+      "excluded": {}
+    },
+    {
+      "annotation_file": "annotations-c.json",
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\mysql-capture-1.png",
+      "source_sha256": "a7e896639866046e3dbdbe4346b5a88f830279879c0c4c2d2b5f6a0d888982cc",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "c07-graphic-documentation-match",
+        "c07-graphic-documentation-wrong-control",
+        "c07-graphic-login-match",
+        "c07-graphic-login-wrong-control",
+        "c07-page-present",
+        "c07-page-absent"
+      ],
+      "excluded": {}
+    },
+    {
+      "annotation_file": "annotations-c.json",
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\debian-capture-1.png",
+      "source_sha256": "fb5f72ac3e40c227d8ba3a14460cb5ff563f22335b7dc9718b28ffc5422aebc5",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "c08-field-site-search-match",
+        "c08-field-site-search-wrong-control",
+        "c08-graphic-download-match",
+        "c08-graphic-download-wrong-control",
+        "c08-page-present",
+        "c08-page-absent"
+      ],
+      "excluded": {}
+    },
+    {
+      "annotation_file": "annotations-c.json",
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\ubuntu-capture-1.png",
+      "source_sha256": "50ab26cba166a861ccb2465c6a2898da5694ea59c6a508ceb1f3484f840c5d65",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "c09-graphic-get-badge-match",
+        "c09-graphic-get-badge-wrong-control",
+        "c09-graphic-manage-trackers-match",
+        "c09-graphic-manage-trackers-wrong-control",
+        "c09-page-present",
+        "c09-page-absent",
+        "ubuntu-setting-persistence-not-observable"
+      ],
+      "excluded": {}
+    },
+    {
+      "annotation_file": "annotations-d.json",
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\archlinux-capture-1.png",
+      "source_sha256": "47916419b924a72e91a2f703ede377173b9458d0fbb3a32edfeafa11d1f55cfd",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "d10-field-01",
+        "d10-field-02",
+        "d10-graphic-03",
+        "d10-graphic-04",
+        "d10-page-05",
+        "d10-page-06"
+      ],
+      "excluded": {}
+    },
+    {
+      "annotation_file": "annotations-d.json",
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\kernel-capture-1.png",
+      "source_sha256": "0a6bba8cc080543629bd3be01776a29ac54ef04f281ed80a85d6d0a8a8e471b1",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "d11-graphic-01",
+        "d11-graphic-02",
+        "d11-graphic-03",
+        "d11-graphic-04",
+        "d11-page-05",
+        "d11-page-06"
+      ],
+      "excluded": {}
+    },
+    {
+      "annotation_file": "annotations-d.json",
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\gnu-capture-1.png",
+      "source_sha256": "ef1c419d2e8c4c4ee9a5f2386f69cad6fbb973deb2a16545abcfee651963049f",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "d12-field-01",
+        "d12-field-02",
+        "d12-graphic-03",
+        "d12-graphic-04",
+        "d12-page-05",
+        "d12-page-06",
+        "gnu-video-progress-not-observable"
+      ],
+      "excluded": {}
+    },
+    {
+      "annotation_file": "annotations-d.json",
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\w3c-capture-1.png",
+      "source_sha256": "3def4f364d38d2d8259286724b84c43b9658a65250e9d8fb8bd49467559e1d19",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "d13-graphic-01",
+        "d13-graphic-02",
+        "d13-graphic-03",
+        "d13-graphic-04",
+        "d13-page-05",
+        "d13-page-06"
+      ],
+      "excluded": {}
+    },
+    {
+      "annotation_file": "annotations-d.json",
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\w3schools-capture-1.png",
+      "source_sha256": "b97d85caf822a9fbaed9f188da18eaa32acf4100964501990f23df6e109f3d12",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "d14-field-01",
+        "d14-field-02",
+        "d14-graphic-03",
+        "d14-graphic-04",
+        "d14-page-05",
+        "d14-page-06"
+      ],
+      "excluded": {}
+    },
+    {
+      "annotation_file": "annotations-d.json",
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\npm-capture-1.png",
+      "source_sha256": "a568c12197678db0d1777f148d06bb2967d5ff2aa7c1e8a1a386e0ce74950469",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "d15-field-01",
+        "d15-field-02",
+        "d15-graphic-03",
+        "d15-graphic-04",
+        "d15-page-05",
+        "d15-page-06"
+      ],
+      "excluded": {}
+    },
+    {
+      "annotation_file": "annotations-d.json",
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\pythonhome-capture-1.png",
+      "source_sha256": "b207b5f68639b65b288e55e2608b67259ca3df23f481ffb2ac608d2e49470682",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "d16-field-01",
+        "d16-field-02",
+        "d16-graphic-03",
+        "d16-graphic-04",
+        "d16-page-05",
+        "d16-page-06"
+      ],
+      "excluded": {}
+    },
+    {
+      "annotation_file": "annotations-d.json",
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\nasa-capture-1.png",
+      "source_sha256": "0e368788525365bddb7f9c6a9c6aa46ece132b93af45dc886c83c2d65972df38",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "d17-field-01",
+        "d17-field-02",
+        "d17-graphic-03",
+        "d17-graphic-04",
+        "d17-page-05",
+        "d17-page-06",
+        "nasa-video-progress-not-observable"
+      ],
+      "excluded": {}
+    },
+    {
+      "annotation_file": "annotations-d.json",
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\openlibrary-capture-1.png",
+      "source_sha256": "95e8b3a2d7cb8a7103426959b99d03c24cd72461ac994a7b046729c4e7f2cc5a",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "d18-field-01",
+        "d18-field-02",
+        "d18-graphic-03",
+        "d18-graphic-04",
+        "d18-page-05",
+        "d18-page-06",
+        "library-carousel-progress-not-observable"
+      ],
+      "excluded": {}
+    },
+    {
+      "annotation_file": "annotations-d.json",
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\internetarchive-capture-1.png",
+      "source_sha256": "e68df84665a54b8fe55d9d9d4c3a1f277ffb64df92b66864a6672490d99f68e4",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "d19-field-01",
+        "d19-field-02",
+        "d19-graphic-03",
+        "d19-graphic-04",
+        "d19-page-05",
+        "d19-page-06"
+      ],
+      "excluded": {}
+    },
+    {
+      "annotation_file": "annotations-main.json",
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-04\\retained-sources\\pypi-capture-1.png",
+      "source_sha256": "bc1f560fa02eb1bac64204a114ad1ca268a1c660e66661b872a6d49ab9d06d55",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "pypi-search-hit",
+        "pypi-search-on-login",
+        "pypi-search-icon",
+        "pypi-register-on-login",
+        "pypi-address-value",
+        "pypi-placeholder-not-entered",
+        "pypi-homepage-result",
+        "pypi-not-project-detail",
+        "pypi-install-not-observable"
+      ],
+      "excluded": {}
+    },
+    {
+      "annotation_file": "annotations-main.json",
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-04\\retained-sources\\mozilla-capture-1.png",
+      "source_sha256": "8fea23bb9d927751ba575fdfa68c520402ca6d8ba2481379aaadff07b4f66836",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "mozilla-address-hit",
+        "mozilla-address-on-products",
+        "mozilla-pause-button",
+        "mozilla-about-on-products",
+        "mozilla-address-value",
+        "mozilla-wrong-address-value",
+        "mozilla-homepage-result",
+        "mozilla-download-persistence"
+      ],
+      "excluded": {}
+    },
+    {
+      "annotation_file": "annotations-main.json",
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-04\\retained-sources\\libreoffice-capture-1.png",
+      "source_sha256": "9e4b4d53fbf78cb98c2b27a9b399564665301dd1d81cc3790e2c6800b0aed5df",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "libreoffice-address-hit",
+        "libreoffice-address-on-language",
+        "libreoffice-download-hit",
+        "libreoffice-donate-on-download",
+        "libreoffice-search-icon",
+        "libreoffice-address-value",
+        "libreoffice-wrong-address-value",
+        "libreoffice-homepage-result",
+        "libreoffice-embedded-editor-decoy"
+      ],
+      "excluded": {}
+    },
+    {
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\execution-speed-20261015-01\\data\\session-2e95b662918644ce98860ebc91dcfbe6\\runtime-output\\artifacts\\screenshots\\microsoft-microsoft-edge__agent-grounding-dispatch-check__full-window__20261015-005939-390970.png",
+      "source_sha256": "57c2f6cfef3232831897db4f91b3a72baf1bf3ec0a91713f142b358d12e7518e",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "live01-field-inside",
+        "live01-field-other-control",
+        "live01-current-page"
+      ],
+      "known_failure_source_train_only": true
+    },
+    {
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\execution-speed-20261015-02\\data\\session-93726f8bd7094d269008264ddfb7f2a9\\runtime-output\\artifacts\\screenshots\\google-microsoft-edge__agent-grounding-dispatch-check__full-window__20261015-012353-318803.png",
+      "source_sha256": "9a6d88112ec52612e327d886644341e6f3a8d253501eefdca7b6618a8707934d",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "live02-field-inside",
+        "live02-field-other-control",
+        "live02-current-page"
+      ],
+      "known_failure_source_train_only": true
+    },
+    {
+      "source_path": "D:\\AgentGUI-Projects\\evidence\\execution-speed-20261015-03\\data\\session-18ee73f7386c4bc8abf6e6cbffb54e14\\runtime-output\\artifacts\\screenshots\\microsoft-microsoft-edge__agent-grounding-dispatch-check__full-window__20261015-013722-075504.png",
+      "source_sha256": "749d7d7f2fbdf212d23529912768ce666aa562b739ab0736ba481f6a3c562d7a",
+      "reviewer": "Main AI",
+      "human_reviewed": false,
+      "original_image_visually_inspected": true,
+      "accepted_case_ids": [
+        "live03-field-inside",
+        "live03-field-other-control",
+        "live03-current-page"
+      ],
+      "known_failure_source_train_only": true
+    }
+  ],
+  "notes": [
+    "Original screenshots visually inspected by Main before paid prompt comparison.",
+    "Known live-failure sources are training only.",
+    "No synthetic UI or model answers used as truth.",
+    "Derived markers and counterfactual wrong-control points are benchmark annotations, not actual executed clicks."
+  ]
+}

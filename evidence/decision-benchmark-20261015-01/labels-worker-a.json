@@ -1,0 +1,109 @@
+{
+  "schema": "decision_benchmark_prelabels.v1",
+  "annotator": "Sol",
+  "annotation_stage": "pre_annotation_checkpoint",
+  "main_review_status": "pending",
+  "status": "stopped_on_main_instruction",
+  "notes": [
+    "这是 Sol 预标注工作状态，不是真人标注或最终 ground truth。",
+    "用户要求优先优化流程，已停止扩展；尚未产出任何逐点 cases。",
+    "没有复制或修改原图，没有读取历史模型输出，没有调用 API 或桌面。"
+  ],
+  "images": [
+    {
+      "catalog_index": 1,
+      "source_path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260923-form-batch-resume-01\\data\\session-ed8ef3e172944871a76cca1db114446b\\runtime-output\\local-direct-steps\\local-step-ffbd0c4fa1ed4803b71b3dc4d43fd2a8\\observations\\httpbin-org-forms-post-microsoft-edge__local-direct-post-action__full-window__20260923-230216-184716.png",
+      "source_sha256": "44004f25d077bf7411aa2f6adeaa40044263507c25d4d744b98b8b24ae27f943",
+      "original_size": {
+        "width": 1278,
+        "height": 1285
+      },
+      "capture_id": "httpbin-org-forms-post-microsoft-edge__local-direct-post-action__full-window__20260923-230216-184716.png",
+      "session_id": "session-ed8ef3e172944871a76cca1db114446b",
+      "group_id": "httpbin-public-order-form",
+      "status": "viewed_not_annotated",
+      "observation": "已查看；可见公开测试表单及测试占位值，未完成逐点标注。",
+      "cases": []
+    },
+    {
+      "catalog_index": 2,
+      "source_path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260922-learning-v1-live-03\\data\\session-fc70dae5d3d44c9cb35d75f04baeb038\\runtime-output\\local-direct-steps\\local-step-c9b0b875e9154a2d8ef5b517d5caf6d8\\observations\\wikipedia-microsoft-edge__local-direct-post-action__full-window__20260922-004149-394991.png",
+      "source_sha256": "7b46d9cff77bc8bd985c462405fff8f971ebf33c62cfebb0e239e6d42fccfc8b",
+      "original_size": {
+        "width": 1278,
+        "height": 953
+      },
+      "capture_id": "wikipedia-microsoft-edge__local-direct-post-action__full-window__20260922-004149-394991.png",
+      "session_id": "session-fc70dae5d3d44c9cb35d75f04baeb038",
+      "group_id": "wikipedia-portal",
+      "status": "viewed_not_annotated",
+      "observation": "已查看；可见百科入口、搜索框及浏览器恢复提示，未完成逐点标注。",
+      "cases": []
+    },
+    {
+      "catalog_index": 3,
+      "source_path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260923-full-form-03\\data\\session-15248fbd61f04de18e1d5d42f72689c5\\captures\\basic-usage-select2-microsoft-edge__live-latency-observation__full-window__20260923-141532-712468.png",
+      "source_sha256": "bf9d89d2dce7a6dd355d3ad6627fea192ca299674665dcebbc59bde0281d4770",
+      "original_size": {
+        "width": 2560,
+        "height": 1400
+      },
+      "capture_id": "basic-usage-select2-microsoft-edge__live-latency-observation__full-window__20260923-141532-712468.png",
+      "session_id": "session-15248fbd61f04de18e1d5d42f72689c5",
+      "group_id": "select2-basic-usage",
+      "status": "viewed_not_annotated",
+      "observation": "已查看；可见网站搜索和下拉框示例，未完成逐点标注。",
+      "cases": []
+    },
+    {
+      "catalog_index": 4,
+      "source_path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260923-advanced-form-03\\data\\session-0a5d54afc89b4b36883a925221d0b3f2\\runtime-output\\local-direct-steps\\local-step-d5c7ac3302bb4604871d7974b004cf5a\\observations\\select-only-combobox-example-apg-wai-w3c-microsoft-edge__local-direct-post-action__full-window__20260923-132043-492463.png",
+      "source_sha256": "3fbfb4ae5a05070b985693aa3882590ad1f71b2311ab916425f2a0ae3189a0ed",
+      "original_size": {
+        "width": 2560,
+        "height": 1400
+      },
+      "capture_id": "select-only-combobox-example-apg-wai-w3c-microsoft-edge__local-direct-post-action__full-window__20260923-132043-492463.png",
+      "session_id": "session-0a5d54afc89b4b36883a925221d0b3f2",
+      "group_id": "apg-combobox-example-family",
+      "status": "viewed_not_annotated",
+      "observation": "已查看；可见展开的水果组合框，与另一APG示例必须同组，未完成逐点标注。",
+      "cases": []
+    },
+    {
+      "catalog_index": 5,
+      "source_path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260923-advanced-form-03\\data\\session-0a5d54afc89b4b36883a925221d0b3f2\\runtime-output\\local-direct-steps\\local-step-b11ada0cd8514dabb587d246559c632b\\observations\\date-picker-combobox-example-apg-wai-w3c-microsoft-edge__local-direct-post-action__full-window__20260923-132252-253008.png",
+      "source_sha256": "eacbf542efb0f1a40caaf06cbe40bad4c96297818e9e04d1c9daa5513f986174",
+      "original_size": {
+        "width": 2560,
+        "height": 1400
+      },
+      "capture_id": "date-picker-combobox-example-apg-wai-w3c-microsoft-edge__local-direct-post-action__full-window__20260923-132252-253008.png",
+      "session_id": "session-0a5d54afc89b4b36883a925221d0b3f2",
+      "group_id": "apg-combobox-example-family",
+      "status": "viewed_not_annotated",
+      "observation": "已查看；可见日期输入及相邻箭头，与另一APG示例必须同组，未完成逐点标注。",
+      "cases": []
+    }
+  ],
+  "skipped": [
+    {
+      "catalog_index": 0,
+      "source_path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260923-test6-bound-keyboard-live\\data\\session-d81336087c3a49358290bae39b99b0fe\\runtime-output\\local-direct-steps\\local-step-beb18022b33f4a098a13ba4e327cf893\\observations\\the-w3c-markup-validation-service-microsoft-edge__local-direct-post-action__full-window__20260923-040548-456763.png",
+      "source_sha256": "c507cd0d95bd6f7025b40f61850815c918f2cdc46fb69be4ca3c77171371ee80",
+      "original_size": {
+        "width": 800,
+        "height": 1155
+      },
+      "capture_id": "the-w3c-markup-validation-service-microsoft-edge__local-direct-post-action__full-window__20260923-040548-456763.png",
+      "session_id": "session-d81336087c3a49358290bae39b99b0fe",
+      "reason_code": "private_autofill_overlay",
+      "reason": "原图中的浏览器保存信息浮层含疑似私人联系信息；整图跳过，未复制其内容。"
+    }
+  ],
+  "not_viewed": [
+    6,
+    7
+  ],
+  "case_count": 0
+}

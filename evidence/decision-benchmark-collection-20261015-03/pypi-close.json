@@ -1,0 +1,21 @@
+{
+  "request_id": "collect-0-close",
+  "received_at": "2026-10-14T12:47:33.288643+00:00",
+  "started_at": "2026-10-14T12:47:33.288643+00:00",
+  "result": {
+    "status": "window_closed",
+    "success": true,
+    "close_requested": true,
+    "automatic_retry_allowed": false
+  },
+  "status": "returned",
+  "finished_at": "2026-10-14T12:47:33.349644+00:00",
+  "command_wall_ms": 60.893,
+  "response_available_at": "2026-10-14T12:47:33.349644+00:00",
+  "operation_succeeded": true,
+  "task_effect_verified": false,
+  "automatic_retry_allowed": false,
+  "original_request_id": "collect-0-close",
+  "current_status_request_id": null,
+  "client_state": "terminal"
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "name": "the-w3c-markup-validation-service-microsoft-edge",
+    "path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260923-test6-bound-keyboard-live\\data\\session-d81336087c3a49358290bae39b99b0fe\\runtime-output\\local-direct-steps\\local-step-beb18022b33f4a098a13ba4e327cf893\\observations\\the-w3c-markup-validation-service-microsoft-edge__local-direct-post-action__full-window__20260923-040548-456763.png",
+    "sha256": "c507cd0d95bd6f7025b40f61850815c918f2cdc46fb69be4ca3c77171371ee80",
+    "kind": "unreviewed_candidate"
+  },
+  {
+    "name": "httpbin-org-forms-post-microsoft-edge",
+    "path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260923-form-batch-resume-01\\data\\session-ed8ef3e172944871a76cca1db114446b\\runtime-output\\local-direct-steps\\local-step-ffbd0c4fa1ed4803b71b3dc4d43fd2a8\\observations\\httpbin-org-forms-post-microsoft-edge__local-direct-post-action__full-window__20260923-230216-184716.png",
+    "sha256": "44004f25d077bf7411aa2f6adeaa40044263507c25d4d744b98b8b24ae27f943",
+    "kind": "unreviewed_candidate"
+  },
+  {
+    "name": "wikipedia-microsoft-edge",
+    "path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260922-learning-v1-live-03\\data\\session-fc70dae5d3d44c9cb35d75f04baeb038\\runtime-output\\local-direct-steps\\local-step-c9b0b875e9154a2d8ef5b517d5caf6d8\\observations\\wikipedia-microsoft-edge__local-direct-post-action__full-window__20260922-004149-394991.png",
+    "sha256": "7b46d9cff77bc8bd985c462405fff8f971ebf33c62cfebb0e239e6d42fccfc8b",
+    "kind": "unreviewed_candidate"
+  },
+  {
+    "name": "basic-usage-select2-microsoft-edge",
+    "path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260923-full-form-03\\data\\session-15248fbd61f04de18e1d5d42f72689c5\\captures\\basic-usage-select2-microsoft-edge__live-latency-observation__full-window__20260923-141532-712468.png",
+    "sha256": "bf9d89d2dce7a6dd355d3ad6627fea192ca299674665dcebbc59bde0281d4770",
+    "kind": "unreviewed_candidate"
+  },
+  {
+    "name": "select-only-combobox-example-apg-wai-w3c-microsoft-edge",
+    "path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260923-advanced-form-03\\data\\session-0a5d54afc89b4b36883a925221d0b3f2\\runtime-output\\local-direct-steps\\local-step-d5c7ac3302bb4604871d7974b004cf5a\\observations\\select-only-combobox-example-apg-wai-w3c-microsoft-edge__local-direct-post-action__full-window__20260923-132043-492463.png",
+    "sha256": "3fbfb4ae5a05070b985693aa3882590ad1f71b2311ab916425f2a0ae3189a0ed",
+    "kind": "unreviewed_candidate"
+  },
+  {
+    "name": "date-picker-combobox-example-apg-wai-w3c-microsoft-edge",
+    "path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260923-advanced-form-03\\data\\session-0a5d54afc89b4b36883a925221d0b3f2\\runtime-output\\local-direct-steps\\local-step-b11ada0cd8514dabb587d246559c632b\\observations\\date-picker-combobox-example-apg-wai-w3c-microsoft-edge__local-direct-post-action__full-window__20260923-132252-253008.png",
+    "sha256": "eacbf542efb0f1a40caaf06cbe40bad4c96297818e9e04d1c9daa5513f986174",
+    "kind": "unreviewed_candidate"
+  },
+  {
+    "name": "quill-your-powerful-rich-text-editor-microsoft-edge",
+    "path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260923-full-form-01\\data\\session-ab7c02a5d67940ac838f3abfd8d4c0cb\\captures\\quill-your-powerful-rich-text-editor-microsoft-edge__live-latency-observation__full-window__20260923-134051-051138.png",
+    "sha256": "b1877e9c9751753ec608e21d73fbfc70e9e6e11699668dc8273c80e7ad830df7",
+    "kind": "unreviewed_candidate"
+  },
+  {
+    "name": "3-14-7-documentation-microsoft-edge",
+    "path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260921-candidate10-19\\session-0fd640c2d9c54d63bc61a0ef4086ead2\\runtime-output\\local-direct-steps\\local-step-bd73aa9bb2af40e7ba77df4779dec6fa\\observations\\3-14-7-documentation-microsoft-edge__local-direct-post-action__full-window__20260921-132720-812697.png",
+    "sha256": "95a305a24f32ffd03375fe696321c605a0e4413e39e14f694792710183f6aa04",
+    "kind": "unreviewed_candidate"
+  },
+  {
+    "name": "search-python-3-14-7-documentation-microsoft-edge",
+    "path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260921-candidate10-19\\session-0fd640c2d9c54d63bc61a0ef4086ead2\\runtime-output\\local-direct-steps\\local-step-49610583ce0d4337988e40c8a4a54daf\\observations\\search-python-3-14-7-documentation-microsoft-edge__local-direct-post-action__full-window__20260921-132723-119423.png",
+    "sha256": "031ae8ec322e64e34ced995709dcba90abca5b2706d49f2f201206ef32e399fb",
+    "kind": "unreviewed_candidate"
+  },
+  {
+    "name": "google-maps-auckland-google-microsoft-edge",
+    "path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260923-test6-browser-live-04\\data\\session-56a19140597341dd92af9e0e6f1d8f06\\runtime-output\\local-direct-steps\\local-step-cfa98e6e021a408d9ad98daa1f8190a1\\observations\\google-maps-auckland-google-microsoft-edge__local-direct-post-action__full-window__20260923-015607-608553.png",
+    "sha256": "11ac4c082534ad67722bef9c78749a8b7fccdef565ff5df7c5e812ffa40c6016",
+    "kind": "unreviewed_candidate"
+  },
+  {
+    "name": "wellington-wikipedia-microsoft-edge",
+    "path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\aion-wikipedia-20260920-15\\data\\session-cef2320c90234c47aa5d4ba3d39444c9\\runtime-output\\local-direct-steps\\local-step-ba09c492335b45af938a63e5e45be5b5\\observations\\wellington-wikipedia-microsoft-edge__local-direct-post-action__full-window__20260920-124442-736587.png",
+    "sha256": "19105ab1a3b4122cda279348d9158ae3f3fe4c44cfb2b13ae60bbde3a8a0db62",
+    "kind": "unreviewed_candidate"
+  },
+  {
+    "name": "explorer-exe",
+    "path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260922-instant-v5-desktop-01\\data\\session-b3b017aa9f2a4ae1bbce585658f4f53e\\runtime-output\\local-direct-steps\\local-step-82032c2062164a8cb97a1f1d89d694ec\\observations\\explorer-exe__local-direct-post-action__full-window__20260922-201253-856982.png",
+    "sha256": "589c091d9d491cce2135b3aeb1d4873242ad269126fa00f8d4c75206e0427a96",
+    "kind": "unreviewed_candidate"
+  },
+  {
+    "name": "auckland-art-gallery-google-microsoft-edge",
+    "path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260923-test6-aion-candidate06\\data\\session-1042d0581cef4fd9a92f81372042bd09\\runtime-output\\local-direct-steps\\local-step-bd8b286a9996455e94a8d74aee5c2ea6\\observations\\auckland-art-gallery-google-microsoft-edge__local-direct-post-action__full-window__20260923-054013-488776.png",
+    "sha256": "9cc4b7e55ec75dab7cce0b104d075eef007f7d2b8bc4671d41dcd3f61fefc2f3",
+    "kind": "unreviewed_candidate"
+  },
+  {
+    "name": "wikipedia-the-free-encyclopedia-microsoft-edge",
+    "path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\aion-wikipedia-20260920-15\\data\\session-cef2320c90234c47aa5d4ba3d39444c9\\runtime-output\\local-direct-steps\\local-step-ba09c492335b45af938a63e5e45be5b5\\captures\\wikipedia-the-free-encyclopedia-microsoft-edge__local-direct-no-learning__full-window__20260920-124440-586091.png",
+    "sha256": "22f4c87b2a6a2a7f7243177146cb51146ab01ea6290318a327a61a8964edb362",
+    "kind": "unreviewed_candidate"
+  },
+  {
+    "name": "calculator-initial",
+    "path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260909-calculator-01\\artifacts\\screenshots\\-bbbf3aed__fresh-native-acceptance__calculator-initial__full-window__20260909-035806-162402.png",
+    "sha256": "3b2ba6a2130f095bb58b66aaca6752c36ac537248c074dda4ecfe3d23bfa595b",
+    "kind": "unreviewed_candidate"
+  },
+  {
+    "name": "notepad-initial",
+    "path": "D:\\AgentGUI-Projects\\verification\\AgentReviewAcceptance\\20260909-notepad-01\\artifacts\\screenshots\\-03faf5c9__fresh-native-acceptance__notepad-initial__full-window__20260909-042130-077500.png",
+    "sha256": "f574ebd225eea72b1f89665722dda5858c4b96a771138211aeb53837687e30ea",
+    "kind": "unreviewed_candidate"
+  }
+]

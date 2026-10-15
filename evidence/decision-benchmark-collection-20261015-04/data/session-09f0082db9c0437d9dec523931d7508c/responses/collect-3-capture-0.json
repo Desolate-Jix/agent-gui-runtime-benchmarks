@@ -1,0 +1,98 @@
+{
+  "command": {
+    "kind": "capture"
+  },
+  "received_at": "2026-10-14T12:52:19.561315+00:00",
+  "started_at": "2026-10-14T12:52:19.561315+00:00",
+  "observation": {
+    "image_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-04\\data\\session-09f0082db9c0437d9dec523931d7508c\\captures\\7-zip-microsoft-edge__live-latency-observation__full-window__20261015-015219-586317.png",
+    "image_width": 1264,
+    "image_height": 892,
+    "image_size": {
+      "width": 1264,
+      "height": 892
+    },
+    "window_rect": [
+      18,
+      10,
+      1282,
+      902
+    ],
+    "roi": null,
+    "roi_adjusted": false,
+    "capture_purpose": "live-latency-observation",
+    "window_size": {
+      "width": 1264,
+      "height": 892
+    },
+    "capture_timings": {
+      "contract_version": "window_capture_timing_v1",
+      "total_ms": 39.911,
+      "steps": [
+        {
+          "name": "backend_and_binding",
+          "elapsed_ms": 0.082
+        },
+        {
+          "name": "foreground_preparation",
+          "elapsed_ms": 0.011
+        },
+        {
+          "name": "geometry_and_pre_visibility",
+          "elapsed_ms": 0.112
+        },
+        {
+          "name": "backend_open_and_grab",
+          "elapsed_ms": 19.966
+        },
+        {
+          "name": "post_binding_and_visibility",
+          "elapsed_ms": 0.299
+        },
+        {
+          "name": "pixel_conversion",
+          "elapsed_ms": 4.004
+        },
+        {
+          "name": "backend_close_and_mask",
+          "elapsed_ms": 0.25
+        },
+        {
+          "name": "output_path",
+          "elapsed_ms": 0.565
+        },
+        {
+          "name": "png_encode_and_write",
+          "elapsed_ms": 12.801
+        },
+        {
+          "name": "retention_cleanup",
+          "elapsed_ms": 1.814
+        }
+      ],
+      "nested_timings_additive": false
+    },
+    "capture_visibility": {
+      "contract_version": "bound_capture_visibility_v2",
+      "allowed": true,
+      "reason": "capture_window_visible",
+      "bound_window_handle": 9046474,
+      "masked": false,
+      "coordinate_space": "window"
+    },
+    "window": {
+      "handle": 9046474,
+      "process_id": 76336
+    },
+    "window_identity": {
+      "handle": 9046474,
+      "process_id": 76336,
+      "process_create_time": 1791982335.5126574
+    },
+    "sha256": "2d09a9dfa4db8f877b26bb562548c22995006c5927f1a794fd8daae6e7366feb"
+  },
+  "status": "returned",
+  "finished_at": "2026-10-14T12:52:19.602316+00:00",
+  "command_wall_ms": 41.633,
+  "response_available_at": "2026-10-14T12:52:19.603316+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "baseline": {},
+  "short": {
+    "input_field": "Is the cyan marker center inside {target}? Judge position only. Blank interior is still inside. Ignore the marker itself and artificial crop edges.",
+    "graphic": "Compare the visible icon or button at the cyan center with {target}. Ignore the cyan annotation itself. Choose a match, a different target, or insufficient visible evidence.",
+    "text_value": "Does the entered field text exactly equal {expected_text}? Ignore separate icons and shortcut hints. If gray unaccepted completion is attached, choose evidence_insufficient.",
+    "page_result": "Check only this visible current result: {condition}. Choose condition_met if shown, condition_not_met if contradicted, otherwise evidence_insufficient. One static image cannot establish temporal progress or hidden persistence."
+  },
+  "region_first": {
+    "input_field": "Identify the visible region containing the cyan center, then compare that region with {target}. Blank space inside the target input counts as inside. Select condition_met for its interior, condition_not_met for a different control or page area, or evidence_insufficient if the point or target boundary cannot be identified. The ring and artificial crop edges are annotations.",
+    "graphic": "Identify the actual visible symbol or control under the cyan center, then match it to {target}. Use its shape or text, not the cyan overlay. Select condition_met for that target, condition_not_met for a different control, or evidence_insufficient if it cannot be identified. Use Overview only to resolve identity or a target-local obstruction.",
+    "text_value": "Read the complete entered value in this field crop, then compare it with {expected_text}. Select condition_met for exact equality and condition_not_met for a different or absent value. Select evidence_insufficient if unreadable or attached gray unaccepted completion prevents comparison. Ignore separate icons and shortcut hints.",
+    "page_result": "Inspect the current screenshot for this condition: {condition}. Select condition_met only when the stated visible result is established; condition_not_met when the image establishes a conflicting state; evidence_insufficient when required evidence is missing. Do not infer earlier actions, future steps, temporal progress or hidden persistence from one static frame."
+  }
+}

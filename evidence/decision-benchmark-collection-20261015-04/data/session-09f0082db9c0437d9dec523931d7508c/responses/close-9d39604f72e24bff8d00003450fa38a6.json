@@ -1,0 +1,14 @@
+{
+  "command": {
+    "kind": "close"
+  },
+  "received_at": "2026-10-14T12:52:30.348002+00:00",
+  "started_at": "2026-10-14T12:52:30.348002+00:00",
+  "result": {
+    "closing": true
+  },
+  "status": "returned",
+  "finished_at": "2026-10-14T12:52:30.348995+00:00",
+  "command_wall_ms": 0.182,
+  "response_available_at": "2026-10-14T12:52:30.348995+00:00"
+}

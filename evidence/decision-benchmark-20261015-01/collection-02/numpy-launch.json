@@ -1,0 +1,37 @@
+{
+  "request_id": "collect-1-launch",
+  "received_at": "2026-10-14T11:42:03.583569+00:00",
+  "started_at": "2026-10-14T11:42:03.583569+00:00",
+  "preparation_preview": {
+    "source": "app_catalog",
+    "app_id": "discovered-0db8bc1f9c846cabd498933e325526eb",
+    "name": "numpy",
+    "url": null,
+    "command": [
+      "c:\\program files (x86)\\microsoft\\edge\\application\\msedge.exe",
+      "--user-data-dir=D:\\AgentGUI-Projects\\test-profiles\\amadeus-codex-runtime-edge",
+      "--new-window",
+      "https://numpy.org/doc/stable/"
+    ],
+    "executable_path": "c:\\program files (x86)\\microsoft\\edge\\application\\msedge.exe",
+    "catalog_entry_sha256": "bf514e0a08acc42341630edfc3e41b94eef280a237d255ef85c490aed1f26dd2",
+    "executable_sha256": "4bb4545b4ab80a3cf463a588ce570ca42de38fe6db16e3baeb0798ac75b4648b",
+    "contract_version": "native_window_preparation_v1",
+    "preparation_id": "a24ff8a4-cc79-41c2-9a8a-1efdd856ba40",
+    "mode": "launch",
+    "identity": null,
+    "expires_in_seconds": 60
+  },
+  "status": "failed",
+  "error_type": "InvalidWindowHandle",
+  "error": "Handle 1968608 is not a vaild window handle",
+  "automatic_retry_allowed": false,
+  "finished_at": "2026-10-14T11:42:03.607567+00:00",
+  "command_wall_ms": 23.78,
+  "response_available_at": "2026-10-14T11:42:03.607567+00:00",
+  "operation_succeeded": false,
+  "task_effect_verified": false,
+  "original_request_id": "collect-1-launch",
+  "current_status_request_id": null,
+  "client_state": "terminal"
+}

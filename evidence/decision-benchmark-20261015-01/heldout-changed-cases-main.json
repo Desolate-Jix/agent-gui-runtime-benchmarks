@@ -1,0 +1,27 @@
+[
+  {
+    "case": "b15-value-06",
+    "category": "text_value",
+    "expected": "condition_not_met",
+    "baseline": "evidence_insufficient",
+    "candidate": "condition_not_met",
+    "question_data": {
+      "target": "Current Notepad document text",
+      "expected_text": "Hello"
+    },
+    "image_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-20261015-01\\suite-v2\\assets\\d0d36d8138348fe9a9e5fc21192989e5b8ceda3c66bedfb95b9c1332e60b514b.png",
+    "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-20261015-01\\suite-v2\\assets\\f574ebd225eea72b1f89665722dda5858c4b96a771138211aeb53837687e30ea.png"
+  },
+  {
+    "case": "libreoffice-embedded-editor-decoy",
+    "category": "page_result",
+    "expected": "condition_not_met",
+    "baseline": "evidence_insufficient",
+    "candidate": "condition_not_met",
+    "question_data": {
+      "condition": "The foreground native application is LibreOffice Writer with an editable document open."
+    },
+    "image_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-20261015-01\\suite-v2\\assets\\9e4b4d53fbf78cb98c2b27a9b399564665301dd1d81cc3790e2c6800b0aed5df.png",
+    "source_path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-20261015-01\\suite-v2\\assets\\9e4b4d53fbf78cb98c2b27a9b399564665301dd1d81cc3790e2c6800b0aed5df.png"
+  }
+]

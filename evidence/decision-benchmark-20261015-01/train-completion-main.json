@@ -1,0 +1,520 @@
+{
+  "mode": "executed",
+  "summary": {
+    "cases": 312,
+    "returned": 312,
+    "exact_correct": 289,
+    "accuracy": 0.9262820512820513,
+    "false_accepts": 11,
+    "false_rejects": 11,
+    "returned_nonpass_on_positive": 11,
+    "errors": 0,
+    "input_tokens": 383919,
+    "output_tokens": 0,
+    "unknown_usage_requests": 0,
+    "http_latency": {
+      "n": 312,
+      "p50_ms": 189.1395,
+      "p95_ms": 468.9161
+    },
+    "returned_http_latency": {
+      "n": 312,
+      "p50_ms": 189.1395,
+      "p95_ms": 468.9161
+    },
+    "unique_cases": 104,
+    "scene_groups": 13,
+    "by_category": {
+      "graphic": {
+        "cases": 108,
+        "returned": 108,
+        "exact_correct": 103,
+        "accuracy": 0.9537037037037037,
+        "false_accepts": 2,
+        "false_rejects": 3,
+        "returned_nonpass_on_positive": 3,
+        "errors": 0,
+        "input_tokens": 89805,
+        "output_tokens": 0,
+        "unknown_usage_requests": 0,
+        "http_latency": {
+          "n": 108,
+          "p50_ms": 182.8194,
+          "p95_ms": 276.2328
+        },
+        "returned_http_latency": {
+          "n": 108,
+          "p50_ms": 182.8194,
+          "p95_ms": 276.2328
+        },
+        "unique_cases": 36,
+        "scene_groups": 11
+      },
+      "input_field": {
+        "cases": 78,
+        "returned": 78,
+        "exact_correct": 65,
+        "accuracy": 0.8333333333333334,
+        "false_accepts": 6,
+        "false_rejects": 7,
+        "returned_nonpass_on_positive": 7,
+        "errors": 0,
+        "input_tokens": 100956,
+        "output_tokens": 0,
+        "unknown_usage_requests": 0,
+        "http_latency": {
+          "n": 78,
+          "p50_ms": 191.48975000000002,
+          "p95_ms": 278.5771
+        },
+        "returned_http_latency": {
+          "n": 78,
+          "p50_ms": 191.48975000000002,
+          "p95_ms": 278.5771
+        },
+        "unique_cases": 26,
+        "scene_groups": 9
+      },
+      "page_result": {
+        "cases": 90,
+        "returned": 90,
+        "exact_correct": 86,
+        "accuracy": 0.9555555555555556,
+        "false_accepts": 3,
+        "false_rejects": 0,
+        "returned_nonpass_on_positive": 0,
+        "errors": 0,
+        "input_tokens": 183417,
+        "output_tokens": 0,
+        "unknown_usage_requests": 0,
+        "http_latency": {
+          "n": 90,
+          "p50_ms": 265.61575,
+          "p95_ms": 1499.8493
+        },
+        "returned_http_latency": {
+          "n": 90,
+          "p50_ms": 265.61575,
+          "p95_ms": 1499.8493
+        },
+        "unique_cases": 30,
+        "scene_groups": 13
+      },
+      "text_value": {
+        "cases": 36,
+        "returned": 36,
+        "exact_correct": 35,
+        "accuracy": 0.9722222222222222,
+        "false_accepts": 0,
+        "false_rejects": 1,
+        "returned_nonpass_on_positive": 1,
+        "errors": 0,
+        "input_tokens": 9741,
+        "output_tokens": 0,
+        "unknown_usage_requests": 0,
+        "http_latency": {
+          "n": 36,
+          "p50_ms": 111.78620000000001,
+          "p95_ms": 158.9488
+        },
+        "returned_http_latency": {
+          "n": 36,
+          "p50_ms": 111.78620000000001,
+          "p95_ms": 158.9488
+        },
+        "unique_cases": 12,
+        "scene_groups": 5
+      }
+    },
+    "by_variant": {
+      "baseline": {
+        "cases": 104,
+        "returned": 104,
+        "exact_correct": 98,
+        "accuracy": 0.9423076923076923,
+        "false_accepts": 3,
+        "false_rejects": 3,
+        "returned_nonpass_on_positive": 3,
+        "errors": 0,
+        "input_tokens": 127831,
+        "output_tokens": 0,
+        "unknown_usage_requests": 0,
+        "http_latency": {
+          "n": 104,
+          "p50_ms": 188.8148,
+          "p95_ms": 480.1673
+        },
+        "returned_http_latency": {
+          "n": 104,
+          "p50_ms": 188.8148,
+          "p95_ms": 480.1673
+        },
+        "unique_cases": 104,
+        "scene_groups": 13,
+        "by_category": {
+          "graphic": {
+            "cases": 36,
+            "returned": 36,
+            "exact_correct": 36,
+            "accuracy": 1.0,
+            "false_accepts": 0,
+            "false_rejects": 0,
+            "returned_nonpass_on_positive": 0,
+            "errors": 0,
+            "input_tokens": 29311,
+            "output_tokens": 0,
+            "unknown_usage_requests": 0,
+            "http_latency": {
+              "n": 36,
+              "p50_ms": 184.22225,
+              "p95_ms": 530.0379
+            },
+            "returned_http_latency": {
+              "n": 36,
+              "p50_ms": 184.22225,
+              "p95_ms": 530.0379
+            },
+            "unique_cases": 36,
+            "scene_groups": 11
+          },
+          "input_field": {
+            "cases": 26,
+            "returned": 26,
+            "exact_correct": 21,
+            "accuracy": 0.8076923076923077,
+            "false_accepts": 2,
+            "false_rejects": 3,
+            "returned_nonpass_on_positive": 3,
+            "errors": 0,
+            "input_tokens": 33184,
+            "output_tokens": 0,
+            "unknown_usage_requests": 0,
+            "http_latency": {
+              "n": 26,
+              "p50_ms": 186.93130000000002,
+              "p95_ms": 270.7566
+            },
+            "returned_http_latency": {
+              "n": 26,
+              "p50_ms": 186.93130000000002,
+              "p95_ms": 270.7566
+            },
+            "unique_cases": 26,
+            "scene_groups": 9
+          },
+          "page_result": {
+            "cases": 30,
+            "returned": 30,
+            "exact_correct": 29,
+            "accuracy": 0.9666666666666667,
+            "false_accepts": 1,
+            "false_rejects": 0,
+            "returned_nonpass_on_positive": 0,
+            "errors": 0,
+            "input_tokens": 62109,
+            "output_tokens": 0,
+            "unknown_usage_requests": 0,
+            "http_latency": {
+              "n": 30,
+              "p50_ms": 265.27905,
+              "p95_ms": 1570.1629
+            },
+            "returned_http_latency": {
+              "n": 30,
+              "p50_ms": 265.27905,
+              "p95_ms": 1570.1629
+            },
+            "unique_cases": 30,
+            "scene_groups": 13
+          },
+          "text_value": {
+            "cases": 12,
+            "returned": 12,
+            "exact_correct": 12,
+            "accuracy": 1.0,
+            "false_accepts": 0,
+            "false_rejects": 0,
+            "returned_nonpass_on_positive": 0,
+            "errors": 0,
+            "input_tokens": 3227,
+            "output_tokens": 0,
+            "unknown_usage_requests": 0,
+            "http_latency": {
+              "n": 12,
+              "p50_ms": 112.62115,
+              "p95_ms": 158.9488
+            },
+            "returned_http_latency": {
+              "n": 12,
+              "p50_ms": 112.62115,
+              "p95_ms": 158.9488
+            },
+            "unique_cases": 12,
+            "scene_groups": 5
+          }
+        }
+      },
+      "region_first": {
+        "cases": 104,
+        "returned": 104,
+        "exact_correct": 95,
+        "accuracy": 0.9134615384615384,
+        "false_accepts": 5,
+        "false_rejects": 4,
+        "returned_nonpass_on_positive": 4,
+        "errors": 0,
+        "input_tokens": 129683,
+        "output_tokens": 0,
+        "unknown_usage_requests": 0,
+        "http_latency": {
+          "n": 104,
+          "p50_ms": 190.53705,
+          "p95_ms": 359.7833
+        },
+        "returned_http_latency": {
+          "n": 104,
+          "p50_ms": 190.53705,
+          "p95_ms": 359.7833
+        },
+        "unique_cases": 104,
+        "scene_groups": 13,
+        "by_category": {
+          "graphic": {
+            "cases": 36,
+            "returned": 36,
+            "exact_correct": 34,
+            "accuracy": 0.9444444444444444,
+            "false_accepts": 1,
+            "false_rejects": 1,
+            "returned_nonpass_on_positive": 1,
+            "errors": 0,
+            "input_tokens": 30859,
+            "output_tokens": 0,
+            "unknown_usage_requests": 0,
+            "http_latency": {
+              "n": 36,
+              "p50_ms": 175.18205,
+              "p95_ms": 254.1636
+            },
+            "returned_http_latency": {
+              "n": 36,
+              "p50_ms": 175.18205,
+              "p95_ms": 254.1636
+            },
+            "unique_cases": 36,
+            "scene_groups": 11
+          },
+          "input_field": {
+            "cases": 26,
+            "returned": 26,
+            "exact_correct": 22,
+            "accuracy": 0.8461538461538461,
+            "false_accepts": 2,
+            "false_rejects": 2,
+            "returned_nonpass_on_positive": 2,
+            "errors": 0,
+            "input_tokens": 34406,
+            "output_tokens": 0,
+            "unknown_usage_requests": 0,
+            "http_latency": {
+              "n": 26,
+              "p50_ms": 192.2749,
+              "p95_ms": 272.4116
+            },
+            "returned_http_latency": {
+              "n": 26,
+              "p50_ms": 192.2749,
+              "p95_ms": 272.4116
+            },
+            "unique_cases": 26,
+            "scene_groups": 9
+          },
+          "page_result": {
+            "cases": 30,
+            "returned": 30,
+            "exact_correct": 28,
+            "accuracy": 0.9333333333333333,
+            "false_accepts": 2,
+            "false_rejects": 0,
+            "returned_nonpass_on_positive": 0,
+            "errors": 0,
+            "input_tokens": 60999,
+            "output_tokens": 0,
+            "unknown_usage_requests": 0,
+            "http_latency": {
+              "n": 30,
+              "p50_ms": 266.26075000000003,
+              "p95_ms": 1461.2375
+            },
+            "returned_http_latency": {
+              "n": 30,
+              "p50_ms": 266.26075000000003,
+              "p95_ms": 1461.2375
+            },
+            "unique_cases": 30,
+            "scene_groups": 13
+          },
+          "text_value": {
+            "cases": 12,
+            "returned": 12,
+            "exact_correct": 11,
+            "accuracy": 0.9166666666666666,
+            "false_accepts": 0,
+            "false_rejects": 1,
+            "returned_nonpass_on_positive": 1,
+            "errors": 0,
+            "input_tokens": 3419,
+            "output_tokens": 0,
+            "unknown_usage_requests": 0,
+            "http_latency": {
+              "n": 12,
+              "p50_ms": 116.5988,
+              "p95_ms": 241.8862
+            },
+            "returned_http_latency": {
+              "n": 12,
+              "p50_ms": 116.5988,
+              "p95_ms": 241.8862
+            },
+            "unique_cases": 12,
+            "scene_groups": 5
+          }
+        }
+      },
+      "short": {
+        "cases": 104,
+        "returned": 104,
+        "exact_correct": 96,
+        "accuracy": 0.9230769230769231,
+        "false_accepts": 3,
+        "false_rejects": 4,
+        "returned_nonpass_on_positive": 4,
+        "errors": 0,
+        "input_tokens": 126405,
+        "output_tokens": 0,
+        "unknown_usage_requests": 0,
+        "http_latency": {
+          "n": 104,
+          "p50_ms": 189.19995,
+          "p95_ms": 468.9161
+        },
+        "returned_http_latency": {
+          "n": 104,
+          "p50_ms": 189.19995,
+          "p95_ms": 468.9161
+        },
+        "unique_cases": 104,
+        "scene_groups": 13,
+        "by_category": {
+          "graphic": {
+            "cases": 36,
+            "returned": 36,
+            "exact_correct": 33,
+            "accuracy": 0.9166666666666666,
+            "false_accepts": 1,
+            "false_rejects": 2,
+            "returned_nonpass_on_positive": 2,
+            "errors": 0,
+            "input_tokens": 29635,
+            "output_tokens": 0,
+            "unknown_usage_requests": 0,
+            "http_latency": {
+              "n": 36,
+              "p50_ms": 177.2394,
+              "p95_ms": 276.2328
+            },
+            "returned_http_latency": {
+              "n": 36,
+              "p50_ms": 177.2394,
+              "p95_ms": 276.2328
+            },
+            "unique_cases": 36,
+            "scene_groups": 11
+          },
+          "input_field": {
+            "cases": 26,
+            "returned": 26,
+            "exact_correct": 22,
+            "accuracy": 0.8461538461538461,
+            "false_accepts": 2,
+            "false_rejects": 2,
+            "returned_nonpass_on_positive": 2,
+            "errors": 0,
+            "input_tokens": 33366,
+            "output_tokens": 0,
+            "unknown_usage_requests": 0,
+            "http_latency": {
+              "n": 26,
+              "p50_ms": 194.29205000000002,
+              "p95_ms": 289.4019
+            },
+            "returned_http_latency": {
+              "n": 26,
+              "p50_ms": 194.29205000000002,
+              "p95_ms": 289.4019
+            },
+            "unique_cases": 26,
+            "scene_groups": 9
+          },
+          "page_result": {
+            "cases": 30,
+            "returned": 30,
+            "exact_correct": 29,
+            "accuracy": 0.9666666666666667,
+            "false_accepts": 0,
+            "false_rejects": 0,
+            "returned_nonpass_on_positive": 0,
+            "errors": 0,
+            "input_tokens": 60309,
+            "output_tokens": 0,
+            "unknown_usage_requests": 0,
+            "http_latency": {
+              "n": 30,
+              "p50_ms": 255.1456,
+              "p95_ms": 1644.2264
+            },
+            "returned_http_latency": {
+              "n": 30,
+              "p50_ms": 255.1456,
+              "p95_ms": 1644.2264
+            },
+            "unique_cases": 30,
+            "scene_groups": 13
+          },
+          "text_value": {
+            "cases": 12,
+            "returned": 12,
+            "exact_correct": 12,
+            "accuracy": 1.0,
+            "false_accepts": 0,
+            "false_rejects": 0,
+            "returned_nonpass_on_positive": 0,
+            "errors": 0,
+            "input_tokens": 3095,
+            "output_tokens": 0,
+            "unknown_usage_requests": 0,
+            "http_latency": {
+              "n": 12,
+              "p50_ms": 109.2586,
+              "p95_ms": 145.602
+            },
+            "returned_http_latency": {
+              "n": 12,
+              "p50_ms": 109.2586,
+              "p95_ms": 145.602
+            },
+            "unique_cases": 12,
+            "scene_groups": 5
+          }
+        }
+      }
+    }
+  },
+  "budget": {
+    "limit": 5000000,
+    "spent": 506147,
+    "reserved": 0,
+    "remaining": 4493853,
+    "halted": false
+  }
+}

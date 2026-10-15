@@ -1,0 +1,63 @@
+{
+  "request_id": "collect-4-launch",
+  "received_at": "2026-10-14T12:52:22.916945+00:00",
+  "started_at": "2026-10-14T12:52:22.916945+00:00",
+  "preparation_preview": {
+    "source": "app_catalog",
+    "app_id": "discovered-399351fe17df9a805c08aae722835edc",
+    "name": "vlc",
+    "working_directory": "c:\\program files (x86)\\microsoft\\edge\\application",
+    "url": null,
+    "command": [
+      "c:\\program files (x86)\\microsoft\\edge\\application\\msedge.exe",
+      "--user-data-dir=D:\\AgentGUI-Projects\\test-profiles\\amadeus-codex-runtime-edge",
+      "--profile-directory=Default",
+      "--new-window",
+      "--window-size=1280,900",
+      "https://www.videolan.org/vlc/"
+    ],
+    "executable_path": "c:\\program files (x86)\\microsoft\\edge\\application\\msedge.exe",
+    "catalog_entry_sha256": "90776daae480d02f9557c3428a700e800912cf0d24e2f05cd5a3a07630ed5955",
+    "executable_sha256": "4bb4545b4ab80a3cf463a588ce570ca42de38fe6db16e3baeb0798ac75b4648b",
+    "contract_version": "native_window_preparation_v1",
+    "preparation_id": "13f5dd2a-6b8c-434b-8c42-35434f18ca14",
+    "mode": "launch",
+    "identity": null,
+    "expires_in_seconds": 60
+  },
+  "result": {
+    "status": "launched_window_ready",
+    "process_id": 66112,
+    "window": {
+      "handle": 2623900,
+      "process_id": 66112,
+      "title": "官方下载：VLC media player，最棒的开源播放器 - VideoLAN - 个人 - Microsoft​ Edge"
+    },
+    "launch_ownership": {
+      "contract_version": "launched_window_ownership.v1",
+      "newly_launched": true,
+      "identity": {
+        "contract_version": "windows_native_identity_observation_v1",
+        "provider": "windows_native_identity",
+        "status": "observed",
+        "target_window_handle": 2623900,
+        "process_id": 66112,
+        "process_create_time": 1791982342.942731,
+        "executable_path": "c:\\program files (x86)\\microsoft\\edge\\application\\msedge.exe"
+      }
+    },
+    "presentation_wait_ms": 500,
+    "content_ready": null,
+    "next_action": "capture_and_inspect_current_content"
+  },
+  "status": "returned",
+  "finished_at": "2026-10-14T12:52:23.886947+00:00",
+  "command_wall_ms": 970.053,
+  "response_available_at": "2026-10-14T12:52:23.886947+00:00",
+  "operation_succeeded": true,
+  "task_effect_verified": false,
+  "automatic_retry_allowed": false,
+  "original_request_id": "collect-4-launch",
+  "current_status_request_id": null,
+  "client_state": "terminal"
+}

@@ -1,0 +1,22 @@
+[
+  [
+    "pypi",
+    "https://pypi.org/"
+  ],
+  [
+    "mozilla",
+    "https://www.mozilla.org/en-US/"
+  ],
+  [
+    "libreoffice",
+    "https://www.libreoffice.org/"
+  ],
+  [
+    "sevenzip",
+    "https://www.7-zip.org/"
+  ],
+  [
+    "vlc",
+    "https://www.videolan.org/vlc/"
+  ]
+]

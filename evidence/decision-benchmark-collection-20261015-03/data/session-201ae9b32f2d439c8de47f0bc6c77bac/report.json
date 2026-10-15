@@ -1,0 +1,448 @@
+{
+  "started_at": "2026-10-14T12:47:23.953001+00:00",
+  "phase": "stopped",
+  "runner_pid": 62408,
+  "learning_enabled": false,
+  "legacy_learning_executor_enabled": false,
+  "learning_recording": {
+    "recording_enabled": false,
+    "learning_id": null,
+    "status": "disabled"
+  },
+  "observer": "minimal",
+  "completed_commands": [
+    {
+      "name": "collect-0-launch.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-0-capture-0.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-0-capture-1.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-0-close.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-1-launch.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-1-capture-0.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-1-capture-1.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-1-close.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-2-launch.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-2-capture-0.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-2-capture-1.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-2-close.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-3-launch.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-3-capture-0.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-3-capture-1.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-3-close.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-4-launch.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-4-capture-0.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-4-capture-1.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-4-close.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-5-launch.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-5-capture-0.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-5-capture-1.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-5-close.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-6-launch.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-6-capture-0.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-6-capture-1.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-6-close.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-7-launch.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-7-capture-0.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-7-capture-1.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-7-close.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-8-launch.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-8-capture-0.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-8-capture-1.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-8-close.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-9-launch.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-9-capture-0.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-9-capture-1.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-9-close.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-10-launch.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-10-capture-0.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-10-capture-1.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-10-close.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-11-launch.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-11-capture-0.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-11-capture-1.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-11-close.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-12-launch.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-12-capture-0.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-12-capture-1.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-12-close.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-13-launch.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-13-capture-0.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-13-capture-1.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-13-close.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-14-launch.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-14-capture-0.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-14-capture-1.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-14-close.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-15-launch.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-15-capture-0.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-15-capture-1.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-15-close.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-16-launch.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-16-capture-0.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-16-capture-1.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-16-close.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-17-launch.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-17-capture-0.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-17-capture-1.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-17-close.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-18-launch.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-18-capture-0.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-18-capture-1.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-18-close.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-19-launch.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-19-capture-0.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-19-capture-1.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-19-close.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-20-launch.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-20-capture-0.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-20-capture-1.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-20-close.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-21-launch.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-21-capture-0.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-21-capture-1.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-21-close.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-22-launch.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-22-capture-0.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-22-capture-1.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-22-close.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-23-launch.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-23-capture-0.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-23-capture-1.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-23-close.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-24-launch.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-24-capture-0.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-24-capture-1.json",
+      "status": "returned"
+    },
+    {
+      "name": "collect-24-close.json",
+      "status": "returned"
+    },
+    {
+      "name": "close-df49c1391d724d319a8820aa927cdf0e.json",
+      "status": "returned"
+    }
+  ],
+  "host_is_admin": false,
+  "decision_service": {
+    "enabled": false,
+    "mode": "off",
+    "model": "gpt-6-luna",
+    "contract_version": "decision_profile.v1",
+    "configured": false,
+    "request_cap": 20,
+    "timeout_seconds": 8,
+    "closed": false,
+    "used": 0,
+    "remaining": 20,
+    "unknown_dispatches": 0,
+    "budget_scope": "execution",
+    "budget_status": "available"
+  },
+  "recognition_source": "agent_current",
+  "delegate_profile": null,
+  "api_profile": null,
+  "model_configuration": null,
+  "learning_recording_error": null,
+  "target": null,
+  "agent_command_cleanup": {
+    "status": "stopped"
+  },
+  "cleanup_errors": [],
+  "finished_at": "2026-10-14T12:50:34.345757+00:00",
+  "host_phase": "stopped",
+  "sampler_stopped": true
+}

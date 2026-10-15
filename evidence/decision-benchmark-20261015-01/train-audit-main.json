@@ -1,0 +1,15 @@
+{
+  "schema": "training_main_audit.v1",
+  "requests": 312,
+  "raw_responses_verified": 312,
+  "truth_request_bindings_verified": 312,
+  "input_tokens": 383919,
+  "output_tokens": 0,
+  "budget_spent": 506147,
+  "reserved": 0,
+  "errors": 0,
+  "raw_requests_retried": 0,
+  "source_manifest_sha256": "577ec133b92fcdac077be541491403e537acb96ec46baa32f054cca96cdcf672",
+  "train_run_sha256": "1c80689fc09ab61c1d73de692dbdc66b77e7b9e8172a821fc8826be96f73c749",
+  "train_results_sha256": "172f2f5874ae5eaa2962cf393c7e346e5bbed8671cd587ea82dd7910a0c40292"
+}

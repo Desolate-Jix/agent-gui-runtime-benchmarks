@@ -1,0 +1,61 @@
+{
+  "command": {
+    "kind": "launch",
+    "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\audacity.lnk",
+    "prefer_existing": false
+  },
+  "received_at": "2026-10-14T12:48:11.027859+00:00",
+  "started_at": "2026-10-14T12:48:11.027859+00:00",
+  "preparation_preview": {
+    "source": "app_catalog",
+    "app_id": "discovered-47d54d647ff5b2ab49cd1057960666d1",
+    "name": "audacity",
+    "working_directory": "c:\\program files (x86)\\microsoft\\edge\\application",
+    "url": null,
+    "command": [
+      "c:\\program files (x86)\\microsoft\\edge\\application\\msedge.exe",
+      "--user-data-dir=D:\\AgentGUI-Projects\\test-profiles\\amadeus-codex-runtime-edge",
+      "--profile-directory=Default",
+      "--new-window",
+      "--window-size=1280,900",
+      "https://www.audacityteam.org/"
+    ],
+    "executable_path": "c:\\program files (x86)\\microsoft\\edge\\application\\msedge.exe",
+    "catalog_entry_sha256": "c588d2bb4c48c5af81ef36dc604e955b7284fad4e736af6f38a38e04f181edd3",
+    "executable_sha256": "4bb4545b4ab80a3cf463a588ce570ca42de38fe6db16e3baeb0798ac75b4648b",
+    "contract_version": "native_window_preparation_v1",
+    "preparation_id": "a5bae017-c25c-4362-9a0b-23ef5c226524",
+    "mode": "launch",
+    "identity": null,
+    "expires_in_seconds": 60
+  },
+  "result": {
+    "status": "launched_window_ready",
+    "process_id": 45584,
+    "window": {
+      "handle": 5310950,
+      "process_id": 45584,
+      "title": "无标题 - 个人 - Microsoft​ Edge"
+    },
+    "launch_ownership": {
+      "contract_version": "launched_window_ownership.v1",
+      "newly_launched": true,
+      "identity": {
+        "contract_version": "windows_native_identity_observation_v1",
+        "provider": "windows_native_identity",
+        "status": "observed",
+        "target_window_handle": 5310950,
+        "process_id": 45584,
+        "process_create_time": 1791982091.0505574,
+        "executable_path": "c:\\program files (x86)\\microsoft\\edge\\application\\msedge.exe"
+      }
+    },
+    "presentation_wait_ms": 500,
+    "content_ready": null,
+    "next_action": "capture_and_inspect_current_content"
+  },
+  "status": "returned",
+  "finished_at": "2026-10-14T12:48:12.008154+00:00",
+  "command_wall_ms": 980.148,
+  "response_available_at": "2026-10-14T12:48:12.008154+00:00"
+}

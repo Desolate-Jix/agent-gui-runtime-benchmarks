@@ -1,0 +1,8 @@
+{
+  "baseline": {},
+  "frozen_mix": {
+    "input_field": "Identify the visible region containing the cyan center, then compare that region with {target}. Blank space inside the target input counts as inside. Select condition_met for its interior, condition_not_met for a different control or page area, or evidence_insufficient if the point or target boundary cannot be identified. The ring and artificial crop edges are annotations.",
+    "page_result": "Check only this visible current result: {condition}. Choose condition_met if shown, condition_not_met if contradicted, otherwise evidence_insufficient. One static image cannot establish temporal progress or hidden persistence.",
+    "text_value": "Does the entered field text exactly equal {expected_text}? Ignore separate icons and shortcut hints. If gray unaccepted completion is attached, choose evidence_insufficient."
+  }
+}

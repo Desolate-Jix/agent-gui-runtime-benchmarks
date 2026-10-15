@@ -1,0 +1,216 @@
+{
+  "retained": [
+    {
+      "receipt": "archlinux-capture-0.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\archlinux-capture-0.png",
+      "sha256": "92c266252fc667003d9cbc887814cd0d00549932622dfe07a3cbc4eee03af95f"
+    },
+    {
+      "receipt": "archlinux-capture-1.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\archlinux-capture-1.png",
+      "sha256": "47916419b924a72e91a2f703ede377173b9458d0fbb3a32edfeafa11d1f55cfd"
+    },
+    {
+      "receipt": "audacity-capture-0.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\audacity-capture-0.png",
+      "sha256": "ab349a5c072a0047ee56d90f9152bc3066443cd3974431d09c50f21426da1ec8"
+    },
+    {
+      "receipt": "audacity-capture-1.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\audacity-capture-1.png",
+      "sha256": "29f4650e83777e8b6582bdb8e62bf5bd1642b2a8df4a59a335d819ed9ab4322b"
+    },
+    {
+      "receipt": "blender-capture-0.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\blender-capture-0.png",
+      "sha256": "e389e39281e0bc402941489e5e26c5e26c8a4f9db2b3ffeca37280523e449522"
+    },
+    {
+      "receipt": "blender-capture-1.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\blender-capture-1.png",
+      "sha256": "e389e39281e0bc402941489e5e26c5e26c8a4f9db2b3ffeca37280523e449522"
+    },
+    {
+      "receipt": "debian-capture-0.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\debian-capture-0.png",
+      "sha256": "fb5f72ac3e40c227d8ba3a14460cb5ff563f22335b7dc9718b28ffc5422aebc5"
+    },
+    {
+      "receipt": "debian-capture-1.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\debian-capture-1.png",
+      "sha256": "fb5f72ac3e40c227d8ba3a14460cb5ff563f22335b7dc9718b28ffc5422aebc5"
+    },
+    {
+      "receipt": "gimp-capture-0.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\gimp-capture-0.png",
+      "sha256": "1c3efedda555150d626471a71c29c4e446bd60a018363b34ea84bbb23fb0de5a"
+    },
+    {
+      "receipt": "gimp-capture-1.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\gimp-capture-1.png",
+      "sha256": "aa9cde33c5e18b86bc44cf531471183b76ddce78368eb71749597a945dab6f35"
+    },
+    {
+      "receipt": "gnu-capture-0.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\gnu-capture-0.png",
+      "sha256": "90b3a18358ab38531612489b955e2add1ec6b7e19e41a390f999915b565b84c4"
+    },
+    {
+      "receipt": "gnu-capture-1.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\gnu-capture-1.png",
+      "sha256": "ef1c419d2e8c4c4ee9a5f2386f69cad6fbb973deb2a16545abcfee651963049f"
+    },
+    {
+      "receipt": "go-capture-0.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\go-capture-0.png",
+      "sha256": "722b16f4f85b90603d034f1a07b1799466a7dd758217f7eb68a196b7737a024c"
+    },
+    {
+      "receipt": "go-capture-1.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\go-capture-1.png",
+      "sha256": "722b16f4f85b90603d034f1a07b1799466a7dd758217f7eb68a196b7737a024c"
+    },
+    {
+      "receipt": "internetarchive-capture-0.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\internetarchive-capture-0.png",
+      "sha256": "2019830824d96f6eadf9b8b3b4fc80febe75c83f8b008f68402ba91d7d44c20b"
+    },
+    {
+      "receipt": "internetarchive-capture-1.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\internetarchive-capture-1.png",
+      "sha256": "e68df84665a54b8fe55d9d9d4c3a1f277ffb64df92b66864a6672490d99f68e4"
+    },
+    {
+      "receipt": "kernel-capture-0.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\kernel-capture-0.png",
+      "sha256": "0a6bba8cc080543629bd3be01776a29ac54ef04f281ed80a85d6d0a8a8e471b1"
+    },
+    {
+      "receipt": "kernel-capture-1.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\kernel-capture-1.png",
+      "sha256": "0a6bba8cc080543629bd3be01776a29ac54ef04f281ed80a85d6d0a8a8e471b1"
+    },
+    {
+      "receipt": "mysql-capture-0.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\mysql-capture-0.png",
+      "sha256": "a7e896639866046e3dbdbe4346b5a88f830279879c0c4c2d2b5f6a0d888982cc"
+    },
+    {
+      "receipt": "mysql-capture-1.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\mysql-capture-1.png",
+      "sha256": "a7e896639866046e3dbdbe4346b5a88f830279879c0c4c2d2b5f6a0d888982cc"
+    },
+    {
+      "receipt": "nasa-capture-0.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\nasa-capture-0.png",
+      "sha256": "e6b9b60b6bbfd22db78fca3473c148a87c53e930e3472b337da69f298490570a"
+    },
+    {
+      "receipt": "nasa-capture-1.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\nasa-capture-1.png",
+      "sha256": "0e368788525365bddb7f9c6a9c6aa46ece132b93af45dc886c83c2d65972df38"
+    },
+    {
+      "receipt": "npm-capture-0.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\npm-capture-0.png",
+      "sha256": "16f7543bbc4b3321bacf4c63dc6cee45ce3579ab7d97e9e305e990bff648b6fc"
+    },
+    {
+      "receipt": "npm-capture-1.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\npm-capture-1.png",
+      "sha256": "a568c12197678db0d1777f148d06bb2967d5ff2aa7c1e8a1a386e0ce74950469"
+    },
+    {
+      "receipt": "openlibrary-capture-0.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\openlibrary-capture-0.png",
+      "sha256": "51ff0ef847eba4984de1867bbc5e94efb0dbdf7539a7bcff729bb080f0c43245"
+    },
+    {
+      "receipt": "openlibrary-capture-1.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\openlibrary-capture-1.png",
+      "sha256": "95e8b3a2d7cb8a7103426959b99d03c24cd72461ac994a7b046729c4e7f2cc5a"
+    },
+    {
+      "receipt": "postgresql-capture-0.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\postgresql-capture-0.png",
+      "sha256": "aee775599308897617a1a8667b075427ff60e6fac4d133f36b213a5f76436641"
+    },
+    {
+      "receipt": "postgresql-capture-1.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\postgresql-capture-1.png",
+      "sha256": "25b60da582256d496410afa1ca5ed903c08fb8eae33b932fa652c473cd1809a1"
+    },
+    {
+      "receipt": "pythonhome-capture-0.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\pythonhome-capture-0.png",
+      "sha256": "b207b5f68639b65b288e55e2608b67259ca3df23f481ffb2ac608d2e49470682"
+    },
+    {
+      "receipt": "pythonhome-capture-1.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\pythonhome-capture-1.png",
+      "sha256": "b207b5f68639b65b288e55e2608b67259ca3df23f481ffb2ac608d2e49470682"
+    },
+    {
+      "receipt": "rust-capture-0.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\rust-capture-0.png",
+      "sha256": "9f236bf705c6fb41be0dd3c044cf95efe8dad43b5e7b44095b0f0c532c1ef053"
+    },
+    {
+      "receipt": "rust-capture-1.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\rust-capture-1.png",
+      "sha256": "7ae8e40567f819ecc5e1af5612f725cd525af9d5abb0b95858fdfb1e448fc182"
+    },
+    {
+      "receipt": "sqlite-capture-0.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\sqlite-capture-0.png",
+      "sha256": "1f3afa691f33d7866c0653e860d1cc9638686f4f3d2a315159660796be6b556f"
+    },
+    {
+      "receipt": "sqlite-capture-1.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\sqlite-capture-1.png",
+      "sha256": "1f3afa691f33d7866c0653e860d1cc9638686f4f3d2a315159660796be6b556f"
+    },
+    {
+      "receipt": "ubuntu-capture-0.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\ubuntu-capture-0.png",
+      "sha256": "194f0d758916f6fffb9cfae01faa6b1ca8851a6e9af25859c90d16a90a898b23"
+    },
+    {
+      "receipt": "ubuntu-capture-1.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\ubuntu-capture-1.png",
+      "sha256": "50ab26cba166a861ccb2465c6a2898da5694ea59c6a508ceb1f3484f840c5d65"
+    },
+    {
+      "receipt": "w3c-capture-0.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\w3c-capture-0.png",
+      "sha256": "3def4f364d38d2d8259286724b84c43b9658a65250e9d8fb8bd49467559e1d19"
+    },
+    {
+      "receipt": "w3c-capture-1.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\w3c-capture-1.png",
+      "sha256": "3def4f364d38d2d8259286724b84c43b9658a65250e9d8fb8bd49467559e1d19"
+    },
+    {
+      "receipt": "w3schools-capture-0.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\w3schools-capture-0.png",
+      "sha256": "daf30fbe156b7de0451e0908c208d16c72505288074e39a34c42c6914e7b3971"
+    },
+    {
+      "receipt": "w3schools-capture-1.json",
+      "path": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-collection-20261015-03\\retained-sources\\w3schools-capture-1.png",
+      "sha256": "b97d85caf822a9fbaed9f188da18eaa32acf4100964501990f23df6e109f3d12"
+    }
+  ],
+  "missing": [
+    "libreoffice-capture-0",
+    "libreoffice-capture-1",
+    "mozilla-capture-0",
+    "mozilla-capture-1",
+    "pypi-capture-0",
+    "pypi-capture-1",
+    "sevenzip-capture-0",
+    "sevenzip-capture-1",
+    "vlc-capture-0",
+    "vlc-capture-1"
+  ]
+}

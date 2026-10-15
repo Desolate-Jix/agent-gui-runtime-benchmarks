@@ -1,0 +1,329 @@
+{
+  "schema": "decision_training_selection.v1",
+  "stage": "train_frozen_pending_validation",
+  "selection_split": "train",
+  "inputs": {
+    "suite_sha256": "577ec133b92fcdac077be541491403e537acb96ec46baa32f054cca96cdcf672",
+    "variants_sha256": "aee9d3a6e610f801d052f1235eec53935ff504f67bdd68ec51596e2f5234e299",
+    "comparison_plan_sha256": "60a472a237f177e9e31680393b660ea47991e4e6a97d7cebf5f935464041d72f",
+    "run_sha256": "1c80689fc09ab61c1d73de692dbdc66b77e7b9e8172a821fc8826be96f73c749",
+    "train_sha256": "172f2f5874ae5eaa2962cf393c7e346e5bbed8671cd587ea82dd7910a0c40292"
+  },
+  "selection_rule": [
+    "per-category exact accuracy descending",
+    "false accepts ascending",
+    "false rejects ascending",
+    "median latency ascending",
+    "input tokens ascending"
+  ],
+  "metric_definitions": {
+    "accuracy": "Exact three-way matches / every frozen train row, including errors/timeouts/refusals/unknowns.",
+    "false_accepts": "Returned condition_met when expected is not condition_met.",
+    "false_rejects": "Returned nonpass on expected condition_met; errors are separate and remain in accuracy denominator, matching runner summarize().",
+    "p50_http_ms": "Median of every available finite HTTP latency, including failed requests; not only correct/returned rows.",
+    "input_tokens": "Known input-token sum; any unknown usage ranks as unavailable, never as zero-token savings.",
+    "ties": "Baseline wins a complete five-key tie; remaining ties use variant name for determinism. Byte-identical category requests retain baseline."
+  },
+  "selected": {
+    "graphic": "baseline",
+    "input_field": "region_first",
+    "page_result": "short",
+    "text_value": "short"
+  },
+  "categories": {
+    "graphic": {
+      "selected_variant": "baseline",
+      "scores": {
+        "baseline": {
+          "cases": 36,
+          "returned": 36,
+          "exact_correct": 36,
+          "accuracy": 1.0,
+          "false_accepts": 0,
+          "false_rejects": 0,
+          "errors": 0,
+          "timeouts": 0,
+          "status_counts": {
+            "completed": 36
+          },
+          "p50_http_ms": 184.22225,
+          "http_latency_n": 36,
+          "input_tokens": 29311,
+          "unknown_usage_requests": 0,
+          "ranking_input_tokens": 29311
+        },
+        "region_first": {
+          "cases": 36,
+          "returned": 36,
+          "exact_correct": 34,
+          "accuracy": 0.9444444444444444,
+          "false_accepts": 1,
+          "false_rejects": 1,
+          "errors": 0,
+          "timeouts": 0,
+          "status_counts": {
+            "completed": 36
+          },
+          "p50_http_ms": 175.18205,
+          "http_latency_n": 36,
+          "input_tokens": 30859,
+          "unknown_usage_requests": 0,
+          "ranking_input_tokens": 30859
+        },
+        "short": {
+          "cases": 36,
+          "returned": 36,
+          "exact_correct": 33,
+          "accuracy": 0.9166666666666666,
+          "false_accepts": 1,
+          "false_rejects": 2,
+          "errors": 0,
+          "timeouts": 0,
+          "status_counts": {
+            "completed": 36
+          },
+          "p50_http_ms": 177.2394,
+          "http_latency_n": 36,
+          "input_tokens": 29635,
+          "unknown_usage_requests": 0,
+          "ranking_input_tokens": 29635
+        }
+      },
+      "eligible_ranking": [
+        "baseline",
+        "region_first",
+        "short"
+      ],
+      "same_request_as_baseline": [],
+      "tied_best_variants": [
+        "baseline"
+      ]
+    },
+    "input_field": {
+      "selected_variant": "region_first",
+      "scores": {
+        "baseline": {
+          "cases": 26,
+          "returned": 26,
+          "exact_correct": 21,
+          "accuracy": 0.8076923076923077,
+          "false_accepts": 2,
+          "false_rejects": 3,
+          "errors": 0,
+          "timeouts": 0,
+          "status_counts": {
+            "completed": 26
+          },
+          "p50_http_ms": 186.93130000000002,
+          "http_latency_n": 26,
+          "input_tokens": 33184,
+          "unknown_usage_requests": 0,
+          "ranking_input_tokens": 33184
+        },
+        "region_first": {
+          "cases": 26,
+          "returned": 26,
+          "exact_correct": 22,
+          "accuracy": 0.8461538461538461,
+          "false_accepts": 2,
+          "false_rejects": 2,
+          "errors": 0,
+          "timeouts": 0,
+          "status_counts": {
+            "completed": 26
+          },
+          "p50_http_ms": 192.2749,
+          "http_latency_n": 26,
+          "input_tokens": 34406,
+          "unknown_usage_requests": 0,
+          "ranking_input_tokens": 34406
+        },
+        "short": {
+          "cases": 26,
+          "returned": 26,
+          "exact_correct": 22,
+          "accuracy": 0.8461538461538461,
+          "false_accepts": 2,
+          "false_rejects": 2,
+          "errors": 0,
+          "timeouts": 0,
+          "status_counts": {
+            "completed": 26
+          },
+          "p50_http_ms": 194.29205000000002,
+          "http_latency_n": 26,
+          "input_tokens": 33366,
+          "unknown_usage_requests": 0,
+          "ranking_input_tokens": 33366
+        }
+      },
+      "eligible_ranking": [
+        "region_first",
+        "short",
+        "baseline"
+      ],
+      "same_request_as_baseline": [],
+      "tied_best_variants": [
+        "region_first"
+      ]
+    },
+    "page_result": {
+      "selected_variant": "short",
+      "scores": {
+        "baseline": {
+          "cases": 30,
+          "returned": 30,
+          "exact_correct": 29,
+          "accuracy": 0.9666666666666667,
+          "false_accepts": 1,
+          "false_rejects": 0,
+          "errors": 0,
+          "timeouts": 0,
+          "status_counts": {
+            "completed": 30
+          },
+          "p50_http_ms": 265.27905,
+          "http_latency_n": 30,
+          "input_tokens": 62109,
+          "unknown_usage_requests": 0,
+          "ranking_input_tokens": 62109
+        },
+        "region_first": {
+          "cases": 30,
+          "returned": 30,
+          "exact_correct": 28,
+          "accuracy": 0.9333333333333333,
+          "false_accepts": 2,
+          "false_rejects": 0,
+          "errors": 0,
+          "timeouts": 0,
+          "status_counts": {
+            "completed": 30
+          },
+          "p50_http_ms": 266.26075000000003,
+          "http_latency_n": 30,
+          "input_tokens": 60999,
+          "unknown_usage_requests": 0,
+          "ranking_input_tokens": 60999
+        },
+        "short": {
+          "cases": 30,
+          "returned": 30,
+          "exact_correct": 29,
+          "accuracy": 0.9666666666666667,
+          "false_accepts": 0,
+          "false_rejects": 0,
+          "errors": 0,
+          "timeouts": 0,
+          "status_counts": {
+            "completed": 30
+          },
+          "p50_http_ms": 255.1456,
+          "http_latency_n": 30,
+          "input_tokens": 60309,
+          "unknown_usage_requests": 0,
+          "ranking_input_tokens": 60309
+        }
+      },
+      "eligible_ranking": [
+        "short",
+        "baseline",
+        "region_first"
+      ],
+      "same_request_as_baseline": [],
+      "tied_best_variants": [
+        "short"
+      ]
+    },
+    "text_value": {
+      "selected_variant": "short",
+      "scores": {
+        "baseline": {
+          "cases": 12,
+          "returned": 12,
+          "exact_correct": 12,
+          "accuracy": 1.0,
+          "false_accepts": 0,
+          "false_rejects": 0,
+          "errors": 0,
+          "timeouts": 0,
+          "status_counts": {
+            "completed": 12
+          },
+          "p50_http_ms": 112.62115,
+          "http_latency_n": 12,
+          "input_tokens": 3227,
+          "unknown_usage_requests": 0,
+          "ranking_input_tokens": 3227
+        },
+        "region_first": {
+          "cases": 12,
+          "returned": 12,
+          "exact_correct": 11,
+          "accuracy": 0.9166666666666666,
+          "false_accepts": 0,
+          "false_rejects": 1,
+          "errors": 0,
+          "timeouts": 0,
+          "status_counts": {
+            "completed": 12
+          },
+          "p50_http_ms": 116.5988,
+          "http_latency_n": 12,
+          "input_tokens": 3419,
+          "unknown_usage_requests": 0,
+          "ranking_input_tokens": 3419
+        },
+        "short": {
+          "cases": 12,
+          "returned": 12,
+          "exact_correct": 12,
+          "accuracy": 1.0,
+          "false_accepts": 0,
+          "false_rejects": 0,
+          "errors": 0,
+          "timeouts": 0,
+          "status_counts": {
+            "completed": 12
+          },
+          "p50_http_ms": 109.2586,
+          "http_latency_n": 12,
+          "input_tokens": 3095,
+          "unknown_usage_requests": 0,
+          "ranking_input_tokens": 3095
+        }
+      },
+      "eligible_ranking": [
+        "short",
+        "baseline",
+        "region_first"
+      ],
+      "same_request_as_baseline": [],
+      "tied_best_variants": [
+        "short"
+      ]
+    }
+  },
+  "has_changes": true,
+  "runner_variants": {
+    "baseline": {},
+    "frozen_mix": {
+      "input_field": "Identify the visible region containing the cyan center, then compare that region with {target}. Blank space inside the target input counts as inside. Select condition_met for its interior, condition_not_met for a different control or page area, or evidence_insufficient if the point or target boundary cannot be identified. The ring and artificial crop edges are annotations.",
+      "page_result": "Check only this visible current result: {condition}. Choose condition_met if shown, condition_not_met if contradicted, otherwise evidence_insufficient. One static image cannot establish temporal progress or hidden persistence.",
+      "text_value": "Does the entered field text exactly equal {expected_text}? Ignore separate icons and shortcut hints. If gray unaccepted completion is attached, choose evidence_insufficient."
+    }
+  },
+  "validation_results_read": false,
+  "test_results_read": false,
+  "validation_rule": "Freeze the category mix selected on train; compare twice per case against baseline. Validation may reject a category change before final freeze.",
+  "heldout_rule": "Only after final freeze compare test baseline versus frozen candidate, twice per case; do not retune on test.",
+  "limitations": "Training-only selection; small training gains are not general accuracy evidence. Validation may reject changes; test requires a later final freeze.",
+  "script_sha256": "1ddba108c5f3de396b62a3c273207e6379d8a4c3d415905ea03d2086acbd2205",
+  "source_paths": {
+    "suite_sha256": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-20261015-01\\suite-v2\\suite.json",
+    "variants_sha256": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-20261015-01\\variants-v1.json",
+    "comparison_plan_sha256": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-20261015-01\\comparison-plan.json",
+    "run_sha256": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-20261015-01\\train-run-01\\run.json",
+    "train_sha256": "D:\\AgentGUI-Projects\\evidence\\decision-benchmark-20261015-01\\train-run-01\\results.json"
+  }
+}

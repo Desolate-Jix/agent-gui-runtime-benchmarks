@@ -1,0 +1,63 @@
+{
+  "request_id": "collect-24-launch",
+  "received_at": "2026-10-14T12:50:26.597717+00:00",
+  "started_at": "2026-10-14T12:50:26.597717+00:00",
+  "preparation_preview": {
+    "source": "app_catalog",
+    "app_id": "discovered-7729ebe8744e8a9e8139533496bac1e3",
+    "name": "internetarchive",
+    "working_directory": "c:\\program files (x86)\\microsoft\\edge\\application",
+    "url": null,
+    "command": [
+      "c:\\program files (x86)\\microsoft\\edge\\application\\msedge.exe",
+      "--user-data-dir=D:\\AgentGUI-Projects\\test-profiles\\amadeus-codex-runtime-edge",
+      "--profile-directory=Default",
+      "--new-window",
+      "--window-size=1280,900",
+      "https://archive.org/"
+    ],
+    "executable_path": "c:\\program files (x86)\\microsoft\\edge\\application\\msedge.exe",
+    "catalog_entry_sha256": "81f53b0972fa3cd7585a5cea02f82ad6f0528b057d22473ca99727d5a394c475",
+    "executable_sha256": "4bb4545b4ab80a3cf463a588ce570ca42de38fe6db16e3baeb0798ac75b4648b",
+    "contract_version": "native_window_preparation_v1",
+    "preparation_id": "99ff5f7a-e7c5-4426-8201-ae4f1b04c263",
+    "mode": "launch",
+    "identity": null,
+    "expires_in_seconds": 60
+  },
+  "result": {
+    "status": "launched_window_ready",
+    "process_id": 38080,
+    "window": {
+      "handle": 2099610,
+      "process_id": 38080,
+      "title": "无标题 - 个人 - Microsoft​ Edge"
+    },
+    "launch_ownership": {
+      "contract_version": "launched_window_ownership.v1",
+      "newly_launched": true,
+      "identity": {
+        "contract_version": "windows_native_identity_observation_v1",
+        "provider": "windows_native_identity",
+        "status": "observed",
+        "target_window_handle": 2099610,
+        "process_id": 38080,
+        "process_create_time": 1791982226.6277964,
+        "executable_path": "c:\\program files (x86)\\microsoft\\edge\\application\\msedge.exe"
+      }
+    },
+    "presentation_wait_ms": 500,
+    "content_ready": null,
+    "next_action": "capture_and_inspect_current_content"
+  },
+  "status": "returned",
+  "finished_at": "2026-10-14T12:50:27.613303+00:00",
+  "command_wall_ms": 1014.826,
+  "response_available_at": "2026-10-14T12:50:27.613303+00:00",
+  "operation_succeeded": true,
+  "task_effect_verified": false,
+  "automatic_retry_allowed": false,
+  "original_request_id": "collect-24-launch",
+  "current_status_request_id": null,
+  "client_state": "terminal"
+}
